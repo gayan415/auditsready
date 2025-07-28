@@ -53,7 +53,7 @@ export default function Home() {
   return (
     <div className="bg-gradient-to-br from-slate-50 to-blue-50 min-h-screen">
       <Head>
-        <title>AuditsReady – AI-Powered Factory Compliance</title>
+        <title>AuditsReady – AI-Powered SOP Compliance for Manufacturing</title>
         <meta name="description" content="AI-powered SOP compliance platform with intelligent backend. Automatically finds gaps and transforms documentation with intelligent assistance." />
       </Head>
 
