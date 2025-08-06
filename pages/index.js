@@ -53,8 +53,51 @@ export default function Home() {
   return (
     <div className="bg-gradient-to-br from-slate-50 to-blue-50 min-h-screen">
       <Head>
-        <title>AuditsReady – AI-Powered SOP Compliance for Manufacturing</title>
-        <meta name="description" content="AI-powered SOP compliance platform with intelligent backend. Automatically finds gaps and transforms documentation with intelligent assistance." />
+        <title>AuditsReady – Audit-Ready SOP Compliance for Manufacturing</title>
+        <meta name="description" content="AI-powered SOP compliance platform helping Alberta manufacturers get audit-ready. Automatic gap detection for craft breweries, oilfield services, food processing, and metal fabrication." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="AuditsReady" />
+        
+        {/* OpenGraph Meta Tags */}
+        <meta property="og:title" content="AuditsReady – Audit-Ready SOP Compliance for Manufacturing" />
+        <meta property="og:description" content="AI-powered SOP compliance platform helping Alberta manufacturers get audit-ready. Where artificial intelligence meets manufacturing excellence." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://auditsready.com" />
+        <meta property="og:image" content="https://auditsready.com/auditsready-logo.png" />
+        <meta property="og:site_name" content="AuditsReady" />
+        
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="AuditsReady – Audit-Ready SOP Compliance for Manufacturing" />
+        <meta name="twitter:description" content="AI-powered SOP compliance platform helping Alberta manufacturers get audit-ready." />
+        <meta name="twitter:image" content="https://auditsready.com/auditsready-logo.png" />
+        
+        {/* Favicon and Icons */}
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "AuditsReady",
+              "description": "AI-powered SOP compliance platform for manufacturing",
+              "url": "https://auditsready.com",
+              "logo": "https://auditsready.com/auditsready-logo.png",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "info@auditsready.com",
+                "contactType": "Customer Service"
+              },
+              "areaServed": "Alberta, Canada",
+              "serviceType": "ISO 9001 Compliance Consulting"
+            })
+          }}
+        />
       </Head>
 
       {/* Hero Section */}
