@@ -208,10 +208,10 @@ export default function Home() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: "🍎", title: "Food Processing", desc: "HACCP gap analysis & AI-powered compliance" },
-              { icon: "📦", title: "Packaging", desc: "Smart quality control optimization" },
-              { icon: "🏗️", title: "Building Materials", desc: "Automated ISO 9001 mapping" },
-              { icon: "⚙️", title: "Manufacturing", desc: "Custom AI solutions for any process" }
+              { icon: "🍺", title: "Craft Breweries", desc: "Quality consistency & export compliance" },
+              { icon: "🛢️", title: "Oilfield Services", desc: "Fabrication & equipment ISO 9001" },
+              { icon: "🥩", title: "Food Processing", desc: "HACCP & ISO compliance made simple" },
+              { icon: "🏗️", title: "Metal Fabrication", desc: "Structural steel & custom work certification" }
             ].map((item, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-gray-100">
                 <div className="text-4xl mb-4">{item.icon}</div>
