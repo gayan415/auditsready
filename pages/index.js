@@ -53,48 +53,137 @@ export default function Home() {
   return (
     <div className="bg-gradient-to-br from-slate-50 to-blue-50 min-h-screen">
       <Head>
-        <title>AuditsReady – Audit-Ready SOP Compliance for Manufacturing</title>
-        <meta name="description" content="AI-powered SOP compliance platform helping Alberta manufacturers get audit-ready. Automatic gap detection for craft breweries, oilfield services, food processing, and metal fabrication." />
+        <title>AI-Powered ISO 9001 Gap Analysis | Audit-Ready SOP Compliance | AuditsReady</title>
+        <meta name="description" content="AI-powered ISO 9001 compliance service for manufacturers worldwide. Expert gap analysis, SOP conversion, and audit preparation. P.Eng validated. Turn handwritten procedures into audit-ready documentation." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="AuditsReady" />
-        
+        <meta name="keywords" content="ISO 9001 gap analysis, ISO 9001 consultant, SOP compliance, manufacturing audit preparation, ISO certification service, quality management system, audit-ready documentation, SOP conversion" />
+        <link rel="canonical" href="https://auditsready.com" />
+
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="AuditsReady – Audit-Ready SOP Compliance for Manufacturing" />
-        <meta property="og:description" content="AI-powered SOP compliance platform helping Alberta manufacturers get audit-ready. Where artificial intelligence meets manufacturing excellence." />
+        <meta property="og:title" content="AI-Powered ISO 9001 Gap Analysis | Audit-Ready SOP Compliance" />
+        <meta property="og:description" content="AI-powered ISO 9001 compliance service for manufacturers. Expert gap analysis, SOP conversion, and audit preparation. P.Eng validated." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://auditsready.com" />
         <meta property="og:image" content="https://auditsready.com/auditsready-logo.png" />
         <meta property="og:site_name" content="AuditsReady" />
-        
+        <meta property="og:locale" content="en_US" />
+
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="AuditsReady – Audit-Ready SOP Compliance for Manufacturing" />
-        <meta name="twitter:description" content="AI-powered SOP compliance platform helping Alberta manufacturers get audit-ready." />
+        <meta name="twitter:title" content="AI-Powered ISO 9001 Gap Analysis | Audit-Ready SOP Compliance" />
+        <meta name="twitter:description" content="AI-powered ISO 9001 compliance service for manufacturers. Expert gap analysis & audit preparation worldwide." />
         <meta name="twitter:image" content="https://auditsready.com/auditsready-logo.png" />
-        
+
         {/* Favicon and Icons */}
         <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         
-        {/* Structured Data */}
+        {/* Structured Data - Organization */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Organization",
+              "@type": "ProfessionalService",
               "name": "AuditsReady",
-              "description": "AI-powered SOP compliance platform for manufacturing",
+              "description": "AI-powered ISO 9001 compliance and SOP gap analysis service for manufacturers worldwide. P.Eng validated audit preparation.",
               "url": "https://auditsready.com",
               "logo": "https://auditsready.com/auditsready-logo.png",
+              "image": "https://auditsready.com/auditsready-logo.png",
+              "telephone": "+1-403-404-4643",
+              "email": "info@auditsready.com",
+              "priceRange": "$$",
+              "areaServed": [
+                {
+                  "@type": "Country",
+                  "name": "United States"
+                },
+                {
+                  "@type": "Country",
+                  "name": "Canada"
+                },
+                {
+                  "@type": "Country",
+                  "name": "Mexico"
+                }
+              ],
               "contactPoint": {
                 "@type": "ContactPoint",
+                "telephone": "+1-403-404-4643",
                 "email": "info@auditsready.com",
-                "contactType": "Customer Service"
+                "contactType": "Customer Service",
+                "availableLanguage": ["English", "en"]
               },
-              "areaServed": "Alberta, Canada",
-              "serviceType": "ISO 9001 Compliance Consulting"
+              "sameAs": [],
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5.0",
+                "reviewCount": "1"
+              }
+            })
+          }}
+        />
+
+        {/* Structured Data - Service */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "serviceType": "ISO 9001 Compliance Consulting",
+              "provider": {
+                "@type": "Organization",
+                "name": "AuditsReady",
+                "url": "https://auditsready.com"
+              },
+              "areaServed": [
+                {
+                  "@type": "Country",
+                  "name": "United States"
+                },
+                {
+                  "@type": "Country",
+                  "name": "Canada"
+                },
+                {
+                  "@type": "Country",
+                  "name": "Mexico"
+                }
+              ],
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "ISO 9001 Compliance Services",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "AI-Powered ISO 9001 Gap Analysis",
+                      "description": "Automated gap detection and compliance mapping"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "SOP Document Conversion",
+                      "description": "Transform handwritten procedures into audit-ready documentation"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "P.Eng Validated Audit Preparation",
+                      "description": "Professional Engineer validated compliance consulting"
+                    }
+                  }
+                ]
+              }
             })
           }}
         />
@@ -181,6 +270,54 @@ export default function Home() {
                 AI-powered suggestions help you create compliant documentation 
                 faster than any traditional tool or manual process.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Trust Signals - How It Works */}
+        <section className="mb-20">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              How It Works
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto mb-6"></div>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Simple 3-step process to audit-ready compliance
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-2xl font-bold text-blue-600 mx-auto mb-4">1</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Send Your Documents</h3>
+              <p className="text-gray-600">Email your existing SOPs, handwritten notes, or Word docs. Any format works.</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-2xl font-bold text-blue-600 mx-auto mb-4">2</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">AI Analysis</h3>
+              <p className="text-gray-600">Our AI scans for gaps, maps to ISO 9001 requirements, and identifies missing procedures.</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-2xl font-bold text-blue-600 mx-auto mb-4">3</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Get Audit-Ready SOPs</h3>
+              <p className="text-gray-600">Receive professional, P.Eng validated, audit-ready documentation in days, not months.</p>
+            </div>
+          </div>
+
+          {/* Trust Badge */}
+          <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-8 border-2 border-green-200 text-center">
+            <div className="flex items-center justify-center gap-4 mb-4">
+              <div className="text-4xl">🏆</div>
+              <h3 className="text-2xl font-bold text-gray-900">Professional Engineer Validated</h3>
+            </div>
+            <p className="text-gray-700 text-lg max-w-3xl mx-auto">
+              Every gap analysis is reviewed by a licensed Professional Engineer (P.Eng) with ISO 9001
+              audit experience. You get AI speed with expert validation.
+            </p>
+            <div className="mt-6 flex items-center justify-center gap-8 text-sm text-gray-600">
+              <div>✓ P.Eng Certified</div>
+              <div>✓ ISO 9001 Expert</div>
+              <div>✓ 10+ Years Experience</div>
             </div>
           </div>
         </section>
@@ -319,26 +456,50 @@ export default function Home() {
       </main>
 
       <footer className="bg-gray-900 text-gray-300 py-12">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <div className="mb-6">
-            <img 
-              src="/auditsready-logo.png" 
-              alt="AuditsReady Logo" 
-              className="h-12 w-auto mx-auto opacity-80"
-            />
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            {/* Company Info */}
+            <div>
+              <img
+                src="/auditsready-logo.png"
+                alt="AuditsReady Logo"
+                className="h-12 w-auto mb-4 opacity-80"
+              />
+              <p className="text-sm text-gray-400">
+                AI-Powered ISO 9001 Compliance & SOP Gap Analysis for Manufacturers Worldwide
+              </p>
+            </div>
+
+            {/* Contact Info */}
+            <div>
+              <h3 className="text-white font-semibold mb-4">Contact Us</h3>
+              <div className="space-y-2 text-sm">
+                <p>📧 <a href="mailto:info@auditsready.com" className="hover:text-white transition-colors">info@auditsready.com</a></p>
+                <p><PhoneDisplay /></p>
+                <p>🌎 Serving North America & Beyond</p>
+              </div>
+            </div>
+
+            {/* Services */}
+            <div>
+              <h3 className="text-white font-semibold mb-4">Services</h3>
+              <ul className="space-y-2 text-sm">
+                <li>AI-Powered Gap Analysis</li>
+                <li>SOP Document Conversion</li>
+                <li>Audit Preparation</li>
+                <li>P.Eng Validated Consulting</li>
+              </ul>
+            </div>
           </div>
-          <p className="text-lg mb-2">
-            🤖 AI-Powered SOP Compliance Experts
-          </p>
-          <p className="text-sm mb-4">
-            📧 info@auditsready.com • <PhoneDisplay />
-          </p>
-          <p className="text-sm">
-            &copy; 2025 AuditsReady. All rights reserved.
-          </p>
-          <p className="text-xs text-gray-500 mt-2">
-            Where artificial intelligence meets manufacturing excellence.
-          </p>
+
+          <div className="border-t border-gray-800 pt-8 text-center">
+            <p className="text-sm mb-2">
+              &copy; 2025 AuditsReady. All rights reserved. | <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
+            </p>
+            <p className="text-xs text-gray-500">
+              Professional Engineer (P.Eng) Validated | Where artificial intelligence meets manufacturing excellence.
+            </p>
+          </div>
         </div>
       </footer>
     </div>
