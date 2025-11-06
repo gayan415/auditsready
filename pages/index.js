@@ -2,6 +2,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
+import Link from 'next/link'
 
 // Phone Reveal Component
 function PhoneReveal({ buttonStyle, buttonText = "📞 Call Us", displayStyle = "" }) {
@@ -35,13 +36,13 @@ function PhoneReveal({ buttonStyle, buttonText = "📞 Call Us", displayStyle = 
 // Simple Phone Display Component for Footer
 function PhoneDisplay() {
   const [showPhone, setShowPhone] = useState(false);
-  
+
   if (showPhone) {
     return <span>📞 +1 (403) 404-4643</span>;
   }
 
   return (
-    <button 
+    <button
       onClick={() => setShowPhone(true)}
       className="underline hover:text-gray-100 transition-colors"
     >
@@ -50,21 +51,201 @@ function PhoneDisplay() {
   );
 }
 
+// Contact Form Modal Component
+function ContactFormModal({ isOpen, onClose }) {
+  const [formData, setFormData] = useState({
+    name: '',
+    company: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      // Create mailto link with form data
+      const subject = encodeURIComponent('AI Demo Request from ' + formData.name);
+      const body = encodeURIComponent(`
+Name: ${formData.name}
+Company: ${formData.company}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Message: ${formData.message}
+
+Note: Customer expects a call within 24 hours.
+      `);
+
+      window.location.href = `mailto:info@auditsready.com?subject=${subject}&body=${body}`;
+
+      setSubmitStatus('success');
+      setTimeout(() => {
+        onClose();
+        setFormData({ name: '', company: '', email: '', phone: '', message: '' });
+        setSubmitStatus(null);
+      }, 2000);
+    } catch (error) {
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  if (!isOpen) return null;
+
+  return (
+    <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+      <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div className="p-8">
+          <div className="flex justify-between items-center mb-6">
+            <h2 className="text-3xl font-bold text-gray-900">Book Your AI Demo</h2>
+            <button
+              onClick={onClose}
+              className="text-gray-400 hover:text-gray-600 text-3xl leading-none"
+            >
+              ×
+            </button>
+          </div>
+
+          <p className="text-gray-600 mb-6">
+            Fill out the form below and we'll call you within 24 hours to schedule your personalized AI demonstration.
+          </p>
+
+          <form onSubmit={handleSubmit}>
+            <div className="space-y-4">
+              <div>
+                <label className="block text-gray-700 font-semibold mb-2">
+                  Name *
+                </label>
+                <input
+                  type="text"
+                  required
+                  value={formData.name}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  placeholder="John Smith"
+                />
+              </div>
+
+              <div>
+                <label className="block text-gray-700 font-semibold mb-2">
+                  Company *
+                </label>
+                <input
+                  type="text"
+                  required
+                  value={formData.company}
+                  onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  placeholder="Acme Manufacturing"
+                />
+              </div>
+
+              <div>
+                <label className="block text-gray-700 font-semibold mb-2">
+                  Email *
+                </label>
+                <input
+                  type="email"
+                  required
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  placeholder="john@acme.com"
+                />
+              </div>
+
+              <div>
+                <label className="block text-gray-700 font-semibold mb-2">
+                  Phone Number (Optional)
+                </label>
+                <input
+                  type="tel"
+                  value={formData.phone}
+                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  placeholder="+1 (403) 555-1234"
+                />
+              </div>
+
+              <div>
+                <label className="block text-gray-700 font-semibold mb-2">
+                  Message *
+                </label>
+                <textarea
+                  required
+                  rows="4"
+                  value={formData.message}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  placeholder="Tell us about your ISO 9001 compliance needs..."
+                />
+              </div>
+            </div>
+
+            <div className="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
+              <p className="text-sm text-blue-800">
+                ✓ We'll call you within 24 hours to schedule your demo
+              </p>
+            </div>
+
+            {submitStatus === 'success' && (
+              <div className="mt-4 bg-green-50 border border-green-200 rounded-lg p-4">
+                <p className="text-green-800">Thank you! Opening your email client...</p>
+              </div>
+            )}
+
+            {submitStatus === 'error' && (
+              <div className="mt-4 bg-red-50 border border-red-200 rounded-lg p-4">
+                <p className="text-red-800">Something went wrong. Please try again.</p>
+              </div>
+            )}
+
+            <div className="mt-8 flex gap-4">
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="flex-1 bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 disabled:opacity-50"
+              >
+                {isSubmitting ? 'Submitting...' : 'Submit Request'}
+              </button>
+              <button
+                type="button"
+                onClick={onClose}
+                className="px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-full text-lg font-semibold hover:bg-gray-50 transition-all duration-300"
+              >
+                Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div className="bg-gradient-to-br from-slate-50 to-blue-50 min-h-screen">
+      <ContactFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Head>
         <title>AI-Powered ISO 9001 Gap Analysis | Audit-Ready SOP Compliance | AuditsReady</title>
-        <meta name="description" content="AI-powered ISO 9001 compliance service for manufacturers worldwide. Expert gap analysis, SOP conversion, and audit preparation. P.Eng validated. Turn handwritten procedures into audit-ready documentation." />
+        <meta name="description" content="AI-powered ISO 9001 compliance for any manufacturing industry worldwide. Automated gap analysis, SOP conversion, and audit preparation. P.Eng validated. Serving all manufacturing sectors from job shops to large facilities." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="AuditsReady" />
-        <meta name="keywords" content="ISO 9001 gap analysis, ISO 9001 consultant, SOP compliance, manufacturing audit preparation, ISO certification service, quality management system, audit-ready documentation, SOP conversion" />
+        <meta name="keywords" content="ISO 9001 gap analysis, ISO 9001 consultant, SOP compliance, manufacturing audit preparation, ISO certification service, quality management system, audit-ready documentation, SOP conversion, any manufacturing industry, all manufacturing sectors, automotive ISO 9001, aerospace manufacturing, electronics manufacturing, food processing ISO 9001, consumer products manufacturing, textile manufacturing, plastics manufacturing" />
         <link rel="canonical" href="https://auditsready.com" />
 
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="AI-Powered ISO 9001 Gap Analysis | Audit-Ready SOP Compliance" />
-        <meta property="og:description" content="AI-powered ISO 9001 compliance service for manufacturers. Expert gap analysis, SOP conversion, and audit preparation. P.Eng validated." />
+        <meta property="og:title" content="AI-Powered ISO 9001 Gap Analysis | Any Manufacturing Industry" />
+        <meta property="og:description" content="AI-powered ISO 9001 compliance for any manufacturing industry worldwide. Automated gap analysis, SOP conversion, and P.Eng validated audit preparation for all manufacturing sectors." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://auditsready.com" />
         <meta property="og:image" content="https://auditsready.com/iso-9001-ai-powered-compliance-auditsready-logo.png" />
@@ -73,8 +254,8 @@ export default function Home() {
 
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="AI-Powered ISO 9001 Gap Analysis | Audit-Ready SOP Compliance" />
-        <meta name="twitter:description" content="AI-powered ISO 9001 compliance service for manufacturers. Expert gap analysis & audit preparation worldwide." />
+        <meta name="twitter:title" content="AI-Powered ISO 9001 Gap Analysis | Any Manufacturing Industry" />
+        <meta name="twitter:description" content="AI-powered ISO 9001 compliance for any manufacturing industry. Automated gap analysis & P.Eng validated audit preparation worldwide." />
         <meta name="twitter:image" content="https://auditsready.com/iso-9001-ai-powered-compliance-auditsready-logo.png" />
 
         {/* Favicon and Icons */}
@@ -90,26 +271,31 @@ export default function Home() {
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               "name": "AuditsReady",
-              "description": "AI-powered ISO 9001 compliance and SOP gap analysis service for manufacturers worldwide. P.Eng validated audit preparation.",
+              "description": "AI-powered ISO 9001 compliance and SOP gap analysis service for any manufacturing industry worldwide. Serving automotive, aerospace, electronics, food processing, consumer products, textiles, plastics, metal fabrication, and all manufacturing sectors. P.Eng validated audit preparation.",
               "url": "https://auditsready.com",
               "logo": "https://auditsready.com/iso-9001-ai-powered-compliance-auditsready-logo.png",
               "image": "https://auditsready.com/iso-9001-ai-powered-compliance-auditsready-logo.png",
               "telephone": "+1-403-404-4643",
               "email": "info@auditsready.com",
               "priceRange": "$$",
-              "areaServed": [
-                {
-                  "@type": "Country",
-                  "name": "United States"
-                },
-                {
-                  "@type": "Country",
-                  "name": "Canada"
-                },
-                {
-                  "@type": "Country",
-                  "name": "Mexico"
-                }
+              "areaServed": {
+                "@type": "Place",
+                "name": "Worldwide"
+              },
+              "knowsAbout": [
+                "ISO 9001 Certification",
+                "Quality Management Systems",
+                "Manufacturing Compliance",
+                "Automotive Manufacturing",
+                "Aerospace Manufacturing",
+                "Electronics Manufacturing",
+                "Food Processing",
+                "Consumer Products Manufacturing",
+                "Textile Manufacturing",
+                "Plastics Manufacturing",
+                "Metal Fabrication",
+                "SOP Documentation",
+                "Gap Analysis"
               ],
               "contactPoint": {
                 "@type": "ContactPoint",
@@ -136,25 +322,21 @@ export default function Home() {
               "@context": "https://schema.org",
               "@type": "Service",
               "serviceType": "ISO 9001 Compliance Consulting",
+              "name": "AI-Powered ISO 9001 Compliance for All Manufacturing Industries",
+              "description": "Automated gap analysis, SOP conversion, and audit preparation for any manufacturing sector worldwide",
               "provider": {
                 "@type": "Organization",
                 "name": "AuditsReady",
                 "url": "https://auditsready.com"
               },
-              "areaServed": [
-                {
-                  "@type": "Country",
-                  "name": "United States"
-                },
-                {
-                  "@type": "Country",
-                  "name": "Canada"
-                },
-                {
-                  "@type": "Country",
-                  "name": "Mexico"
-                }
-              ],
+              "areaServed": {
+                "@type": "Place",
+                "name": "Worldwide"
+              },
+              "audience": {
+                "@type": "BusinessAudience",
+                "audienceType": "Manufacturing Companies of All Sizes and Industries"
+              },
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",
                 "name": "ISO 9001 Compliance Services",
@@ -188,6 +370,51 @@ export default function Home() {
             })
           }}
         />
+
+        {/* Structured Data - FAQ */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What industries does AuditsReady serve?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "AuditsReady serves any kind of manufacturing industry worldwide, including automotive, aerospace, electronics, food processing, consumer products, textiles, plastics, metal fabrication, and all other manufacturing sectors seeking ISO 9001 certification."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How does AI-powered gap analysis work?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our AI system automatically scans your existing SOPs and documentation to identify gaps, missing procedures, and compliance issues. It maps your processes to ISO 9001 requirements and provides intelligent recommendations, all validated by a licensed Professional Engineer (P.Eng)."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What company sizes can use AuditsReady?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "AuditsReady serves manufacturing companies of all sizes, from small 5-person job shops to large 500+ employee production facilities. Our AI-powered platform scales to your needs regardless of company size."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is the service available worldwide?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, AuditsReady provides AI-powered ISO 9001 compliance services to manufacturers worldwide, including North America, Europe, Asia, and all other regions globally."
+                  }
+                }
+              ]
+            })
+          }}
+        />
       </Head>
 
       {/* Hero Section */}
@@ -215,13 +442,13 @@ export default function Home() {
             into professional, audit-ready formats. Personal service meets proven technology.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="mailto:info@auditsready.com" 
+            <button
+              onClick={() => setIsModalOpen(true)}
               className="inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
             >
-              See How It Works
-            </a>
-            <PhoneReveal 
+              Book AI Demo
+            </button>
+            <PhoneReveal
               buttonStyle="inline-block border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-900 transition-all duration-300"
               buttonText="📞 Call Us Today"
             />
@@ -236,48 +463,6 @@ export default function Home() {
       </header>
 
       <main className="max-w-7xl mx-auto py-20 px-6">
-        {/* AI-Powered Features Section */}
-        <section className="mb-20">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Beyond Traditional Tools
-            </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto mb-6"></div>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Artificial intelligence meets personal service for truly smart compliance
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 text-center">
-              <div className="text-5xl mb-6">🤖</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Advanced AI Backend</h3>
-              <p className="text-gray-700">
-                Enterprise-grade artificial intelligence identifies patterns 
-                and optimizes your documentation automatically.
-              </p>
-            </div>
-            
-            <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 text-center">
-              <div className="text-5xl mb-6">🔍</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Intelligent Gap Detection</h3>
-              <p className="text-gray-700">
-                AI scans your SOPs and automatically finds missing procedures, 
-                compliance gaps, and areas needing improvement.
-              </p>
-            </div>
-            
-            <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 text-center">
-              <div className="text-5xl mb-6">⚡</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Smart Assistance</h3>
-              <p className="text-gray-700">
-                AI-powered suggestions help you create compliant documentation 
-                faster than any traditional tool or manual process.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* Trust Signals - How It Works */}
         <section className="mb-20">
           <div className="text-center mb-16">
@@ -288,6 +473,20 @@ export default function Home() {
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Simple 3-step process to audit-ready compliance
             </p>
+          </div>
+
+          {/* Video Placeholder */}
+          <div className="mb-16 max-w-4xl mx-auto">
+            <div className="relative bg-gradient-to-br from-blue-900 to-indigo-900 rounded-2xl shadow-2xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center text-white p-8">
+                  <div className="text-6xl mb-4">▶️</div>
+                  <h3 className="text-2xl font-bold mb-2">See How It Works</h3>
+                  <p className="text-blue-200">2-minute demo video coming soon</p>
+                  <p className="text-sm text-blue-300 mt-4">Watch how our AI transforms your compliance process</p>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
@@ -322,6 +521,60 @@ export default function Home() {
               <div>✓ P.Eng Certified</div>
               <div>✓ ISO 9001 Expert</div>
               <div>✓ 10+ Years Experience</div>
+            </div>
+          </div>
+
+          {/* Free Checklist Button */}
+          <div className="mt-12 text-center">
+            <Link
+              href="/blog/iso-9001-checklist"
+              className="inline-flex items-center gap-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white px-10 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+            >
+              <span className="text-2xl">📋</span>
+              Free ISO 9001 Checklist
+            </Link>
+            <p className="text-gray-600 mt-3 text-sm">Download our comprehensive implementation guide</p>
+          </div>
+        </section>
+
+        {/* AI-Powered Features Section */}
+        <section className="mb-20">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Beyond Traditional Tools
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto mb-6"></div>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Artificial intelligence meets personal service for truly smart compliance
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 text-center">
+              <div className="text-5xl mb-6">🤖</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Advanced AI Backend</h3>
+              <p className="text-gray-700">
+                Enterprise-grade artificial intelligence identifies patterns
+                and optimizes your documentation automatically.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 text-center">
+              <div className="text-5xl mb-6">🔍</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Intelligent Gap Detection</h3>
+              <p className="text-gray-700">
+                AI scans your SOPs and automatically finds missing procedures,
+                compliance gaps, and areas needing improvement.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 text-center">
+              <div className="text-5xl mb-6">⚡</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Smart Assistance</h3>
+              <p className="text-gray-700">
+                AI-powered suggestions help you create compliant documentation
+                faster than any traditional tool or manual process.
+              </p>
             </div>
           </div>
         </section>
@@ -383,26 +636,49 @@ export default function Home() {
 
         {/* Who It's For Section */}
         <section className="mb-20">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Industries We Transform
-            </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto mb-6"></div>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { icon: "🍺", title: "Craft Breweries", desc: "Quality consistency & export compliance" },
-              { icon: "🛢️", title: "Oilfield Services", desc: "Fabrication & equipment ISO 9001" },
-              { icon: "🥩", title: "Food Processing", desc: "HACCP & ISO compliance made simple" },
-              { icon: "🏗️", title: "Metal Fabrication", desc: "Structural steel & custom work certification" }
-            ].map((item, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-gray-100">
-                <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.desc}</p>
+          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl shadow-xl p-12 border border-blue-100">
+            <div className="text-center mb-8">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                Built for Every Manufacturing Business
+              </h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto mb-6"></div>
+              <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                From small job shops to large production facilities, our AI-powered compliance platform serves
+                <strong> any kind of manufacturing industry</strong> seeking ISO 9001 certification.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              <div className="bg-white rounded-xl p-6 shadow-lg">
+                <div className="text-4xl mb-4 text-center">🏭</div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">All Industries Welcome</h3>
+                <p className="text-gray-600 text-sm text-center">
+                  Whether you're in automotive, aerospace, electronics, food processing, consumer products, textiles, plastics, or any manufacturing sector
+                </p>
               </div>
-            ))}
+
+              <div className="bg-white rounded-xl p-6 shadow-lg">
+                <div className="text-4xl mb-4 text-center">📊</div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">Any Company Size</h3>
+                <p className="text-gray-600 text-sm text-center">
+                  From 5-person job shops to 500-employee facilities - our solution scales to your needs
+                </p>
+              </div>
+
+              <div className="bg-white rounded-xl p-6 shadow-lg">
+                <div className="text-4xl mb-4 text-center">🌍</div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">Global Reach</h3>
+                <p className="text-gray-600 text-sm text-center">
+                  Serving manufacturers worldwide - North America, Europe, Asia, and beyond
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-10 text-center">
+              <p className="text-gray-700 text-lg font-semibold">
+                No matter what you make, we help you get audit-ready
+              </p>
+            </div>
           </div>
         </section>
 
@@ -440,13 +716,13 @@ export default function Home() {
                 <strong>See how AI transforms your compliance process — free demonstration included.</strong>
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a 
-                  href="mailto:info@auditsready.com" 
+                <button
+                  onClick={() => setIsModalOpen(true)}
                   className="inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white px-10 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
                 >
                   🤖 Book AI Demo
-                </a>
-                <PhoneReveal 
+                </button>
+                <PhoneReveal
                   buttonStyle="inline-block bg-white text-blue-900 px-10 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
                   buttonText="📞 Speak to Experts"
                 />
