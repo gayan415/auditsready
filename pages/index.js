@@ -66,29 +66,32 @@ function ContactFormModal({ isOpen, onClose }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus(null);
 
     try {
-      // Create mailto link with form data
-      const subject = encodeURIComponent('AI Demo Request from ' + formData.name);
-      const body = encodeURIComponent(`
-Name: ${formData.name}
-Company: ${formData.company}
-Email: ${formData.email}
-Phone: ${formData.phone}
-Message: ${formData.message}
+      // Send form data to API endpoint
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
 
-Note: Customer expects a call within 24 hours.
-      `);
+      const data = await response.json();
 
-      window.location.href = `mailto:info@auditsready.com?subject=${subject}&body=${body}`;
-
-      setSubmitStatus('success');
-      setTimeout(() => {
-        onClose();
-        setFormData({ name: '', company: '', email: '', phone: '', message: '' });
-        setSubmitStatus(null);
-      }, 2000);
+      if (response.ok) {
+        setSubmitStatus('success');
+        setTimeout(() => {
+          onClose();
+          setFormData({ name: '', company: '', email: '', phone: '', message: '' });
+          setSubmitStatus(null);
+        }, 3000);
+      } else {
+        setSubmitStatus('error');
+      }
     } catch (error) {
+      console.error('Form submission error:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -195,13 +198,15 @@ Note: Customer expects a call within 24 hours.
 
             {submitStatus === 'success' && (
               <div className="mt-4 bg-green-50 border border-green-200 rounded-lg p-4">
-                <p className="text-green-800">Thank you! Opening your email client...</p>
+                <p className="text-green-800 font-semibold">✓ Thank you! Your request has been submitted successfully.</p>
+                <p className="text-green-700 text-sm mt-1">We'll call you within 24 hours to schedule your demo.</p>
               </div>
             )}
 
             {submitStatus === 'error' && (
               <div className="mt-4 bg-red-50 border border-red-200 rounded-lg p-4">
-                <p className="text-red-800">Something went wrong. Please try again.</p>
+                <p className="text-red-800 font-semibold">Something went wrong. Please try again.</p>
+                <p className="text-red-700 text-sm mt-1">Or email us directly at info@auditsready.com</p>
               </div>
             )}
 
