@@ -18,12 +18,12 @@ export default function AuditPreparationPost() {
         <meta property="og:description" content="8-week timeline, comprehensive checklist, and expert tips to pass your ISO 9001 certification audit. Don't fail your audit!" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://auditsready.com/blog/how-to-prepare-for-iso-9001-audit" />
-        <meta property="og:image" content="https://auditsready.com/auditsready-logo.png" />
+        <meta property="og:image" content="https://auditsready.com/iso-9001-ai-powered-compliance-auditsready-logo.png" />
 
         {/* Favicon and Icons */}
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/iso-9001-auditsready-favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/iso-9001-auditsready-favicon.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/iso-9001-auditsready-app-icon.png" />
 
         {/* Structured Data - Article */}
         <script
@@ -43,7 +43,7 @@ export default function AuditPreparationPost() {
                 "name": "AuditsReady",
                 "logo": {
                   "@type": "ImageObject",
-                  "url": "https://auditsready.com/auditsready-logo.png"
+                  "url": "https://auditsready.com/iso-9001-ai-powered-compliance-auditsready-logo.png"
                 }
               },
               "datePublished": "2025-02-04",
@@ -62,7 +62,7 @@ export default function AuditPreparationPost() {
         <div className="max-w-4xl mx-auto px-4 py-12">
           <Link href="/" className="inline-flex items-center gap-3 mb-8 text-white hover:text-blue-200 transition-colors">
             <Image
-              src="/auditsready-logo.png"
+              src="/iso-9001-ai-powered-compliance-auditsready-logo.png"
               alt="AuditsReady Logo"
               width={48}
               height={48}
@@ -630,48 +630,48 @@ export default function AuditPreparationPost() {
 
           {/* Call to Action */}
           <div className="bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl p-8 md:p-12 text-center text-white mt-12">
-            <h2 className="text-3xl font-bold mb-4">Get Your Free Audit Readiness Assessment</h2>
+            <h2 className="text-3xl font-bold mb-4">Get Audit-Ready in 8 Weeks (Find Your Gaps Now)</h2>
             <p className="text-xl text-white mb-2">
-              Don't risk a $10,000-$30,000 audit failure. Know exactly where you stand.
+              Don't risk a $10,000-$30,000 audit failure. Our AI finds the exact gaps auditors will find—before they show up.
             </p>
             <p className="text-lg text-orange-100 mb-8">
-              Upload your current SOPs and we'll show you:
+              Upload your current SOPs and procedures. Get your personalized 8-week action plan:
             </p>
             <div className="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto mb-8 text-left">
               <div className="flex items-start gap-3">
                 <span className="text-2xl">✅</span>
-                <span className="text-sm">AI scan for ISO 9001 compliance gaps</span>
+                <span className="text-sm">AI scan identifies critical audit gaps</span>
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-2xl">✅</span>
-                <span className="text-sm">Critical missing procedures identified</span>
+                <span className="text-sm">Week-by-week preparation roadmap</span>
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-2xl">✅</span>
-                <span className="text-sm">Your estimated pass probability score</span>
+                <span className="text-sm">Pass probability score (realistic assessment)</span>
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-2xl">✅</span>
-                <span className="text-sm">Prioritized action plan to close gaps</span>
+                <span className="text-sm">Prioritized fix list (tackle worst gaps first)</span>
               </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:info@auditsready.com?subject=Free%20Audit%20Readiness%20Assessment"
+                href="mailto:info@auditsready.com?subject=Urgent%20-%20Audit%20Preparation%20Help%20Needed"
                 className="inline-block bg-white text-orange-600 px-10 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
               >
-                📧 Get Free Assessment
+                🚨 Find My Audit Gaps Now
               </a>
               <Link
-                href="/"
+                href="/blog/iso-9001-checklist"
                 className="inline-block bg-transparent border-2 border-white text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-orange-600 transition-all duration-300"
               >
-                🤖 Learn About AI Gap Analysis
+                📥 Download 8-Week Prep Checklist
               </Link>
             </div>
             <p className="text-sm text-orange-100 mt-6">
-              Free AI analysis • P.Eng validation included • Results in 24 hours • No credit card required
+              Results in 24 hours • P.Eng validated • Free 8-week action plan • No credit card
             </p>
           </div>
 
