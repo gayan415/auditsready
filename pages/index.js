@@ -67,7 +67,7 @@ export default function Home() {
         <meta property="og:description" content="AI-powered ISO 9001 compliance service for manufacturers. Expert gap analysis, SOP conversion, and audit preparation. P.Eng validated." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://auditsready.com" />
-        <meta property="og:image" content="https://auditsready.com/auditsready-logo.png" />
+        <meta property="og:image" content="https://auditsready.com/iso-9001-ai-powered-compliance-auditsready-logo.png" />
         <meta property="og:site_name" content="AuditsReady" />
         <meta property="og:locale" content="en_US" />
 
@@ -75,12 +75,12 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="AI-Powered ISO 9001 Gap Analysis | Audit-Ready SOP Compliance" />
         <meta name="twitter:description" content="AI-powered ISO 9001 compliance service for manufacturers. Expert gap analysis & audit preparation worldwide." />
-        <meta name="twitter:image" content="https://auditsready.com/auditsready-logo.png" />
+        <meta name="twitter:image" content="https://auditsready.com/iso-9001-ai-powered-compliance-auditsready-logo.png" />
 
         {/* Favicon and Icons */}
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/iso-9001-auditsready-favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/iso-9001-auditsready-favicon.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/iso-9001-auditsready-app-icon.png" />
         
         {/* Structured Data - Organization */}
         <script
@@ -92,8 +92,8 @@ export default function Home() {
               "name": "AuditsReady",
               "description": "AI-powered ISO 9001 compliance and SOP gap analysis service for manufacturers worldwide. P.Eng validated audit preparation.",
               "url": "https://auditsready.com",
-              "logo": "https://auditsready.com/auditsready-logo.png",
-              "image": "https://auditsready.com/auditsready-logo.png",
+              "logo": "https://auditsready.com/iso-9001-ai-powered-compliance-auditsready-logo.png",
+              "image": "https://auditsready.com/iso-9001-ai-powered-compliance-auditsready-logo.png",
               "telephone": "+1-403-404-4643",
               "email": "info@auditsready.com",
               "priceRange": "$$",
@@ -196,7 +196,7 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-4 py-20 text-center text-white">
           <div className="flex justify-center mb-8">
             <Image
-              src="/auditsready-logo.png"
+              src="/iso-9001-ai-powered-compliance-auditsready-logo.png"
               alt="AuditsReady Logo"
               width={80}
               height={80}
@@ -465,7 +465,7 @@ export default function Home() {
             {/* Company Info */}
             <div>
               <Image
-                src="/auditsready-logo.png"
+                src="/iso-9001-ai-powered-compliance-auditsready-logo.png"
                 alt="AuditsReady Logo"
                 width={48}
                 height={48}

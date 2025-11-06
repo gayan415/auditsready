@@ -5,6 +5,70 @@ import Link from 'next/link'
 export default function BlogIndex() {
   const posts = [
     {
+      slug: 'iso-9001-for-metal-fabrication',
+      title: 'ISO 9001 for Metal Fabrication Shops: Complete Guide (2025)',
+      excerpt: 'ISO 9001 certification guide for metal fabrication and job shops: welding specs (WPS/PQR), material traceability, CWB integration, customer requirements, and costs ($55k-$120k). Real fab shop case studies.',
+      date: '2025-10-07',
+      readTime: '14 min read',
+      category: 'ISO 9001 Compliance'
+    },
+    {
+      slug: 'iso-9001-for-craft-breweries',
+      title: 'ISO 9001 for Craft Breweries: Complete Certification Guide (2025)',
+      excerpt: 'Everything craft breweries need to know about ISO 9001: HACCP integration, TTB compliance, export requirements, distributor demands, and costs ($45k-$95k). Real brewery case studies.',
+      date: '2025-09-22',
+      readTime: '12 min read',
+      category: 'ISO 9001 Compliance'
+    },
+    {
+      slug: 'iso-9001-internal-audit-guide',
+      title: 'ISO 9001 Internal Audit Guide: How to Conduct Effective Internal Audits (2025)',
+      excerpt: 'Complete ISO 9001 internal audit guide: who can audit, frequency requirements, audit checklist, how to document findings, and best practices for manufacturers. Required for certification.',
+      date: '2025-08-09',
+      readTime: '13 min read',
+      category: 'ISO 9001 Compliance'
+    },
+    {
+      slug: 'how-long-does-iso-9001-take',
+      title: 'How Long Does ISO 9001 Certification Take? Timeline & Fast-Track Options (2025)',
+      excerpt: 'ISO 9001 certification takes 6-18 months depending on company size, documentation state, and approach. Complete timeline breakdown with fast-track options and what slows it down.',
+      date: '2025-07-18',
+      readTime: '10 min read',
+      category: 'ISO 9001 Compliance'
+    },
+    {
+      slug: 'iso-9001-requirements',
+      title: 'ISO 9001 Requirements: Complete Guide to All 10 Clauses (2025)',
+      excerpt: 'Complete guide to ISO 9001:2015 requirements. Detailed breakdown of all 10 clauses with real examples, implementation steps, and what auditors actually check. The ultimate ISO 9001 reference.',
+      date: '2025-06-24',
+      readTime: '18 min read',
+      category: 'ISO 9001 Compliance'
+    },
+    {
+      slug: 'iso-9001-vs-iso-14001',
+      title: 'ISO 9001 vs ISO 14001: Which Certification Do You Actually Need? (2025)',
+      excerpt: 'ISO 9001 (quality) vs ISO 14001 (environment): Complete comparison of requirements, costs, benefits, and which one manufacturers should pursue first. Can you do both simultaneously?',
+      date: '2025-05-03',
+      readTime: '11 min read',
+      category: 'ISO 9001 Compliance'
+    },
+    {
+      slug: 'iso-9001-checklist',
+      title: 'Free ISO 9001 Checklist: Complete Implementation Guide (2025)',
+      excerpt: 'Download our free ISO 9001 checklist covering all 10 clauses. Step-by-step implementation guide for manufacturers. Includes gap analysis templates and audit preparation checklists.',
+      date: '2025-04-15',
+      readTime: '15 min read',
+      category: 'ISO 9001 Compliance'
+    },
+    {
+      slug: 'iso-9001-certification-cost',
+      title: 'ISO 9001 Certification Cost: Complete Breakdown for Manufacturers (2025)',
+      excerpt: 'Complete ISO 9001 certification cost breakdown: $50k-$150k+ total investment. Learn certification body fees, consultant costs, hidden expenses, and how to reduce costs by 40-60% with AI.',
+      date: '2025-03-12',
+      readTime: '14 min read',
+      category: 'ISO 9001 Compliance'
+    },
+    {
       slug: 'how-to-prepare-for-iso-9001-audit',
       title: 'How to Prepare for ISO 9001 Audit: Complete Checklist for Manufacturers (2025)',
       excerpt: 'Your audit is in 8 weeks. Here\'s your complete preparation timeline, comprehensive checklist, and what auditors actually look for. Learn the top 10 reasons manufacturers fail and how to avoid them.',
@@ -32,9 +96,9 @@ export default function BlogIndex() {
         <link rel="canonical" href="https://auditsready.com/blog" />
 
         {/* Favicon and Icons */}
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/iso-9001-auditsready-favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/iso-9001-auditsready-favicon.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/iso-9001-auditsready-app-icon.png" />
       </Head>
 
       {/* Header */}
@@ -42,7 +106,7 @@ export default function BlogIndex() {
         <div className="max-w-7xl mx-auto px-4 py-12">
           <Link href="/" className="inline-flex items-center gap-3 mb-8 text-white hover:text-blue-200 transition-colors">
             <Image
-              src="/auditsready-logo.png"
+              src="/iso-9001-ai-powered-compliance-auditsready-logo.png"
               alt="AuditsReady Logo"
               width={48}
               height={48}

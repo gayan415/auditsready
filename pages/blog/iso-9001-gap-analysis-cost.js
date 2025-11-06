@@ -18,12 +18,12 @@ export default function GapAnalysisCostPost() {
         <meta property="og:description" content="Compare traditional consultants ($15k-$50k), DIY approaches, and AI-powered gap analysis. Real costs revealed." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://auditsready.com/blog/iso-9001-gap-analysis-cost" />
-        <meta property="og:image" content="https://auditsready.com/auditsready-logo.png" />
+        <meta property="og:image" content="https://auditsready.com/iso-9001-ai-powered-compliance-auditsready-logo.png" />
 
         {/* Favicon and Icons */}
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/iso-9001-auditsready-favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/iso-9001-auditsready-favicon.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/iso-9001-auditsready-app-icon.png" />
 
         {/* Structured Data - Article */}
         <script
@@ -43,7 +43,7 @@ export default function GapAnalysisCostPost() {
                 "name": "AuditsReady",
                 "logo": {
                   "@type": "ImageObject",
-                  "url": "https://auditsready.com/auditsready-logo.png"
+                  "url": "https://auditsready.com/iso-9001-ai-powered-compliance-auditsready-logo.png"
                 }
               },
               "datePublished": "2025-01-05",
@@ -62,7 +62,7 @@ export default function GapAnalysisCostPost() {
         <div className="max-w-4xl mx-auto px-4 py-12">
           <Link href="/" className="inline-flex items-center gap-3 mb-8 text-white hover:text-blue-200 transition-colors">
             <Image
-              src="/auditsready-logo.png"
+              src="/iso-9001-ai-powered-compliance-auditsready-logo.png"
               alt="AuditsReady Logo"
               width={48}
               height={48}
@@ -460,26 +460,26 @@ export default function GapAnalysisCostPost() {
 
           {/* Call to Action */}
           <div className="bg-gradient-to-r from-blue-900 to-indigo-900 rounded-2xl p-8 md:p-12 text-center text-white mt-12">
-            <h2 className="text-3xl font-bold mb-4">See How AI Can Transform Your Gap Analysis</h2>
+            <h2 className="text-3xl font-bold mb-4">See Your Exact Gap Analysis Cost (Free Estimate)</h2>
             <p className="text-xl text-blue-100 mb-8">
-              Get a free AI-powered gap analysis sample for your facility. No commitment required.
+              Tell us about your company size and current documentation state. Get instant cost comparison: traditional consultant pricing vs. our AI-powered approach. See exactly where you'll save $8k-$35k.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:info@auditsready.com?subject=Free%20Gap%20Analysis%20Sample"
+                href="mailto:info@auditsready.com?subject=Gap%20Analysis%20Cost%20Estimate%20Request"
                 className="inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white px-10 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
               >
-                📧 Get Free Sample Analysis
+                📊 Calculate My Gap Analysis Cost
               </a>
               <Link
                 href="/"
                 className="inline-block bg-white text-blue-900 px-10 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
               >
-                🤖 Learn More About AI Gap Analysis
+                💬 Talk to P.Eng About My Situation
               </Link>
             </div>
             <p className="text-sm text-blue-200 mt-6">
-              Free AI analysis • Same-day response • No credit card required • Personal consultation included
+              Free cost estimate • Compare consultant vs. AI pricing • Same-day response • No obligation
             </p>
           </div>
 
