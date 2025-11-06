@@ -46,8 +46,8 @@ export default function AuditPreparationPost() {
                   "url": "https://auditsready.com/auditsready-logo.png"
                 }
               },
-              "datePublished": "2025-01-06",
-              "dateModified": "2025-01-06",
+              "datePublished": "2025-02-04",
+              "dateModified": "2025-02-04",
               "mainEntityOfPage": {
                 "@type": "WebPage",
                 "@id": "https://auditsready.com/blog/how-to-prepare-for-iso-9001-audit"
@@ -72,7 +72,7 @@ export default function AuditPreparationPost() {
           </Link>
           <div className="flex items-center gap-4 mb-6 text-sm text-blue-200">
             <span className="bg-blue-800 px-3 py-1 rounded-full">ISO 9001 Compliance</span>
-            <time dateTime="2025-01-06">January 6, 2025</time>
+            <time dateTime="2025-02-04">February 4, 2025</time>
             <span>•</span>
             <span>12 min read</span>
           </div>

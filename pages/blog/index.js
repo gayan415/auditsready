@@ -8,7 +8,7 @@ export default function BlogIndex() {
       slug: 'how-to-prepare-for-iso-9001-audit',
       title: 'How to Prepare for ISO 9001 Audit: Complete Checklist for Manufacturers (2025)',
       excerpt: 'Your audit is in 8 weeks. Here\'s your complete preparation timeline, comprehensive checklist, and what auditors actually look for. Learn the top 10 reasons manufacturers fail and how to avoid them.',
-      date: '2025-01-06',
+      date: '2025-02-04',
       readTime: '12 min read',
       category: 'ISO 9001 Compliance'
     },
