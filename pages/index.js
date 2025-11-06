@@ -1,5 +1,6 @@
 
 import Head from 'next/head'
+import Image from 'next/image'
 import { useState } from 'react'
 
 // Phone Reveal Component
@@ -194,10 +195,13 @@ export default function Home() {
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="relative max-w-7xl mx-auto px-4 py-20 text-center text-white">
           <div className="flex justify-center mb-8">
-            <img 
-              src="/auditsready-logo.png" 
-              alt="AuditsReady Logo" 
-              className="h-20 w-auto drop-shadow-lg"
+            <Image
+              src="/auditsready-logo.png"
+              alt="AuditsReady Logo"
+              width={80}
+              height={80}
+              className="drop-shadow-lg"
+              priority
             />
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
@@ -460,10 +464,12 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             {/* Company Info */}
             <div>
-              <img
+              <Image
                 src="/auditsready-logo.png"
                 alt="AuditsReady Logo"
-                className="h-12 w-auto mb-4 opacity-80"
+                width={48}
+                height={48}
+                className="mb-4 opacity-80"
               />
               <p className="text-sm text-gray-400">
                 AI-Powered ISO 9001 Compliance & SOP Gap Analysis for Manufacturers Worldwide
