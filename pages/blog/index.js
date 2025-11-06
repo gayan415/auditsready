@@ -5,6 +5,14 @@ import Link from 'next/link'
 export default function BlogIndex() {
   const posts = [
     {
+      slug: 'how-to-prepare-for-iso-9001-audit',
+      title: 'How to Prepare for ISO 9001 Audit: Complete Checklist for Manufacturers (2025)',
+      excerpt: 'Your audit is in 8 weeks. Here\'s your complete preparation timeline, comprehensive checklist, and what auditors actually look for. Learn the top 10 reasons manufacturers fail and how to avoid them.',
+      date: '2025-01-06',
+      readTime: '12 min read',
+      category: 'ISO 9001 Compliance'
+    },
+    {
       slug: 'iso-9001-gap-analysis-cost',
       title: 'ISO 9001 Gap Analysis: Complete Cost Breakdown for Manufacturers (2025)',
       excerpt: 'Discover the real cost of ISO 9001 gap analysis - from traditional consultants ($15k-$50k) to DIY approaches and the new AI-powered alternative. Compare all options with hidden costs revealed.',
