@@ -461,7 +461,7 @@ export default function Home() {
 
       <footer className="bg-gray-900 text-gray-300 py-12">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
             {/* Company Info */}
             <div>
               <Image
@@ -496,11 +496,20 @@ export default function Home() {
                 <li>P.Eng Validated Consulting</li>
               </ul>
             </div>
+
+            {/* Resources */}
+            <div>
+              <h3 className="text-white font-semibold mb-4">Resources</h3>
+              <ul className="space-y-2 text-sm">
+                <li><a href="/blog" className="hover:text-white transition-colors">Blog</a></li>
+                <li><a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a></li>
+              </ul>
+            </div>
           </div>
 
           <div className="border-t border-gray-800 pt-8 text-center">
             <p className="text-sm mb-2">
-              &copy; 2025 AuditsReady. All rights reserved. | <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
+              &copy; 2025 AuditsReady. All rights reserved.
             </p>
             <p className="text-xs text-gray-500">
               Professional Engineer (P.Eng) Validated | Where artificial intelligence meets manufacturing excellence.
