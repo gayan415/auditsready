@@ -38,7 +38,7 @@ Submitted: ${new Date().toLocaleString()}
         'Authorization': `Bearer ${process.env.RESEND_API_KEY}`
       },
       body: JSON.stringify({
-        from: 'AuditsReady Contact Form <onboarding@resend.dev>',
+        from: 'AuditsReady Contact Form <noreply@auditsready.com>',
         to: 'info@auditsready.com',
         subject: `AI Demo Request from ${name} - ${company}`,
         text: emailContent,
