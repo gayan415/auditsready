@@ -241,7 +241,7 @@ export default function Home() {
       <ContactFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Head>
         <title>AI-Powered ISO 9001 Gap Analysis | Audit-Ready SOP Compliance | AuditsReady</title>
-        <meta name="description" content="AI-powered ISO 9001 compliance for any manufacturing industry worldwide. Automated gap analysis, SOP conversion, and audit preparation. P.Eng validated. Serving all manufacturing sectors from job shops to large facilities." />
+        <meta name="description" content="AI-powered ISO 9001 compliance for any manufacturing industry worldwide. Automated gap analysis and ISO 9001-compliant SOP generation. P.Eng validated. Serving all manufacturing sectors from job shops to large facilities." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="AuditsReady" />
@@ -250,7 +250,7 @@ export default function Home() {
 
         {/* OpenGraph Meta Tags */}
         <meta property="og:title" content="AI-Powered ISO 9001 Gap Analysis | Any Manufacturing Industry" />
-        <meta property="og:description" content="AI-powered ISO 9001 compliance for any manufacturing industry worldwide. Automated gap analysis, SOP conversion, and P.Eng validated audit preparation for all manufacturing sectors." />
+        <meta property="og:description" content="AI-powered ISO 9001 compliance for any manufacturing industry worldwide. Automated gap analysis and ISO 9001-compliant SOP generation. P.Eng validated for all manufacturing sectors." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://auditsready.com" />
         <meta property="og:image" content="https://auditsready.com/iso-9001-ai-powered-compliance-auditsready-logo.png" />
@@ -260,7 +260,7 @@ export default function Home() {
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="AI-Powered ISO 9001 Gap Analysis | Any Manufacturing Industry" />
-        <meta name="twitter:description" content="AI-powered ISO 9001 compliance for any manufacturing industry. Automated gap analysis & P.Eng validated audit preparation worldwide." />
+        <meta name="twitter:description" content="AI-powered ISO 9001 compliance for any manufacturing industry. Automated gap analysis and ISO 9001-compliant SOP generation. P.Eng validated worldwide." />
         <meta name="twitter:image" content="https://auditsready.com/iso-9001-ai-powered-compliance-auditsready-logo.png" />
 
         {/* Favicon and Icons */}
@@ -328,7 +328,7 @@ export default function Home() {
               "@type": "Service",
               "serviceType": "ISO 9001 Compliance Consulting",
               "name": "AI-Powered ISO 9001 Compliance for All Manufacturing Industries",
-              "description": "Automated gap analysis, SOP conversion, and audit preparation for any manufacturing sector worldwide",
+              "description": "Automated gap analysis and ISO 9001-compliant SOP generation for any manufacturing sector worldwide",
               "provider": {
                 "@type": "Organization",
                 "name": "AuditsReady",
@@ -421,6 +421,29 @@ export default function Home() {
           }}
         />
       </Head>
+
+      {/* Navigation */}
+      <nav className="bg-gradient-to-r from-blue-900 to-indigo-900">
+        <div className="max-w-7xl mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <Image
+                src="/iso-9001-ai-powered-compliance-auditsready-logo.png"
+                alt="AuditsReady Logo"
+                width={50}
+                height={50}
+                className="drop-shadow-lg"
+              />
+              <span className="text-2xl font-bold text-white">AuditsReady</span>
+            </div>
+            <div className="hidden md:flex gap-6 text-white">
+              <Link href="/" className="hover:text-blue-200 transition-colors font-semibold text-orange-300">Home</Link>
+              <Link href="/blog" className="hover:text-blue-200 transition-colors">Blog</Link>
+              <Link href="/pricing" className="hover:text-blue-200 transition-colors">Pricing</Link>
+            </div>
+          </div>
+        </div>
+      </nav>
 
       {/* Hero Section */}
       <header className="relative overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900">
@@ -594,9 +617,10 @@ export default function Home() {
                   AI Finds What Others Miss
                 </h3>
                 <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                  While traditional consultants rely on manual reviews, our AI-powered platform 
-                  instantly analyzes your entire documentation ecosystem to identify gaps, 
-                  inconsistencies, and compliance risks you never knew existed.
+                  While traditional consultants rely on manual reviews, our AI-powered platform
+                  instantly analyzes your entire documentation ecosystem to identify gaps,
+                  inconsistencies, and compliance risks—then generates ISO 9001-compliant SOPs
+                  to fill those gaps.
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-start text-gray-700">
@@ -783,8 +807,9 @@ export default function Home() {
             <div>
               <h3 className="text-white font-semibold mb-4">Resources</h3>
               <ul className="space-y-2 text-sm">
-                <li><a href="/blog" className="hover:text-white transition-colors">Blog</a></li>
-                <li><a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a></li>
+                <li><Link href="/blog" className="hover:text-white transition-colors">Blog</Link></li>
+                <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
+                <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
               </ul>
             </div>
           </div>

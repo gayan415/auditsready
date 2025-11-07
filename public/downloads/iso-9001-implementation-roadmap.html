@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISO 9001:2015 Implementation Roadmap - AuditsReady</title>
+  <style>
+    @media print {
+      body { margin: 0; }
+      .page-break { page-break-before: always; }
+      @page { margin: 0.75in; }
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 8.5in;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+    }
+
+    .header {
+      text-align: center;
+      padding: 40px 0 30px;
+      border-bottom: 3px solid #1e40af;
+      margin-bottom: 30px;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #1e40af;
+      margin-bottom: 10px;
+    }
+
+    .cover-title {
+      font-size: 32px;
+      font-weight: bold;
+      color: #1e40af;
+      margin: 20px 0 10px;
+    }
+
+    .cover-subtitle {
+      font-size: 18px;
+      color: #64748b;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      color: #1e40af;
+      font-size: 24px;
+      margin-top: 30px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #1e40af;
+    }
+
+    h2 {
+      color: #1e40af;
+      font-size: 20px;
+      margin-top: 25px;
+    }
+
+    h3 {
+      color: #475569;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    .month-card {
+      background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+      border-left: 6px solid #1e40af;
+      padding: 25px;
+      margin: 25px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .month-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .month-number {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, #1e40af 0%, #6366f1 100%);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: bold;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+
+    .month-title {
+      font-size: 22px;
+      font-weight: bold;
+      color: #1e40af;
+      margin: 0;
+    }
+
+    .month-focus {
+      font-size: 14px;
+      color: #64748b;
+      margin-top: 5px;
+    }
+
+    .task-list {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0;
+    }
+
+    .task-item {
+      display: flex;
+      align-items: flex-start;
+      margin: 12px 0;
+      padding: 10px;
+      background: white;
+      border-radius: 4px;
+    }
+
+    .task-checkbox {
+      width: 18px;
+      height: 18px;
+      border: 2px solid #1e40af;
+      margin-right: 12px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .deliverables-box {
+      background: #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+
+    .deliverables-box h4 {
+      margin: 0 0 10px 0;
+      color: #92400e;
+    }
+
+    .tip-box {
+      background: #dbeafe;
+      border-left: 4px solid #3b82f6;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+
+    .tip-box strong {
+      color: #1e40af;
+    }
+
+    .warning-box {
+      background: #fee2e2;
+      border-left: 4px solid #dc2626;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+
+    .warning-box strong {
+      color: #991b1b;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 2px solid #e2e8f0;
+      font-size: 12px;
+      color: #64748b;
+    }
+
+    .footer-strong {
+      font-weight: bold;
+      color: #1e40af;
+    }
+
+    .cta-box {
+      background: linear-gradient(135deg, #1e40af 0%, #6366f1 100%);
+      color: white;
+      padding: 30px;
+      border-radius: 8px;
+      margin: 30px 0;
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      color: white;
+      margin-top: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    th {
+      background: #1e40af;
+      color: white;
+      padding: 12px;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    td {
+      padding: 10px 12px;
+      border: 1px solid #e2e8f0;
+    }
+
+    tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    .phase-label {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+
+    .phase-foundation {
+      background: #dbeafe;
+      color: #1e40af;
+    }
+
+    .phase-implementation {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    .phase-validation {
+      background: #dcfce7;
+      color: #166534;
+    }
+  </style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="header">
+  <div class="logo">🗓️ AuditsReady</div>
+  <div class="cover-title">ISO 9001:2015<br>Implementation Roadmap</div>
+  <div class="cover-subtitle">6-Month Project Plan from Zero to Certification</div>
+</div>
+
+<div style="background: #f1f5f9; padding: 25px; border-radius: 8px; margin: 30px 0;">
+  <h2 style="margin-top: 0; color: #1e40af;">About This Roadmap</h2>
+  <p>This roadmap breaks down ISO 9001:2015 implementation into <strong>6 manageable monthly phases</strong>. Each month focuses on specific clauses, deliverables, and milestones to keep your project on track.</p>
+
+  <p><strong>Who This Is For:</strong></p>
+  <ul>
+    <li>Manufacturers starting ISO 9001 implementation from scratch</li>
+    <li>Quality managers leading certification projects</li>
+    <li>Companies with 10-500 employees</li>
+    <li>Organizations targeting 6-month certification timeline</li>
+  </ul>
+
+  <p><strong>How to Use This Roadmap:</strong></p>
+  <ul>
+    <li>✓ Assign monthly tasks to team members</li>
+    <li>✓ Check off completed items as you progress</li>
+    <li>✓ Track deliverables at end of each month</li>
+    <li>✓ Adjust timeline based on your resources</li>
+  </ul>
+</div>
+
+<div class="tip-box">
+  <p><strong>💡 Realistic Expectations:</strong> This 6-month timeline assumes:</p>
+  <ul style="margin: 10px 0;">
+    <li>Dedicated quality manager (50% time commitment)</li>
+    <li>Management support and resources</li>
+    <li>Some existing documentation to build from</li>
+    <li>Access to consultant or AI tools for guidance</li>
+  </ul>
+  <p style="margin-top: 10px;">If starting completely from scratch with minimal resources, plan for 9-12 months.</p>
+</div>
+
+<div class="cta-box">
+  <h2>Accelerate Your Implementation</h2>
+  <p style="margin: 15px 0;">AuditsReady's AI can reduce this timeline by 60% by automating gap analysis and SOP generation.</p>
+  <p><strong>📧 Email:</strong> info@auditsready.com | <strong>📞 Phone:</strong> +1-403-404-4643 | <strong>🌐 Web:</strong> auditsready.com</p>
+</div>
+
+<div class="footer">
+  <p><strong>© 2025 AuditsReady</strong> | auditsready.com | AI-Powered ISO 9001 Compliance</p>
+</div>
+
+<!-- PAGE 2: MONTH 1 -->
+<div class="page-break"></div>
+
+<div class="month-card" style="border-left-color: #3b82f6;">
+  <div class="month-header">
+    <div class="month-number" style="background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);">1</div>
+    <div>
+      <h2 class="month-title">Month 1: Foundation & Planning</h2>
+      <div class="month-focus"><span class="phase-label phase-foundation">Foundation Phase</span>Clauses 4, 5, 6 | Establish QMS framework</div>
+    </div>
+  </div>
+
+  <h3>Week 1-2: Clause 4 - Context of Organization</h3>
+  <ul class="task-list">
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Identify internal/external issues:</strong> Conduct SWOT analysis covering equipment, labor, cash flow, regulations, customer requirements, competitors</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Document interested parties:</strong> List stakeholders (customers, employees, regulators, suppliers, investors) and their needs</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Define QMS scope:</strong> Write scope statement covering products/services, locations, and exclusions</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Create process flow diagram:</strong> Map core processes from receiving through shipping with department interactions</div>
+    </li>
+  </ul>
+
+  <h3>Week 3: Clause 5 - Leadership</h3>
+  <ul class="task-list">
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Draft quality policy:</strong> Write 3-5 sentence statement reflecting your business and commitment to quality</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Get management sign-off:</strong> CEO/Owner approves and commits to quality policy</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Communicate policy:</strong> Post in break room, add to employee handbook, discuss in team meeting</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Document roles:</strong> Create organizational chart with quality responsibilities for each position</div>
+    </li>
+  </ul>
+
+  <h3>Week 4: Clause 6 - Planning (Risk & Objectives)</h3>
+  <ul class="task-list">
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Create risk register:</strong> Identify 5-10 quality risks (equipment failure, supplier issues, key employee turnover)</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Document risk mitigation:</strong> For each risk, define preventive actions and controls</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Set quality objectives:</strong> Define 3-5 measurable goals (defect reduction, on-time delivery, customer satisfaction)</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Create change management process:</strong> Document how you'll handle major operational changes</div>
+    </li>
+  </ul>
+
+  <div class="deliverables-box">
+    <h4>📦 Month 1 Deliverables:</h4>
+    <ul style="margin: 5px 0; padding-left: 20px;">
+      <li>Context document (internal/external issues, interested parties)</li>
+      <li>QMS scope statement</li>
+      <li>Process flow diagram</li>
+      <li>Quality policy (approved and posted)</li>
+      <li>Roles & responsibilities document</li>
+      <li>Risk register with mitigation plans</li>
+      <li>Quality objectives (measurable)</li>
+    </ul>
+  </div>
+</div>
+
+<!-- PAGE 3: MONTH 2 -->
+<div class="page-break"></div>
+
+<div class="month-card" style="border-left-color: #8b5cf6;">
+  <div class="month-header">
+    <div class="month-number" style="background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);">2</div>
+    <div>
+      <h2 class="month-title">Month 2: Documentation & Infrastructure</h2>
+      <div class="month-focus"><span class="phase-label phase-implementation">Implementation Phase</span>Clause 7 | Build QMS support systems</div>
+    </div>
+  </div>
+
+  <h3>Week 1-2: Document Control System (Clause 7.5)</h3>
+  <ul class="task-list">
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Choose documentation platform:</strong> Select electronic system (Google Drive, SharePoint, dedicated QMS software)</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Create document control procedure:</strong> Define version control, approval process, distribution, retention</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Set up folder structure:</strong> Organize by clause or process (Procedures, Work Instructions, Forms, Records)</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Inventory existing documentation:</strong> List all current procedures, work instructions, forms, and records</div>
+    </li>
+  </ul>
+
+  <h3>Week 2-3: Resources & Competence (Clause 7.1-7.2)</h3>
+  <ul class="task-list">
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Confirm resource adequacy:</strong> Verify sufficient staff, equipment, and budget for QMS</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Document infrastructure:</strong> List buildings, equipment, IT systems critical to operations</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Create calibration log:</strong> Identify measuring equipment requiring calibration, schedule calibrations</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Document training needs:</strong> For each position, list required competencies and training</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Create training records template:</strong> Design form to track employee training (what, when, who, signature)</div>
+    </li>
+  </ul>
+
+  <h3>Week 4: Gap Analysis</h3>
+  <ul class="task-list">
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Compare existing docs to requirements:</strong> Identify what procedures are missing or incomplete</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Create documentation priority list:</strong> Rank which procedures to write/update first (focus on Clause 8)</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Assign writing tasks:</strong> Delegate procedure writing to subject matter experts</div>
+    </li>
+  </ul>
+
+  <div class="deliverables-box">
+    <h4>📦 Month 2 Deliverables:</h4>
+    <ul style="margin: 5px 0; padding-left: 20px;">
+      <li>Document control procedure</li>
+      <li>Electronic documentation system set up</li>
+      <li>Existing documentation inventory</li>
+      <li>Competency matrix by position</li>
+      <li>Training records template</li>
+      <li>Calibration schedule and records</li>
+      <li>Gap analysis report with priority list</li>
+    </ul>
+  </div>
+</div>
+
+<!-- PAGE 4: MONTH 3 -->
+<div class="page-break"></div>
+
+<div class="month-card" style="border-left-color: #f97316;">
+  <div class="month-header">
+    <div class="month-number" style="background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);">3</div>
+    <div>
+      <h2 class="month-title">Month 3: Operations Documentation</h2>
+      <div class="month-focus"><span class="phase-label phase-implementation">Implementation Phase</span>Clause 8 | Document core processes</div>
+    </div>
+  </div>
+
+  <h3>Week 1: Customer-Related Processes (Clause 8.2)</h3>
+  <ul class="task-list">
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Document customer communication:</strong> How customers contact you, how you respond, what records you keep</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Create order review procedure:</strong> How you confirm you can meet specs, delivery, and price before accepting orders</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Design order review form:</strong> Template for capturing customer requirements and internal approval</div>
+    </li>
+  </ul>
+
+  <h3>Week 2: Design Control (Clause 8.3) - If Applicable</h3>
+  <ul class="task-list">
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Document design process:</strong> Inputs, reviews, validation, verification, change control</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Create design forms:</strong> Templates for design reviews, validation, and changes</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>OR exclude design:</strong> If you don't design products, document exclusion in scope</div>
+    </li>
+  </ul>
+
+  <h3>Week 3: Supplier Control (Clause 8.4)</h3>
+  <ul class="task-list">
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Create approved supplier list:</strong> Document evaluation criteria and current approved suppliers</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Document purchasing process:</strong> How you create POs, communicate specs, verify receipts</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Create receiving inspection procedure:</strong> How you inspect incoming materials and handle rejections</div>
+    </li>
+  </ul>
+
+  <h3>Week 4: Production & Service Provision (Clause 8.5)</h3>
+  <ul class="task-list">
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Document production planning:</strong> How you schedule work, allocate resources, control output</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Create/update work instructions:</strong> For critical operations, document step-by-step procedures</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Implement product identification:</strong> Job numbers, lot codes, serial numbers throughout production</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Document final inspection:</strong> Who approves, what's checked, pass/fail criteria</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Create nonconformance procedure:</strong> How you handle defects (scrap, rework, customer approval)</div>
+    </li>
+  </ul>
+
+  <div class="deliverables-box">
+    <h4>📦 Month 3 Deliverables:</h4>
+    <ul style="margin: 5px 0; padding-left: 20px;">
+      <li>Customer communication procedure</li>
+      <li>Order review procedure and form</li>
+      <li>Design control procedure (or exclusion documented)</li>
+      <li>Approved supplier list and evaluation criteria</li>
+      <li>Purchasing procedure</li>
+      <li>Receiving inspection procedure</li>
+      <li>Production planning procedure</li>
+      <li>Work instructions for critical processes</li>
+      <li>Product identification system</li>
+      <li>Final inspection procedure</li>
+      <li>Nonconformance procedure</li>
+    </ul>
+  </div>
+</div>
+
+<!-- PAGE 5: MONTH 4 -->
+<div class="page-break"></div>
+
+<div class="month-card" style="border-left-color: #10b981;">
+  <div class="month-header">
+    <div class="month-number" style="background: linear-gradient(135deg, #10b981 0%, #34d399 100%);">4</div>
+    <div>
+      <h2 class="month-title">Month 4: Training & System Rollout</h2>
+      <div class="month-focus"><span class="phase-label phase-implementation">Implementation Phase</span>Train team & start generating records</div>
+    </div>
+  </div>
+
+  <h3>Week 1-2: Employee Training</h3>
+  <ul class="task-list">
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Schedule training sessions:</strong> Plan training for all employees on new/updated procedures</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Conduct management training:</strong> Train leadership on management review, objectives, commitment</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Train document control:</strong> Ensure employees know how to access latest procedures</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Train production staff:</strong> Walk through work instructions, inspection procedures, nonconformance reporting</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Document all training:</strong> Sign training records for every session (who, what, when, signature)</div>
+    </li>
+  </ul>
+
+  <h3>Week 2-3: Implement Performance Monitoring (Clause 9.1)</h3>
+  <ul class="task-list">
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Set up metrics tracking:</strong> Create spreadsheet or system to track quality objectives</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Define data collection methods:</strong> Who collects what data, how often, where it's stored</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Start tracking metrics:</strong> Begin recording defect rates, on-time delivery, customer complaints, etc.</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Implement customer satisfaction measurement:</strong> Launch surveys, scorecard system, or complaint tracking</div>
+    </li>
+  </ul>
+
+  <h3>Week 3-4: Generate Records</h3>
+  <ul class="task-list">
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Start using new procedures:</strong> Ensure employees follow documented processes</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Collect records:</strong> Build evidence of compliance (order reviews, inspection records, calibrations, training)</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Organize records systematically:</strong> File in electronic system per document control procedure</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Address non-compliance:</strong> If employees aren't following procedures, retrain and correct</div>
+    </li>
+  </ul>
+
+  <div class="deliverables-box">
+    <h4>📦 Month 4 Deliverables:</h4>
+    <ul style="margin: 5px 0; padding-left: 20px;">
+      <li>Training records for all employees (signed)</li>
+      <li>Quality metrics tracking system operational</li>
+      <li>Customer satisfaction measurement launched</li>
+      <li>30+ days of quality records (inspections, calibrations, orders, etc.)</li>
+      <li>Evidence of procedures being followed</li>
+    </ul>
+  </div>
+</div>
+
+<!-- PAGE 6: MONTH 5 -->
+<div class="page-break"></div>
+
+<div class="month-card" style="border-left-color: #6366f1;">
+  <div class="month-header">
+    <div class="month-number" style="background: linear-gradient(135deg, #6366f1 0%, #818cf8 100%);">5</div>
+    <div>
+      <h2 class="month-title">Month 5: Internal Audit & Management Review</h2>
+      <div class="month-focus"><span class="phase-label phase-validation">Validation Phase</span>Clauses 9.2-9.3 | Test QMS effectiveness</div>
+    </div>
+  </div>
+
+  <h3>Week 1: Prepare for Internal Audit</h3>
+  <ul class="task-list">
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Appoint internal auditor:</strong> Select trained person (can be employee or hire external auditor)</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Create audit schedule:</strong> Plan to audit all QMS clauses and key processes</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Develop audit checklist:</strong> List questions to verify compliance with each clause</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Notify departments:</strong> Inform employees when their area will be audited</div>
+    </li>
+  </ul>
+
+  <h3>Week 2: Conduct Internal Audit (Clause 9.2)</h3>
+  <ul class="task-list">
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Opening meeting:</strong> Kick off audit with management and department heads</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Audit all processes:</strong> Interview employees, review records, observe operations</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Document findings:</strong> Note nonconformances (major/minor) and opportunities for improvement</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Closing meeting:</strong> Present findings to management</div>
+    </li>
+  </ul>
+
+  <h3>Week 3: Corrective Actions (Clause 10.2)</h3>
+  <ul class="task-list">
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Assign corrective actions:</strong> For each finding, assign owner and due date</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Investigate root causes:</strong> Use 5 Whys or fishbone diagram to find why problems occurred</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Implement corrections:</strong> Fix immediate issues and address root causes</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Document corrective actions:</strong> Track actions, evidence of implementation, verification of effectiveness</div>
+    </li>
+  </ul>
+
+  <h3>Week 4: Management Review (Clause 9.3)</h3>
+  <ul class="task-list">
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Prepare management review package:</strong> Compile metrics, audit results, customer feedback, resource needs</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Conduct management review meeting:</strong> CEO/leadership reviews QMS performance and effectiveness</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Document decisions:</strong> Record management decisions, action items, resource commitments</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Communicate outcomes:</strong> Share management review results with organization</div>
+    </li>
+  </ul>
+
+  <div class="deliverables-box">
+    <h4>📦 Month 5 Deliverables:</h4>
+    <ul style="margin: 5px 0; padding-left: 20px;">
+      <li>Internal audit report with findings</li>
+      <li>Corrective action plans (assigned and in progress)</li>
+      <li>Root cause analysis for each finding</li>
+      <li>Management review minutes</li>
+      <li>Management review action items</li>
+    </ul>
+  </div>
+
+  <div class="warning-box">
+    <p><strong>⚠️ Critical:</strong> Do NOT schedule certification audit until all internal audit corrective actions are closed. Certification auditors will verify that your internal audit was conducted properly and that you addressed findings.</p>
+  </div>
+</div>
+
+<!-- PAGE 7: MONTH 6 -->
+<div class="page-break"></div>
+
+<div class="month-card" style="border-left-color: #dc2626;">
+  <div class="month-header">
+    <div class="month-number" style="background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);">6</div>
+    <div>
+      <h2 class="month-title">Month 6: Certification Audit Preparation</h2>
+      <div class="month-focus"><span class="phase-label phase-validation">Validation Phase</span>Final readiness & certification</div>
+    </div>
+  </div>
+
+  <h3>Week 1-2: Close Corrective Actions</h3>
+  <ul class="task-list">
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Verify all CARs closed:</strong> Ensure corrective actions from internal audit are implemented</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Verify effectiveness:</strong> Check that corrections actually fixed the problems</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Update audit report:</strong> Document closure of findings</div>
+    </li>
+  </ul>
+
+  <h3>Week 2: Select Certification Body</h3>
+  <ul class="task-list">
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Get quotes from 3 CBs:</strong> Request proposals from accredited certification bodies</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Verify accreditation:</strong> Ensure CB is accredited by recognized body (ANAB, UKAS, etc.)</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Select certification body:</strong> Choose based on price, reputation, auditor expertise</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Schedule Stage 1 audit:</strong> Book date for document review (usually 1 day on-site)</div>
+    </li>
+  </ul>
+
+  <h3>Week 3: Pre-Audit Readiness Assessment</h3>
+  <ul class="task-list">
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Conduct mock audit:</strong> Simulate certification audit with consultant or experienced auditor</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Check document availability:</strong> Ensure procedures are accessible to auditor</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Review records completeness:</strong> Verify you have 3+ months of records for all processes</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Prepare employees:</strong> Brief team on what to expect during audit</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Fix any last-minute gaps:</strong> Address issues found in mock audit</div>
+    </li>
+  </ul>
+
+  <h3>Week 4: Certification Audit (Stage 1 & 2)</h3>
+  <ul class="task-list">
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Stage 1 audit:</strong> Auditor reviews documentation and readiness (1 day)</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Address Stage 1 findings:</strong> Fix any issues identified before Stage 2</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Schedule Stage 2 audit:</strong> Book full certification audit (2-4 days depending on size)</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Stage 2 audit:</strong> Full QMS audit including interviews, record reviews, process observations</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Closing meeting:</strong> Auditor presents findings and recommendation</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Address minor NCs:</strong> If minor nonconformances found, submit corrective actions within 30 days</div>
+    </li>
+    <li class="task-item">
+      <div class="task-checkbox"></div>
+      <div><strong>Receive certificate:</strong> Once approved, certification body issues ISO 9001 certificate</div>
+    </li>
+  </ul>
+
+  <div class="deliverables-box">
+    <h4>📦 Month 6 Deliverables:</h4>
+    <ul style="margin: 5px 0; padding-left: 20px;">
+      <li>All internal audit corrective actions closed</li>
+      <li>Certification body contract signed</li>
+      <li>Stage 1 audit completed</li>
+      <li>Stage 2 audit completed</li>
+      <li>ISO 9001:2015 certificate issued 🎉</li>
+    </ul>
+  </div>
+</div>
+
+<!-- PAGE 8: After Certification -->
+<div class="page-break"></div>
+
+<h1>After Certification: Surveillance & Maintenance</h1>
+
+<p>Congratulations on achieving ISO 9001 certification! But remember: <strong>certification is not the finish line.</strong> It's the starting point for continual improvement.</p>
+
+<h2>Ongoing Requirements:</h2>
+
+<table>
+  <tr>
+    <th>Activity</th>
+    <th>Frequency</th>
+    <th>Purpose</th>
+  </tr>
+  <tr>
+    <td><strong>Surveillance Audits</strong></td>
+    <td>Annual (Years 1 & 2)</td>
+    <td>CB verifies you're maintaining QMS</td>
+  </tr>
+  <tr>
+    <td><strong>Recertification Audit</strong></td>
+    <td>Every 3 years</td>
+    <td>Full audit to renew certificate</td>
+  </tr>
+  <tr>
+    <td><strong>Internal Audits</strong></td>
+    <td>Minimum annually</td>
+    <td>Required by Clause 9.2</td>
+  </tr>
+  <tr>
+    <td><strong>Management Review</strong></td>
+    <td>Minimum annually</td>
+    <td>Required by Clause 9.3</td>
+  </tr>
+  <tr>
+    <td><strong>Metric Tracking</strong></td>
+    <td>Ongoing (monthly recommended)</td>
+    <td>Monitor quality objectives</td>
+  </tr>
+  <tr>
+    <td><strong>Corrective Actions</strong></td>
+    <td>As needed</td>
+    <td>Address nonconformances</td>
+  </tr>
+</table>
+
+<div class="tip-box">
+  <p><strong>💡 Best Practice:</strong> Schedule recurring calendar reminders:</p>
+  <ul>
+    <li>Internal audit planning (90 days before anniversary)</li>
+    <li>Management review (30 days before anniversary)</li>
+    <li>Surveillance audit scheduling (60 days before anniversary)</li>
+    <li>Calibration due dates</li>
+    <li>Training refreshers</li>
+  </ul>
+</div>
+
+<h2>Common Reasons for Certificate Suspension:</h2>
+
+<div class="warning-box">
+  <ul style="margin: 5px 0;">
+    <li><strong>Skipping internal audits:</strong> You must conduct them annually, no exceptions</li>
+    <li><strong>Ignoring corrective actions:</strong> Repeated findings show QMS not improving</li>
+    <li><strong>Not following procedures:</strong> If auditor finds procedures aren't being followed</li>
+    <li><strong>Customer complaints spike:</strong> Major quality issues can trigger special audits</li>
+    <li><strong>Ignoring surveillance audits:</strong> Missing or rescheduling without reason</li>
+  </ul>
+</div>
+
+<h2>Continual Improvement Opportunities:</h2>
+
+<ul>
+  <li>Automate record-keeping with QMS software</li>
+  <li>Integrate ISO 9001 with other standards (ISO 14001, IATF 16949, AS9100)</li>
+  <li>Use AI tools to analyze quality data trends</li>
+  <li>Engage employees in improvement initiatives (Kaizen, Six Sigma)</li>
+  <li>Benchmark against industry best practices</li>
+</ul>
+
+<div class="cta-box">
+  <h2>Need Ongoing QMS Support?</h2>
+  <p style="margin: 15px 0;">AuditsReady provides AI-powered QMS maintenance tools to help you stay compliant with minimal effort.</p>
+
+  <div style="text-align: left; max-width: 500px; margin: 20px auto;">
+    <h3 style="color: white;">Services:</h3>
+    <ul style="list-style: none; padding: 0;">
+      <li>✅ Automated internal audit preparation</li>
+      <li>✅ AI-powered metric analysis and insights</li>
+      <li>✅ Document update recommendations</li>
+      <li>✅ Pre-surveillance audit readiness checks</li>
+      <li>✅ Corrective action tracking</li>
+    </ul>
+  </div>
+
+  <p><strong>📧 Email:</strong> info@auditsready.com<br>
+  <strong>📞 Phone:</strong> +1-403-404-4643<br>
+  <strong>🌐 Web:</strong> auditsready.com</p>
+</div>
+
+<div class="footer" style="margin-top: 60px;">
+  <p><strong class="footer-strong">© 2025 AuditsReady</strong><br>
+  AI-Powered ISO 9001 Compliance for Manufacturers Worldwide</p>
+  <p style="margin-top: 10px;">
+    📧 info@auditsready.com | 📞 +1-403-404-4643 | 🌐 auditsready.com
+  </p>
+  <p style="margin-top: 15px; font-size: 11px;">
+    This roadmap is based on typical implementation timelines. Actual timeline may vary based on organization size, resources, and starting point.<br>
+    AuditsReady provides implementation guidance but is not an accredited certification body.
+  </p>
+</div>
+
+</body>
+</html>
