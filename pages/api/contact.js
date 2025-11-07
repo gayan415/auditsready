@@ -46,9 +46,22 @@ Submitted: ${new Date().toLocaleString()}
       })
     });
 
+    // Parse the response to get detailed error info
+    const resendData = await resendResponse.json();
+
     if (!resendResponse.ok) {
-      throw new Error('Failed to send email');
+      // Log detailed error for debugging
+      console.error('Resend API Error Details:', {
+        status: resendResponse.status,
+        statusText: resendResponse.statusText,
+        errorData: resendData,
+        hasApiKey: !!process.env.RESEND_API_KEY
+      });
+
+      throw new Error(`Resend API error: ${JSON.stringify(resendData)}`);
     }
+
+    console.log('Email sent successfully via Resend:', resendData.id);
 
     return res.status(200).json({
       success: true,
