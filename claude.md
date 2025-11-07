@@ -13,6 +13,8 @@ Marketing and landing page for AuditsReady, an AI-powered ISO9001 SOP compliance
 - **Framework:** Next.js (latest) with React
 - **Styling:** Tailwind CSS v3.0+
 - **Analytics:** Google Analytics 4 (G-223ZBY1BM9)
+- **Email Service:** Resend API (free tier: 100 emails/day)
+- **Email Forwarding:** ImprovMX (info@auditsready.com forwarding)
 - **Deployment:** Vercel (auto-deploy on push to main)
 
 ## Project Structure
@@ -22,8 +24,10 @@ auditsready/
 ├── pages/
 │   ├── _app.js           # Analytics tracking
 │   ├── _document.js      # GA script injection
-│   ├── index.js          # Main landing page
+│   ├── index.js          # Main landing page with contact form modal
 │   ├── privacy.js        # Privacy policy
+│   ├── api/
+│   │   └── contact.js    # Contact form API endpoint (Resend integration)
 │   └── blog/
 │       ├── index.js      # Blog listing page
 │       ├── iso-9001-gap-analysis-cost.js          # Post #1
@@ -37,6 +41,8 @@ auditsready/
 │   ├── iso-9001-auditsready-favicon.ico
 │   ├── iso-9001-auditsready-favicon.svg
 │   └── iso-9001-auditsready-app-icon.png
+├── .env.example         # Environment variables documentation
+├── .env.local           # Local environment variables (gitignored)
 ├── package.json
 ├── next.config.js       # Security headers
 └── tailwind.config.js
@@ -45,13 +51,20 @@ auditsready/
 ## Key Features
 
 ### Landing Page Sections
-1. **Hero** - Value proposition with email CTA and phone reveal
-2. **How It Works** - 3-step process with P.Eng trust badge
-3. **AI Features** - Claude Sonnet 4.5 + Opus capabilities
-4. **Service Description** - Gap detection and SOP conversion
-5. **Industries** - Breweries, Oilfield, Food Processing, Metal Fabrication
-6. **Pricing/CTA** - Early adopter pricing with dual CTAs
+1. **Hero** - Value proposition with "Book AI Demo" modal CTA and phone reveal
+2. **How It Works** - Video placeholder + 3-step process with P.Eng trust badge + Free ISO 9001 Checklist CTA
+3. **Beyond Traditional Tools** - AI features (Claude Sonnet 4.5 + Opus capabilities)
+4. **AI Finds What Others Miss** - Gap detection and SOP conversion capabilities
+5. **Built for Every Manufacturing Business** - Universal industry messaging (automotive, aerospace, electronics, food, consumer products, textiles, plastics, metal fabrication, etc.)
+6. **Pricing/CTA** - Early adopter pricing with "Book AI Demo" modal
 7. **Footer** - Contact info with click-to-reveal phone
+
+### Contact Form (Modal)
+- Professional modal popup with form fields (Name, Company, Email, Phone, Message)
+- Integrated with Resend API for reliable email delivery
+- Sends to info@auditsready.com → ImprovMX forwards to personal email
+- Success/error handling with user-friendly messages
+- 24-hour callback promise displayed
 
 ### Phone Number Protection
 - `PhoneReveal` component prevents bot scraping
@@ -71,19 +84,21 @@ git push origin main    # Auto-deploys to Vercel
 ## Target Market
 
 **Primary:** Small-medium manufacturers worldwide (10-500 employees)
-**Geographic:** North America (USA, Canada, Mexico) + Global
-**Industries:** Craft breweries, oilfield services, food processing, metal fabrication
+**Geographic:** Worldwide (no geographic restrictions)
+**Industries:** Any manufacturing sector - automotive, aerospace, electronics, food processing, consumer products, textiles, plastics, metal fabrication, craft breweries, oilfield services, and more
 
 ## SEO Implementation
 
 ### Meta Tags (Global Positioning)
 - Title: "AI-Powered ISO 9001 Gap Analysis | Audit-Ready SOP Compliance"
-- Keywords: ISO 9001 gap analysis, SOP compliance, audit preparation
-- No geographic restrictions (worldwide service)
+- Keywords: ISO 9001 gap analysis, SOP compliance, audit preparation, automotive ISO 9001, aerospace manufacturing, electronics manufacturing, food processing ISO 9001, consumer products manufacturing
+- Emphasis on "any manufacturing industry" for broad appeal
+- Geographic scope: Worldwide
 
 ### Structured Data
-- ProfessionalService schema (USA, Canada, Mexico coverage)
-- Service schema with offerings
+- ProfessionalService schema (Worldwide coverage with knowsAbout 13+ manufacturing sectors)
+- Service schema with offerings and business audience
+- FAQPage schema with 4 strategic questions for rich snippets
 - Phone number visible to crawlers in structured data
 
 ### Technical SEO
@@ -102,8 +117,14 @@ git push origin main    # Auto-deploys to Vercel
 
 ### Environment Variables
 ```bash
+# Google Analytics
 NEXT_PUBLIC_GA_ID=G-223ZBY1BM9
+
+# Resend API for contact form emails
+RESEND_API_KEY=re_your_key_here  # Get from https://resend.com/api-keys
 ```
+
+**Note:** Store in `.env.local` for local development (gitignored). Add to Vercel environment variables for production.
 
 ### Security Headers (next.config.js)
 - X-Frame-Options: DENY
@@ -114,11 +135,26 @@ NEXT_PUBLIC_GA_ID=G-223ZBY1BM9
 
 ## Contact Information
 
-- **Email:** info@auditsready.com
-- **Phone:** +1-403-404-4643 (click-to-reveal)
-- **Serving:** North America & Beyond
+- **Email:** info@auditsready.com (forwarded via ImprovMX)
+- **Phone:** +1-403-404-4643 (click-to-reveal component)
+- **Serving:** Worldwide - any manufacturing industry
+- **Contact Form:** Modal popup with Resend API integration
 
 ## Recent Updates
+
+### 2025-11-06: Website UX Improvements & Contact Form
+- ✅ **Contact Form Modal**: Replaced mailto with Resend API for professional email delivery
+  - Form fields: Name, Company, Email, Phone (optional), Message
+  - Sends via Resend → info@auditsready.com → ImprovMX forwarding
+  - 24-hour callback promise displayed
+  - Proper success/error handling
+- ✅ **Video Placeholder**: Added 16:9 video section in "How It Works" (ready for 2-minute demo)
+- ✅ **Free ISO 9001 Checklist CTA**: Button linking to `/blog/iso-9001-checklist`
+- ✅ **Section Reordering**: "How It Works" now before "Beyond Traditional Tools"
+- ✅ **Universal Industry Messaging**: Replaced specific 4-industry cards with "any manufacturing industry"
+- ✅ **Expanded Industry Keywords**: Added food processing, consumer products to SEO
+- ✅ **FAQ Structured Data**: Added FAQPage schema for rich snippets (4 Q&As)
+- ✅ **Geographic Scope**: Changed from regional to "Worldwide" in all metadata
 
 ### 2025-01-06: Blog Content Strategy Launched
 - ✅ Created blog infrastructure (`/pages/blog/index.js`)
@@ -144,8 +180,11 @@ NEXT_PUBLIC_GA_ID=G-223ZBY1BM9
 - ✅ Google Search Console verified
 - ✅ Sitemap updated (13 URLs total: homepage, privacy, blog, 10 posts)
 - ✅ 10 blog posts created (Posts #1-10) covering Jan-Oct 2025
-- 🔄 Branch: `blog/third-post-certification-cost` - Ready for review and merge
+- ✅ Contact form with Resend API integration deployed
+- ✅ Universal "any manufacturing industry" positioning live
+- ✅ Video placeholder ready for 2-minute demo
 - 📊 Total content: 27,000+ words across 10 comprehensive posts
+- 🎬 **Next:** Create 2-minute demo video for "How It Works" section
 
 ## Blog Content Strategy
 
@@ -319,7 +358,8 @@ NEXT_PUBLIC_GA_ID=G-223ZBY1BM9
 
 1. All code in pages - consider extracting components
 2. No automated testing
-3. No email capture forms yet (needed for Post #4 lead magnet)
+3. Using Resend test domain (onboarding@resend.dev) - consider verifying auditsready.com domain
+4. Video placeholder needs actual 2-minute demo video
 
 ## Marketing Strategy Decisions
 
@@ -342,6 +382,45 @@ NEXT_PUBLIC_GA_ID=G-223ZBY1BM9
 
 ---
 
-**Last Updated:** 2025-01-06
+**Last Updated:** 2025-11-06
+**Branch:** main
+**Deployment:** Live on Vercel via GitHub integration
+
+## Email Configuration
+
+### Resend API Setup
+- **Service:** Resend (https://resend.com)
+- **Free Tier:** 100 emails/day, 3,000/month
+- **API Endpoint:** `/api/contact`
+- **Sender:** onboarding@resend.dev (Resend test domain)
+- **Recipient:** info@auditsready.com
+- **Reply-To:** Customer's email from form
+
+### ImprovMX Forwarding
+- **Service:** ImprovMX (https://app.improvmx.com)
+- **Forward:** info@auditsready.com → Personal email
+- **Purpose:** Receive contact form submissions in personal inbox
+
+### Email Flow
+```
+Customer submits form
+  ↓
+/api/contact endpoint
+  ↓
+Resend API sends email
+  ↓
+info@auditsready.com
+  ↓
+ImprovMX forwards
+  ↓
+Personal email inbox
+```
+
+### Production Setup (Vercel)
+1. Go to Vercel Dashboard → Project → Settings → Environment Variables
+2. Add: `RESEND_API_KEY` = `re_7R9j7PVX_GR8WzoKs9L5phAaCAAyrVFjQ`
+3. Redeploy or wait for next deployment
+
+**Last Updated:** 2025-11-06
 **Branch:** main
 **Deployment:** Live on Vercel via GitHub integration
