@@ -482,9 +482,9 @@ export default function Home() {
 
           {/* Demo Video */}
           <div className="mb-16 max-w-4xl mx-auto">
-            <div className="relative rounded-2xl shadow-2xl overflow-hidden bg-black">
+            <div className="relative rounded-2xl shadow-2xl overflow-hidden bg-black" style={{ aspectRatio: '16 / 9' }}>
               <video
-                className="w-full h-auto"
+                className="w-full h-full object-cover"
                 controls
                 preload="metadata"
                 poster="/iso-9001-ai-powered-compliance-auditsready-logo.png"

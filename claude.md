@@ -36,6 +36,7 @@ auditsready/
 │   └── gtag.js          # Google Analytics helpers
 ├── public/
 │   ├── iso-9001-ai-powered-compliance-auditsready-logo.png
+│   ├── auditsready-demo.mp4  # 8-second demo video (4.7MB)
 │   ├── sitemap.xml       # 13 URLs (homepage, privacy, blog, 10 posts)
 │   ├── robots.txt
 │   ├── iso-9001-auditsready-favicon.ico
@@ -52,7 +53,7 @@ auditsready/
 
 ### Landing Page Sections
 1. **Hero** - Value proposition with "Book AI Demo" modal CTA and phone reveal
-2. **How It Works** - Video placeholder + 3-step process with P.Eng trust badge + Free ISO 9001 Checklist CTA
+2. **How It Works** - 8-second demo video (auditsready-demo.mp4) + 3-step process with P.Eng trust badge + Free ISO 9001 Checklist CTA
 3. **Beyond Traditional Tools** - AI features (Claude Sonnet 4.5 + Opus capabilities)
 4. **AI Finds What Others Miss** - Gap detection and SOP conversion capabilities
 5. **Built for Every Manufacturing Business** - Universal industry messaging (automotive, aerospace, electronics, food, consumer products, textiles, plastics, metal fabrication, etc.)
@@ -142,13 +143,21 @@ RESEND_API_KEY=re_your_key_here  # Get from https://resend.com/api-keys
 
 ## Recent Updates
 
+### 2025-11-07: Demo Video Added
+- ✅ **Demo Video**: Added 8-second AI demonstration video to "How It Works" section
+  - File: `auditsready-demo.mp4` (4.7MB, locally hosted)
+  - HTML5 video player with controls, poster image
+  - Fixed 16:9 aspect ratio (no layout shift on play)
+  - Shows AI-powered document processing visualization
+  - **Note:** Full 2-minute demo video will be created later (no AI tools currently capable of generating 2-minute videos)
+
 ### 2025-11-06: Website UX Improvements & Contact Form
 - ✅ **Contact Form Modal**: Replaced mailto with Resend API for professional email delivery
   - Form fields: Name, Company, Email, Phone (optional), Message
   - Sends via Resend → info@auditsready.com → ImprovMX forwarding
   - 24-hour callback promise displayed
   - Proper success/error handling
-- ✅ **Video Placeholder**: Added 16:9 video section in "How It Works" (ready for 2-minute demo)
+- ✅ **Video Placeholder**: Added 16:9 video section in "How It Works" (ready for demo)
 - ✅ **Free ISO 9001 Checklist CTA**: Button linking to `/blog/iso-9001-checklist`
 - ✅ **Section Reordering**: "How It Works" now before "Beyond Traditional Tools"
 - ✅ **Universal Industry Messaging**: Replaced specific 4-industry cards with "any manufacturing industry"
@@ -182,9 +191,9 @@ RESEND_API_KEY=re_your_key_here  # Get from https://resend.com/api-keys
 - ✅ 10 blog posts created (Posts #1-10) covering Jan-Oct 2025
 - ✅ Contact form with Resend API integration deployed
 - ✅ Universal "any manufacturing industry" positioning live
-- ✅ Video placeholder ready for 2-minute demo
+- ✅ 8-second demo video live in "How It Works" section
 - 📊 Total content: 27,000+ words across 10 comprehensive posts
-- 🎬 **Next:** Create 2-minute demo video for "How It Works" section
+- 🎬 **Future:** Create full 2-minute demo video when AI tools support longer videos
 
 ## Blog Content Strategy
 
@@ -358,8 +367,7 @@ RESEND_API_KEY=re_your_key_here  # Get from https://resend.com/api-keys
 
 1. All code in pages - consider extracting components
 2. No automated testing
-3. Using Resend test domain (onboarding@resend.dev) - consider verifying auditsready.com domain
-4. Video placeholder needs actual 2-minute demo video
+3. 8-second demo video is temporary - full 2-minute demo to be created manually later (AI tools not yet capable of 2-minute videos)
 
 ## Marketing Strategy Decisions
 
@@ -390,11 +398,13 @@ RESEND_API_KEY=re_your_key_here  # Get from https://resend.com/api-keys
 
 ### Resend API Setup
 - **Service:** Resend (https://resend.com)
+- **Account:** jayasundara.jmg@gmail.com
 - **Free Tier:** 100 emails/day, 3,000/month
 - **API Endpoint:** `/api/contact`
-- **Sender:** onboarding@resend.dev (Resend test domain)
+- **Sender:** noreply@auditsready.com (verified domain)
 - **Recipient:** info@auditsready.com
 - **Reply-To:** Customer's email from form
+- **Domain Status:** ✅ Verified (DKIM, SPF, DMARC configured)
 
 ### ImprovMX Forwarding
 - **Service:** ImprovMX (https://app.improvmx.com)
@@ -407,9 +417,9 @@ Customer submits form
   ↓
 /api/contact endpoint
   ↓
-Resend API sends email
+Resend API sends FROM: noreply@auditsready.com
   ↓
-info@auditsready.com
+TO: info@auditsready.com
   ↓
 ImprovMX forwards
   ↓
@@ -418,8 +428,87 @@ Personal email inbox
 
 ### Production Setup (Vercel)
 1. Go to Vercel Dashboard → Project → Settings → Environment Variables
-2. Add: `RESEND_API_KEY` = `re_7R9j7PVX_GR8WzoKs9L5phAaCAAyrVFjQ`
-3. Redeploy or wait for next deployment
+2. Add: `RESEND_API_KEY` = `your_resend_api_key_here`
+3. Get API key from: https://resend.com/api-keys
+4. Redeploy or wait for next deployment
+
+### Resend Domain Verification (One-Time Setup)
+**Status:** ✅ COMPLETED
+
+If you ever need to verify another domain or re-verify:
+
+1. **Add Domain to Resend:**
+   - Go to: https://resend.com/domains
+   - Click "Add Domain"
+   - Enter: `auditsready.com`
+   - Region: North Virginia (us-east-1)
+
+2. **Add DNS Records** (at your domain provider - GoDaddy/Cloudflare/etc.):
+
+   **Domain Verification (DKIM):**
+   - Type: `TXT`
+   - Name: `resend._domainkey`
+   - Value: `p=MIGfMA0GCSqGSIb3DQEB...` (provided by Resend)
+   - TTL: Auto
+
+   **Enable Sending (SPF & DMARC):**
+   - Type: `MX`
+   - Name: `send`
+   - Value: `feedback-smtp.us-east-1.amazonses.com`
+   - Priority: 10
+   - TTL: 60
+
+   - Type: `TXT`
+   - Name: `send`
+   - Value: `v=spf1 include:amazonses.com ~all`
+   - TTL: 60
+
+   - Type: `TXT` (Optional)
+   - Name: `_dmarc`
+   - Value: `v=DMARC1; p=none;`
+   - TTL: Auto
+
+3. **Wait for Verification:**
+   - DNS propagation takes 5-60 minutes
+   - Check status at https://resend.com/domains
+   - Look for green "Verified" badges
+
+4. **Update Code:**
+   - Change `from` field in `/pages/api/contact.js`
+   - From: `onboarding@resend.dev` → To: `noreply@auditsready.com`
+   - Deploy changes
+
+### Troubleshooting Contact Form
+
+**If contact form returns 500 error:**
+
+1. **Check Vercel Logs:**
+   - Go to: https://vercel.com/dashboard → Project → Logs
+   - Look for detailed error messages from Resend API
+
+2. **Common Issues:**
+   - ❌ `RESEND_API_KEY` not set in Vercel environment variables
+   - ❌ Domain not verified in Resend (check https://resend.com/domains)
+   - ❌ Using unverified sender email (must use verified domain)
+   - ❌ Rate limit exceeded (100 emails/day on free tier)
+   - ❌ Invalid recipient email address
+
+3. **Test Resend API Directly:**
+   ```bash
+   curl -X POST https://api.resend.com/emails \
+     -H "Authorization: Bearer YOUR_RESEND_API_KEY" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "from": "noreply@auditsready.com",
+       "to": "info@auditsready.com",
+       "subject": "Test Email",
+       "text": "Testing Resend API"
+     }'
+   ```
+
+4. **Verify ImprovMX Forwarding:**
+   - Go to: https://app.improvmx.com
+   - Check that info@auditsready.com → personal email is active
 
 **Last Updated:** 2025-11-06
 **Branch:** main
