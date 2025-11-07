@@ -480,17 +480,18 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Video Placeholder */}
+          {/* Demo Video */}
           <div className="mb-16 max-w-4xl mx-auto">
-            <div className="relative bg-gradient-to-br from-blue-900 to-indigo-900 rounded-2xl shadow-2xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center text-white p-8">
-                  <div className="text-6xl mb-4">▶️</div>
-                  <h3 className="text-2xl font-bold mb-2">See How It Works</h3>
-                  <p className="text-blue-200">2-minute demo video coming soon</p>
-                  <p className="text-sm text-blue-300 mt-4">Watch how our AI transforms your compliance process</p>
-                </div>
-              </div>
+            <div className="relative rounded-2xl shadow-2xl overflow-hidden bg-black">
+              <video
+                className="w-full h-auto"
+                controls
+                preload="metadata"
+                poster="/iso-9001-ai-powered-compliance-auditsready-logo.png"
+              >
+                <source src="/auditsready-demo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
 
