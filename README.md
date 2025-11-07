@@ -44,11 +44,10 @@ Required environment variables (add to `.env.local`):
 
 ```bash
 NEXT_PUBLIC_GA_ID=G-223ZBY1BM9
-RESEND_API_KEY=re_7R9j7PVX_GR8WzoKs9L5phAaCAAyrVFjQ
+RESEND_API_KEY=your_resend_api_key_here
 ```
 
-**Resend Account:** jayasundara.jmg@gmail.com
-**API Keys:** https://resend.com/api-keys (free tier: 100 emails/day)
+**Get API key from:** https://resend.com/api-keys (free tier: 100 emails/day)
 
 ## Email Setup
 
