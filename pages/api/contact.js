@@ -41,8 +41,7 @@ Submitted: ${new Date().toLocaleString()}
         from: 'AuditsReady Contact Form <noreply@auditsready.com>',
         to: 'info@auditsready.com',
         subject: `AI Demo Request from ${name} - ${company}`,
-        text: emailContent,
-        reply_to: email
+        text: emailContent
       })
     });
 
