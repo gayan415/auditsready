@@ -67,7 +67,7 @@ We're happy to answer questions about:
 If you have any questions or want to discuss your implementation plan, just reply to this email. We're here to help.
 
 Cheers,
-[Your Name]
+Gayan Jayasundara
 AuditsReady Team
 
 ---
@@ -156,10 +156,10 @@ If you need any clarification or want to discuss your specific situation, just r
 Happy to help guide you through this!
 
 Cheers,
-[Your Name]
+Gayan Jayasundara
 AuditsReady Team
 
-📧 info@auditsready.com | 📞 +1-403-404-4643
+📧 gayan@auditsready.com | 📞 +1-403-404-4643
 
 ---
 
@@ -209,4 +209,5 @@ Monitor these metrics:
 
 ---
 
-**Last Updated:** 2025-11-07
+**Last Updated:** 2025-11-08
+**Note:** Now using Google Workspace (gayan@auditsready.com, yashi@auditsready.com) instead of ImprovMX forwarding

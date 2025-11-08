@@ -142,12 +142,28 @@ RESEND_API_KEY=re_your_key_here  # Get from https://resend.com/api-keys
 
 ## Contact Information
 
-- **Email:** info@auditsready.com (forwarded via ImprovMX)
+- **Primary Emails (Google Workspace Users):**
+  - gayan@auditsready.com (Owner, primary contact)
+  - yashi@auditsready.com (Support)
+- **Public-Facing Email Aliases:**
+  - info@auditsready.com (General inquiries - routes to gayan@ or yashi@)
+  - sales@auditsready.com (Sales - routes to team)
+  - compliance@auditsready.com (Compliance queries - routes to team)
+  - noreply@auditsready.com (Automated emails only)
 - **Phone:** +1-403-404-4643 (click-to-reveal component)
 - **Serving:** Worldwide - any manufacturing industry
 - **Contact Form:** Modal popup with Resend API integration
 
 ## Recent Updates
+
+### 2025-11-08: Google Workspace Setup & Email Fix
+- ✅ **Google Workspace Configured**: Added gayan@auditsready.com and yashi@auditsready.com
+  - 2 user accounts with professional email addresses
+  - Email aliases: info@, sales@, compliance@, noreply@ (all route to user accounts)
+  - Replaced ImprovMX forwarding with native Google Workspace
+- ✅ **Contact Form Fixed**: Removed reply_to header causing Gmail phishing warnings
+  - Emails now deliver cleanly without security warnings
+  - Customer email still visible in body for manual replies
 
 ### 2025-11-07: Lead Magnet Deliverables Created
 - ✅ **12-Page ISO 9001 Checklist**: Complete implementation guide with all 10 clauses
@@ -536,11 +552,25 @@ RESEND_API_KEY=re_your_key_here  # Get from https://resend.com/api-keys
 
 ---
 
-**Last Updated:** 2025-11-07
+**Last Updated:** 2025-11-08
 **Branch:** main
 **Deployment:** Live on Vercel via GitHub integration
 
 ## Email Configuration
+
+### Google Workspace Setup
+- **Service:** Google Workspace
+- **Domain:** auditsready.com
+- **User Accounts (2 users):**
+  - gayan@auditsready.com (Primary contact, owner)
+  - yashi@auditsready.com (Support)
+- **Email Aliases (forward to user accounts above):**
+  - info@auditsready.com → Routes to gayan@ or yashi@
+  - noreply@auditsready.com → Routes to gayan@ or yashi@
+  - sales@auditsready.com → Routes to gayan@ or yashi@
+  - compliance@auditsready.com → Routes to gayan@ or yashi@
+- **Status:** ✅ Active
+- **Access:** Full email, calendar, drive, docs access
 
 ### Resend API Setup
 - **Service:** Resend (https://resend.com)
@@ -549,13 +579,7 @@ RESEND_API_KEY=re_your_key_here  # Get from https://resend.com/api-keys
 - **API Endpoint:** `/api/contact`
 - **Sender:** noreply@auditsready.com (verified domain)
 - **Recipient:** info@auditsready.com
-- **Reply-To:** Customer's email from form
 - **Domain Status:** ✅ Verified (DKIM, SPF, DMARC configured)
-
-### ImprovMX Forwarding
-- **Service:** ImprovMX (https://app.improvmx.com)
-- **Forward:** info@auditsready.com → Personal email
-- **Purpose:** Receive contact form submissions in personal inbox
 
 ### Email Flow
 ```
@@ -565,11 +589,11 @@ Customer submits form
   ↓
 Resend API sends FROM: noreply@auditsready.com
   ↓
-TO: info@auditsready.com
+TO: info@auditsready.com (alias)
   ↓
-ImprovMX forwards
+Routes to gayan@ or yashi@ inbox
   ↓
-Personal email inbox
+Team reads in Gmail
 ```
 
 ### Production Setup (Vercel)
@@ -652,10 +676,11 @@ If you ever need to verify another domain or re-verify:
      }'
    ```
 
-4. **Verify ImprovMX Forwarding:**
-   - Go to: https://app.improvmx.com
-   - Check that info@auditsready.com → personal email is active
+4. **Verify Google Workspace Inbox:**
+   - Log in to Gmail with gayan@auditsready.com or yashi@auditsready.com
+   - Check inbox (emails to info@auditsready.com will be routed here via alias)
+   - Verify email was delivered successfully
 
-**Last Updated:** 2025-11-06
+**Last Updated:** 2025-11-08
 **Branch:** main
 **Deployment:** Live on Vercel via GitHub integration

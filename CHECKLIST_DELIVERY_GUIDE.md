@@ -114,15 +114,16 @@ After conversion, check that PDFs look professional:
 
 ### Option A: Manual Email (Immediate)
 
-**Using Gmail/Outlook:**
-1. Compose new email to customer
-2. Copy template from `EMAIL_RESPONSE_TEMPLATE.md`
-3. Attach 3 files:
+**Using Google Workspace Gmail:**
+1. Log in to gayan@auditsready.com or yashi@auditsready.com
+2. Compose new email to customer
+3. Copy template from `EMAIL_RESPONSE_TEMPLATE.md`
+4. Attach 3 files:
    - `iso-9001-checklist.pdf`
    - `iso-9001-implementation-roadmap.pdf`
    - `iso-9001-gap-analysis-template.csv`
-4. Personalize (add customer name, industry if known)
-5. Send
+5. Personalize (add customer name, industry if known)
+6. Send from gayan@auditsready.com (primary) or yashi@auditsready.com (support)
 
 **Total time:** 5 minutes per customer
 
@@ -290,5 +291,6 @@ Just ask! These templates are designed to be easy to customize.
 
 ---
 
-**Last Updated:** 2025-11-07
+**Last Updated:** 2025-11-08
 **Files Location:** `/Users/gjayasun/git/auditsready/public/downloads/`
+**Email Setup:** Google Workspace (gayan@auditsready.com, yashi@auditsready.com)
