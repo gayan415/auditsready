@@ -717,10 +717,10 @@ export default function Home() {
           <div className="bg-gradient-to-r from-blue-900 to-indigo-900 rounded-2xl shadow-2xl p-8 md:p-12 text-white">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold mb-4">
-                Early Adopter Pricing Available
+                Professional ISO 9001 Compliance — Starting at $1,500
               </h2>
               <p className="text-xl text-blue-100">
-                No two factories are the same — and neither are their SOPs
+                Save 70-85% vs traditional consultants | One-time packages or monthly subscriptions
               </p>
             </div>
             
@@ -743,22 +743,24 @@ export default function Home() {
             
             <div className="text-center">
               <p className="text-xl mb-8 text-blue-100">
-                <strong>See how AI transforms your compliance process — free demonstration included.</strong>
+                <strong>Transparent pricing. No hidden fees. Book a free demo or view detailed pricing.</strong>
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button
-                  onClick={() => setIsModalOpen(true)}
+                <Link
+                  href="/pricing"
                   className="inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white px-10 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
                 >
-                  🤖 Book AI Demo
+                  📋 View Detailed Pricing
+                </Link>
+                <button
+                  onClick={() => setIsModalOpen(true)}
+                  className="inline-block bg-white text-blue-900 px-10 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+                >
+                  🤖 Book Free Demo
                 </button>
-                <PhoneReveal
-                  buttonStyle="inline-block bg-white text-blue-900 px-10 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
-                  buttonText="📞 Speak to Experts"
-                />
               </div>
               <p className="text-sm text-blue-200 mt-4">
-                Free AI analysis • Same-day response • Personal consultation
+                Free consultation • Same-day response • No obligation
               </p>
             </div>
           </div>
