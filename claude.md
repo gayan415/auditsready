@@ -46,6 +46,18 @@ auditsready/
 │       ├── iso-9001-checklist.html (convert to PDF)
 │       ├── iso-9001-implementation-roadmap.html (convert to PDF)
 │       └── iso-9001-gap-analysis-template.csv
+├── LAWYER_REVIEW_NEEDED/        # Legal documents (MVP/Phase 1)
+│   ├── README.md                # Complete legal package guide
+│   ├── TERMS-OF-SERVICE-DRAFT.md
+│   ├── PRIVACY-POLICY-DRAFT.md
+│   ├── REFUND-CANCELLATION-POLICY-DRAFT.md
+│   ├── ACCEPTABLE-USE-POLICY-DRAFT.md
+│   ├── STATEMENT-OF-WORK-TEMPLATE.md  # Use for each customer project
+│   ├── MASTER-SERVICES-AGREEMENT-DRAFT.md  # Phase 2 only
+│   ├── LAWYER-REVIEW-SUMMARY.md
+│   ├── LAWYER-INTERVIEW-QUESTIONNAIRE.md
+│   ├── LAWYER-RESEARCH-DIRECTORY.md
+│   └── EMAIL-TO-LAWYER-TEMPLATE.md
 ├── .env.example         # Environment variables documentation
 ├── .env.local           # Local environment variables (gitignored)
 ├── package.json
@@ -155,6 +167,24 @@ RESEND_API_KEY=re_your_key_here  # Get from https://resend.com/api-keys
 - **Contact Form:** Modal popup with Resend API integration
 
 ## Recent Updates
+
+### 2025-11-09: Legal Documents Adapted for MVP/Phase 1
+- ✅ **All Legal Documents Updated**: Adapted 5 legal documents from SaaS platform to email-based consulting services
+  - **Terms of Service**: Project-based fees, email delivery method, 90-day data retention, project completion/cancellation
+  - **Privacy Policy**: No user accounts in MVP, email security notices, 90-day retention, email-based data collection
+  - **Refund Policy**: Project cancellation (before/after work begins), EU withdrawal rights for consulting, project alternatives
+  - **Acceptable Use Policy**: Document submission ethics, reselling restrictions, deliverable misuse prevention
+  - **Master Services Agreement**: Marked as "Phase 2 Only" - not used for MVP email-based services
+- ✅ **Statement of Work (SOW) Template Created**: Comprehensive contract template for each customer project
+  - Defines scope, deliverables, timeline, and fees for each engagement
+  - Customer/provider responsibilities clearly outlined
+  - Confidentiality and IP ownership terms
+  - Critical disclaimers (no certification guarantee, AI limitations, professional services disclaimer)
+  - Document submission instructions for email-based workflow (Appendix A)
+  - Use this template for EVERY customer engagement in MVP/Phase 1
+- 📁 **Location**: All documents in `/LAWYER_REVIEW_NEEDED/` folder (10 files total: 5 policies + SOW + MSA + 3 lawyer guides)
+- ⚠️ **Status**: DRAFTS - require lawyer review before production use (~$6k-$10k budget, 6 weeks timeline)
+- 🎯 **Next Steps**: Find lawyer, send complete package for review, implement on website after approval
 
 ### 2025-11-08: Google Workspace Setup & Email Fix
 - ✅ **Google Workspace Configured**: Added gayan@auditsready.com and yashi@auditsready.com
@@ -421,6 +451,106 @@ RESEND_API_KEY=re_your_key_here  # Get from https://resend.com/api-keys
 1. All code in pages - consider extracting components
 2. No automated testing
 3. 8-second demo video is temporary - full 2-minute demo to be created manually later (AI tools not yet capable of 2-minute videos)
+
+## Legal Documents for MVP/Phase 1
+
+### Business Model: Email-Based Consulting Services
+- **MVP Approach**: Project-based gap analysis consulting delivered via email
+- **No Platform**: No user accounts, logins, or SaaS subscription in Phase 1
+- **Payment**: One-time project fees, paid upon receipt of deliverables
+- **Deliverables**: Gap analysis report (PDF) + action plan (Excel) via email
+
+### Public Website Documents (Display in Footer)
+
+| Document | URL | Purpose | Status |
+|----------|-----|---------|--------|
+| Terms of Service | `/terms` | Governs all use of website and services | ✅ Draft ready |
+| Privacy Policy | `/privacy` | GDPR/CCPA compliance, data protection | ✅ Draft ready (needs update from existing) |
+| Refund Policy | `/refund-policy` | Explains refund rules for projects | ✅ Draft ready |
+| Acceptable Use | `/acceptable-use` | Defines prohibited uses of services | ✅ Draft ready |
+
+**Implementation Needed:**
+- Create `/pages/terms.js` with Terms of Service content
+- Update `/pages/privacy.js` with new MVP-adapted content
+- Create `/pages/refund-policy.js` with Refund Policy content
+- Create `/pages/acceptable-use.js` with Acceptable Use content
+- Add footer links to all 4 policies on homepage and all pages
+
+### Private Documents (Used with Each Customer)
+
+| Document | When to Use | How to Deliver | Status |
+|----------|-------------|----------------|--------|
+| Statement of Work (SOW) | Before EVERY project starts | Email as PDF/Word, customer signs | ✅ Template ready |
+| Master Services Agreement | Phase 2 only (not MVP) | N/A for MVP | ⚠️ Not used in MVP |
+
+### Customer Engagement Workflow (MVP/Phase 1)
+
+```
+1. Initial Contact
+   ↓ Customer fills contact form or emails
+   └─ They see Terms/Privacy links on website
+
+2. Discovery Call
+   ↓ Discuss needs, document count, timeline
+   └─ Explain process and pricing
+
+3. Quote & SOW
+   ↓ Send customized Statement of Work
+   └─ Customer reviews scope, fees, deliverables
+
+4. Customer Accepts
+   ↓ Customer signs SOW (DocuSign/email)
+   └─ Payment terms kick in
+
+5. Document Submission
+   ↓ Customer emails documents per SOW
+   └─ Follow SOW Appendix A instructions
+
+6. Analysis & Delivery
+   ↓ Deliver gap analysis report + action plan
+   └─ Per SOW deliverables section
+
+7. Payment
+   ↓ Customer pays invoice (Stripe/bank)
+   └─ Per SOW payment terms
+
+8. Project Complete
+   └─ 14-day support window, data deleted after 90 days
+```
+
+### Legal Package Status
+
+**Location**: `/LAWYER_REVIEW_NEEDED/` folder
+
+**Documents (10 files):**
+1. README.md - Complete guide for finding and hiring lawyer
+2. TERMS-OF-SERVICE-DRAFT.md - 9,100 words
+3. PRIVACY-POLICY-DRAFT.md - 5,800 words
+4. REFUND-CANCELLATION-POLICY-DRAFT.md - 2,900 words
+5. ACCEPTABLE-USE-POLICY-DRAFT.md - 3,400 words
+6. STATEMENT-OF-WORK-TEMPLATE.md - 3,600 words (NEW - use for each customer)
+7. MASTER-SERVICES-AGREEMENT-DRAFT.md - 6,200 words (Phase 2 only)
+8. LAWYER-REVIEW-SUMMARY.md - Executive summary for lawyer
+9. LAWYER-INTERVIEW-QUESTIONNAIRE.md - 51 questions to ask lawyers
+10. LAWYER-RESEARCH-DIRECTORY.md - Where to find qualified lawyers
+11. EMAIL-TO-LAWYER-TEMPLATE.md - 10 email templates
+
+**Total**: ~48,000 words of legal documentation
+
+**Next Steps:**
+1. Find 2-3 lawyers with SaaS/GDPR expertise (use directory)
+2. Interview using questionnaire (use templates)
+3. Send complete package for review ($6k-$10k budget)
+4. Implement approved documents on website
+5. Use SOW template for all customer projects
+
+**Budget & Timeline:**
+- Legal review: $6,000-$10,000
+- Timeline: 6 weeks from lawyer selection to launch-ready
+- E&O insurance: $1,500-$3,000/year
+- Business formation: $500-$2,000
+
+---
 
 ## Marketing Strategy Decisions
 
