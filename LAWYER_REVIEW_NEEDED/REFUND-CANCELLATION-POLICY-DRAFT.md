@@ -135,14 +135,14 @@ Refunds required by consumer protection laws in your jurisdiction:
 
 No refunds will be issued for:
 
-❌ **Failed ISO certifications or audits** (Services are guidance, not guarantees)
-❌ **Change of mind** after money-back guarantee period
-❌ **Dissatisfaction with AI accuracy** (AI has inherent limitations, disclosed upfront)
-❌ **Account termination for Terms of Service violations**
-❌ **Unused features or features you didn't use**
-❌ **Switching to a competitor**
-❌ **Economic hardship or budget changes**
-❌ **Partial months or years** (no pro-rating except for service failures)
+- ❌ **Failed ISO certifications or audits** (Services are guidance, not guarantees)
+- ❌ **Change of mind** after money-back guarantee period
+- ❌ **Dissatisfaction with AI accuracy** (AI has inherent limitations, disclosed upfront)
+- ❌ **Account termination for Terms of Service violations**
+- ❌ **Unused features or features you didn't use**
+- ❌ **Switching to a competitor**
+- ❌ **Economic hardship or budget changes**
+- ❌ **Partial months or years** (no pro-rating except for service failures)
 
 ### 4.4 How Refunds Are Processed
 
