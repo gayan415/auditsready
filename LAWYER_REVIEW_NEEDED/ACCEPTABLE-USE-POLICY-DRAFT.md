@@ -19,77 +19,77 @@ Violation of this AUP may result in suspension or termination of your account, w
 
 You may use AuditsReady's Services to:
 
-✅ Analyze your organization's documentation for ISO 9001 compliance gaps
-✅ Generate and improve Standard Operating Procedures (SOPs)
-✅ Prepare for ISO 9001 audits and certifications
-✅ Manage quality management system documentation
-✅ Receive implementation guidance and recommendations
-✅ Collaborate with your internal team members (if multi-user account)
+- ✅ Analyze your organization's documentation for ISO 9001 compliance gaps
+- ✅ Generate and improve Standard Operating Procedures (SOPs)
+- ✅ Prepare for ISO 9001 audits and certifications
+- ✅ Manage quality management system documentation
+- ✅ Receive implementation guidance and recommendations
+- ✅ Collaborate with your internal team members (if multi-user account)
 
 ## 3. PROHIBITED USES
 
 ### 3.1 Illegal Activities
 You may NOT use the Services to:
 
-❌ Violate any applicable laws, regulations, or industry standards
-❌ Infringe intellectual property rights of others
-❌ Engage in fraud, misrepresentation, or deceptive practices
-❌ Launder money or engage in financial crimes
-❌ Violate export control or sanctions laws
+- ❌ Violate any applicable laws, regulations, or industry standards
+- ❌ Infringe intellectual property rights of others
+- ❌ Engage in fraud, misrepresentation, or deceptive practices
+- ❌ Launder money or engage in financial crimes
+- ❌ Violate export control or sanctions laws
 
 ### 3.2 Abuse of Services
 You may NOT:
 
-❌ **Reverse engineer, decompile, or disassemble** any software or AI models
-❌ **Extract or scrape** data using automated tools (bots, scrapers, crawlers)
-❌ **Bypass technical limitations** or access restrictions
-❌ **Share your account credentials** with unauthorized third parties
-❌ **Resell or redistribute** Services without our written permission
-❌ **Create multiple accounts** to circumvent restrictions or abuse free trials
+- ❌ **Reverse engineer, decompile, or disassemble** any software or AI models
+- ❌ **Extract or scrape** data using automated tools (bots, scrapers, crawlers)
+- ❌ **Bypass technical limitations** or access restrictions
+- ❌ **Share your account credentials** with unauthorized third parties
+- ❌ **Resell or redistribute** Services without our written permission
+- ❌ **Create multiple accounts** to circumvent restrictions or abuse free trials
 
 ### 3.3 Competitive Use
 You may NOT:
 
-❌ Use Services to build a **competing product or service**
-❌ Benchmark Services against competitors without our consent
-❌ Copy our features, interface, or AI methodologies
-❌ Offer Services as part of a competing ISO consulting business
+- ❌ Use Services to build a **competing product or service**
+- ❌ Benchmark Services against competitors without our consent
+- ❌ Copy our features, interface, or AI methodologies
+- ❌ Offer Services as part of a competing ISO consulting business
 
 ### 3.4 Harmful Content
 You may NOT upload or process:
 
-❌ **Malware, viruses, or malicious code**
-❌ **Content that violates third-party rights** (copyrighted materials you don't own)
-❌ **Illegal or stolen data**
-❌ **Personally Identifiable Information (PII) of third parties** without proper consent
-❌ **Sensitive personal data** (health records, financial data) unless necessary for compliance and properly secured
+- ❌ **Malware, viruses, or malicious code**
+- ❌ **Content that violates third-party rights** (copyrighted materials you don't own)
+- ❌ **Illegal or stolen data**
+- ❌ **Personally Identifiable Information (PII) of third parties** without proper consent
+- ❌ **Sensitive personal data** (health records, financial data) unless necessary for compliance and properly secured
 
 ### 3.5 Security Violations
 You may NOT:
 
-❌ Attempt to **hack, breach, or compromise** our systems
-❌ Probe, scan, or test vulnerabilities without authorization
-❌ Access other users' accounts or data
-❌ Interfere with or disrupt Services or servers
-❌ Overload systems with excessive requests (DoS/DDoS attacks)
-❌ Transmit spam, phishing emails, or unsolicited communications through our platform
+- ❌ Attempt to **hack, breach, or compromise** our systems
+- ❌ Probe, scan, or test vulnerabilities without authorization
+- ❌ Access other users' accounts or data
+- ❌ Interfere with or disrupt Services or servers
+- ❌ Overload systems with excessive requests (DoS/DDoS attacks)
+- ❌ Transmit spam, phishing emails, or unsolicited communications through our platform
 
 ### 3.6 Misuse of AI Tools
 You may NOT:
 
-❌ Use AI tools to generate **fraudulent or misleading compliance documentation**
-❌ Submit AI-generated SOPs to auditors **without human review and validation**
-❌ Rely solely on AI recommendations **without independent verification**
-❌ Input confidential data belonging to **other organizations** without authorization
-❌ Attempt to **manipulate or "jailbreak"** AI models to produce prohibited content
+- ❌ Use AI tools to generate **fraudulent or misleading compliance documentation**
+- ❌ Submit AI-generated SOPs to auditors **without human review and validation**
+- ❌ Rely solely on AI recommendations **without independent verification**
+- ❌ Input confidential data belonging to **other organizations** without authorization
+- ❌ Attempt to **manipulate or "jailbreak"** AI models to produce prohibited content
 
 ### 3.7 Misrepresentation
 You may NOT:
 
-❌ **Falsely claim certification or compliance** based solely on AuditsReady outputs
-❌ Represent that AuditsReady **guarantees certification success**
-❌ Misrepresent your relationship with AuditsReady (no implied partnerships)
-❌ Use our name, logo, or trademarks without written permission
+- ❌ **Falsely claim certification or compliance** based solely on AuditsReady outputs
+- ❌ Represent that AuditsReady **guarantees certification success**
+- ❌ Misrepresent your relationship with AuditsReady (no implied partnerships)
+- ❌ Use our name, logo, or trademarks without written permission
 
 ## 4. RESPONSIBLE AI USE
 
