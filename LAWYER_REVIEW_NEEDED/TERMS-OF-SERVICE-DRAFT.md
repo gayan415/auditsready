@@ -50,13 +50,13 @@ d) **Not Professional Services:** AuditsReady is software-as-a-service (SaaS), n
 
 You agree to:
 
-a) Provide accurate and complete information to the Services
-b) Maintain the security of your account credentials
-c) Use the Services only for lawful purposes and in accordance with these Terms
-d) Not reverse engineer, decompile, or attempt to extract source code from our software
-e) Not use the Services to provide competing services to third parties
-f) Independently verify all AI-generated content before use in production environments
-g) Comply with all applicable ISO standards and certification body requirements
+- a) Provide accurate and complete information to the Services
+- b) Maintain the security of your account credentials
+- c) Use the Services only for lawful purposes and in accordance with these Terms
+- d) Not reverse engineer, decompile, or attempt to extract source code from our software
+- e) Not use the Services to provide competing services to third parties
+- f) Independently verify all AI-generated content before use in production environments
+- g) Comply with all applicable ISO standards and certification body requirements
 
 ## 5. INTELLECTUAL PROPERTY
 
@@ -132,11 +132,11 @@ c) Your violation of any third-party rights
 d) Any claim that your use of the Services caused you to fail an ISO audit or certification
 e) Inaccurate or incomplete information you provided
 
-## 11. PROFESSIONAL ENGINEERING DISCLAIMER
+## 11. PROFESSIONAL SERVICES DISCLAIMER
 
-While AuditsReady's founder is a licensed Professional Engineer (P.Eng), the Services are NOT professional engineering services. Use of the Services does NOT create an engineer-client relationship or any professional duty of care beyond the software services provided.
+The Services are NOT professional consulting, engineering, auditing, or certification services. Use of the Services does NOT create any professional relationship or duty of care beyond the software services provided.
 
-For matters requiring professional engineering judgment, you must retain a qualified, licensed engineer directly.
+For matters requiring professional judgment or expertise, you must retain qualified professionals directly.
 
 ## 12. TERMINATION
 
@@ -224,10 +224,10 @@ Website: https://auditsready.com
 
 **Additional questions for lawyer:**
 1. Should we have separate B2B vs. B2C terms?
-2. Do we need specific disclaimers for P.Eng credential use?
-3. What insurance minimums should we carry?
-4. How enforceable are AI disclaimer clauses?
-5. Should we include a dispute resolution escalation process?
+2. What insurance minimums should we carry?
+3. How enforceable are AI disclaimer clauses?
+4. Should we include a dispute resolution escalation process?
+5. Are there any industry-specific disclaimers we should add?
 
 ---
 
