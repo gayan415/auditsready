@@ -171,14 +171,20 @@ AuditsReady agrees to:
 
 ### 6.2 Payment Terms
 
-- **Payment Due:** Upon receipt of deliverables (gap analysis report)
-- **Payment Methods:** Credit card (Stripe), bank transfer, or invoice
-- **Currency:** USD (or CAD, specify)
-- **Late Payment:** Invoices unpaid after 30 days may incur 1.5% monthly late fee
+- **Payment Due:** **100% upfront payment required before work begins**
+- **Payment Deadline:** Payment must be received within [3-5 business days] of SOW acceptance
+- **Work Start:** Analysis begins only after payment is received and confirmed
+- **Payment Methods:**
+  - Credit card (Stripe) - processes immediately
+  - Bank transfer or e-transfer - work begins once funds received
+  - PayPal (if applicable)
+- **Currency:** USD or CAD (specify)
+- **Payment Confirmation:** You will receive email confirmation once payment is processed
 
 ### 6.3 Cancellation and Refunds
 
-- **Before work begins:** Full refund if cancelled before document analysis commences
+- **Before payment:** No charge, free to decline SOW
+- **After payment, before work begins:** Full refund minus processing fees (typically 3-5%)
 - **After work begins:** No refunds for work already performed
 - **See:** Refund and Cancellation Policy for complete terms
 

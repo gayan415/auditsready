@@ -34,27 +34,42 @@ If subscription-based platform services become available in the future, separate
 
 ## 3. PROJECT CANCELLATION
 
-### 3.1 Cancellation Before Work Begins
+### 3.1 Cancellation Before Payment
 
-You may cancel a project before we begin analysis:
+You may cancel a project before making payment:
 
 **How to Cancel:**
-- Email info@auditsready.com
-- Subject: "Project Cancellation"
+- Email info@auditsready.com or simply do not submit payment
+- Subject: "Project Cancellation" (if already signed SOW)
 - Include: Your name, company name, project details
 
-**Refund:**
-- Full refund if cancellation is before work commences
-- Refund processed within 5-10 business days
+**No Charge:**
+- No payment required if you decline before paying
+- Free to walk away at any time before payment
 
-### 3.2 Cancellation After Work Begins
+### 3.2 Cancellation After Payment, Before Work Begins
+
+If you've paid but we haven't started analysis yet:
+
+**How to Cancel:**
+- Email info@auditsready.com immediately
+- Subject: "Refund Request - Before Work Begins"
+- Include: Your name, company name, payment details
+
+**Refund:**
+- Full refund minus payment processing fees (typically 3-5% for credit card, $0 for e-transfer)
+- Refund processed within 5-10 business days
+- Example: $500 paid by credit card → $485 refunded ($15 processing fee)
+
+### 3.3 Cancellation After Work Begins
 
 Once document analysis has commenced:
 - **No refunds** for work already performed
+- Payment is non-refundable once work begins
 - You will receive deliverables for work completed to date
 - Pro-rated refund may be available if project cannot be completed (our fault)
 
-### 3.3 Project Completion
+### 3.4 Project Completion
 
 **Timeline:**
 - Most gap analysis projects completed within 48-72 hours
@@ -65,7 +80,7 @@ Once document analysis has commenced:
 - Optional: 30-minute consultation call conducted
 - All agreed-upon deliverables provided
 
-### 3.4 Confirmation
+### 3.5 Confirmation
 
 You will receive an email confirmation of any cancellation or completion within 24 hours.
 
@@ -86,11 +101,13 @@ This includes:
 
 We will provide refunds in the following circumstances:
 
-#### 4.2.1 Cancellation Before Work Begins
-- Full refund if you cancel before document analysis commences
-- Must notify us via email to info@auditsready.com
+#### 4.2.1 Cancellation After Payment, Before Work Begins
+- Full refund minus payment processing fees if you cancel after paying but before we start work
+- Processing fees: 3-5% for credit card, $0 for e-transfer/bank transfer
+- Must notify us via email to info@auditsready.com immediately
 - Refund processed within 5-10 business days
-- See Section 3.1 for cancellation process
+- See Section 3.2 for cancellation process
+- **Note:** Most customers pay and we start work same day, so this window is typically 0-24 hours
 
 #### 4.2.2 Money-Back Guarantee (If Offered)
 **[TBD - LAWYER TO ADVISE]**
