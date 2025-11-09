@@ -34,22 +34,23 @@ For GDPR purposes, AuditsReady is the data controller responsible for your perso
 
 ### 3.1 Information You Provide Directly
 
-**Account Information:**
+**Contact and Business Information:**
 - Name, email address, phone number
 - Company name, industry, job title
 - Billing address and payment information
-- Password and account credentials
 
-**Customer Data:**
-- Documents uploaded to the platform
+**Customer Data (Submitted for Analysis):**
+- Documents submitted via email or file transfer
 - Standard Operating Procedures (SOPs)
 - Quality management system documentation
-- Communication with support team
+- Email communications regarding your project
 
 **Contact Forms:**
 - Name, email, phone, company, message content
-- Demo booking requests
-- Newsletter subscriptions
+- Service requests and inquiries
+- Newsletter subscriptions (if offered)
+
+**MVP/Phase 1 Note:** We do not currently require account creation or passwords. All services are provided via email communication.
 
 ### 3.2 Information Collected Automatically
 
@@ -60,9 +61,8 @@ For GDPR purposes, AuditsReady is the data controller responsible for your perso
 - Click behavior and interaction patterns
 
 **Cookies and Tracking Technologies:**
-- Session cookies (essential for platform functionality)
-- Analytics cookies (Google Analytics)
-- Preference cookies (language, settings)
+- Analytics cookies (Google Analytics for website traffic)
+- No session or authentication cookies (no user accounts in MVP/Phase 1)
 
 See Section 9 for detailed cookie information.
 
@@ -80,11 +80,12 @@ See Section 9 for detailed cookie information.
 We use your information for the following purposes:
 
 ### 4.1 Providing Services (Legal Basis: Contract Performance)
-- Creating and managing your account
+- Communicating with you about your project
 - Processing AI analysis of your documents
-- Generating SOPs and compliance recommendations
-- Providing customer support
+- Generating gap analysis reports and recommendations
+- Providing consulting and customer support
 - Processing payments and billing
+- Storing documents securely during and after project completion
 
 ### 4.2 Improving Services (Legal Basis: Legitimate Interest)
 - Analyzing usage patterns to improve AI accuracy
@@ -153,11 +154,15 @@ We will share your information with third parties when you explicitly consent.
 
 We retain your information for as long as necessary to provide Services and comply with legal obligations:
 
-- **Account Data:** Retained while your account is active
-- **Customer Data:** Deleted 30 days after account termination (unless you request earlier deletion)
+**MVP/Phase 1 (Email-Based Services):**
+- **Contact Information:** Retained for ongoing business relationship
+- **Customer Data (Documents):** Deleted 90 days after project completion (unless you request earlier deletion)
+- **Email Communications:** Retained for 90 days after project completion
 - **Payment Records:** Retained 7 years for tax/accounting purposes
 - **Marketing Data:** Until you unsubscribe or request deletion
 - **Legal Retention:** Some data retained longer if required by law
+
+**You may request immediate deletion** by emailing info@auditsready.com with "Data Deletion Request" in the subject line.
 
 ## 8. YOUR PRIVACY RIGHTS
 
@@ -233,18 +238,25 @@ You can control cookies through:
 We implement reasonable security measures to protect your information:
 
 ### 10.1 Technical Safeguards
-- **Encryption in transit:** HTTPS/TLS for all data transmission
-- **Encryption at rest:** Database and file storage encryption
-- **Access controls:** Role-based permissions, multi-factor authentication
-- **Regular security audits:** Vulnerability assessments and penetration testing
+- **Encryption in transit:** HTTPS/TLS for website and email transmission
+- **Encryption at rest:** Secure file storage with encryption
+- **Access controls:** Limited access to customer documents
+- **Secure email storage:** Encrypted email storage systems
 
 ### 10.2 Organizational Safeguards
 - Employee training on data protection
 - Confidentiality agreements with staff and contractors
 - Incident response procedures
+- Document deletion procedures after retention period
 
-### 10.3 Limitations
-No method of transmission or storage is 100% secure. While we strive to protect your data, we cannot guarantee absolute security. You are responsible for maintaining your account password confidentiality.
+### 10.3 Email Security (MVP/Phase 1)
+- **Email limitations:** Email is not a fully secure method of communication
+- **Your responsibility:** You are responsible for secure transmission of sensitive documents
+- **Recommendations:** Consider password-protecting files containing highly sensitive information
+- **Our practices:** We use encrypted email storage and secure file handling procedures
+
+### 10.4 Limitations
+No method of transmission or storage is 100% secure. While we strive to protect your data, we cannot guarantee absolute security. Email communication carries inherent risks.
 
 ## 11. DATA TRANSFERS
 
