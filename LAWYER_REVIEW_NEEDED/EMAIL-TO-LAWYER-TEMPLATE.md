@@ -79,11 +79,11 @@ Thank you for considering this. Looking forward to hearing from you.
 
 Best regards,
 
-Gayan Jayasundara, P.Eng
-Founder, AuditsReady
-Email: gayan@auditsready.com
-Phone: +1-403-404-4643
-Website: https://auditsready.com
+**Gayan Jayasundara**
+Co-Founder, AuditsReady
+gayan@auditsready.com
++1-403-404-4643
+https://auditsready.com
 
 ---
 
@@ -109,9 +109,10 @@ Thank you for your time!
 
 Best,
 
-Gayan Jayasundara
-AuditsReady
+**Gayan Jayasundara**
+Co-Founder, AuditsReady
 gayan@auditsready.com
++1-403-404-4643
 
 ---
 
@@ -225,7 +226,11 @@ Happy to share more about AuditsReady if you're curious - would love to catch up
 
 Thanks in advance,
 
-Gayan
+**Gayan Jayasundara**
+Co-Founder, AuditsReady
+gayan@auditsready.com
++1-403-404-4643
+https://auditsready.com
 
 ---
 
@@ -263,9 +268,10 @@ Looking forward to speaking with you!
 
 Best,
 
-Gayan Jayasundara
-AuditsReady
+**Gayan Jayasundara**
+Co-Founder, AuditsReady
 gayan@auditsready.com
++1-403-404-4643
 +1-403-404-4643
 
 ---
@@ -310,7 +316,11 @@ Thanks again for your time!
 
 Best,
 
-Gayan
+**Gayan Jayasundara**
+Co-Founder, AuditsReady
+gayan@auditsready.com
++1-403-404-4643
+https://auditsready.com
 
 ---
 
@@ -332,8 +342,11 @@ Wishing you all the best!
 
 Best regards,
 
-Gayan Jayasundara
-AuditsReady
+**Gayan Jayasundara**
+Co-Founder, AuditsReady
+gayan@auditsready.com
++1-403-404-4643
+https://auditsready.com
 
 ---
 
@@ -366,9 +379,10 @@ Looking forward to working with you!
 
 Best,
 
-Gayan Jayasundara
-AuditsReady
+**Gayan Jayasundara**
+Co-Founder, AuditsReady
 gayan@auditsready.com
++1-403-404-4643
 +1-403-404-4643
 
 ---
@@ -418,7 +432,11 @@ Thank you!
 
 Best,
 
-Gayan
+**Gayan Jayasundara**
+Co-Founder, AuditsReady
+gayan@auditsready.com
++1-403-404-4643
+https://auditsready.com
 
 ---
 
@@ -442,7 +460,11 @@ Thanks!
 
 Best,
 
-Gayan
+**Gayan Jayasundara**
+Co-Founder, AuditsReady
+gayan@auditsready.com
++1-403-404-4643
+https://auditsready.com
 
 ---
 
