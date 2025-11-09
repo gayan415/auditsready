@@ -1,11 +1,31 @@
 # MASTER SERVICES AGREEMENT - DRAFT
 ## AuditsReady
 
+**⚠️ PHASE 2 ONLY - NOT USED IN MVP/PHASE 1 ⚠️**
+
 **DRAFT FOR LAWYER REVIEW - DO NOT USE IN PRODUCTION**
 
 **Effective Date:** [DATE]
 
 **IMPORTANT NOTICE:** This Master Services Agreement is a DRAFT prepared for attorney review. It is NOT legally binding until reviewed, revised, and approved by qualified legal counsel.
+
+---
+
+## ⚠️ MVP/PHASE 1 NOTE
+
+**This document is NOT used for MVP/Phase 1 operations.**
+
+**For MVP/Phase 1 (Email-Based Consulting Services):**
+- Use: **Statement of Work (SOW) Template** for each project
+- Use: **Terms of Service** for general terms
+- Use: **Privacy Policy** for data protection
+- Use: **Refund and Cancellation Policy** for project cancellations
+
+**This Master Services Agreement will be used in Phase 2 when:**
+- Subscription-based SaaS platform launches
+- Enterprise customers require custom terms
+- Multi-year agreements are offered
+- Service Level Agreements (SLAs) are formalized
 
 ---
 
