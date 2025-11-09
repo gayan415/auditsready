@@ -15,7 +15,7 @@ This Acceptable Use Policy ("AUP") defines prohibited uses of AuditsReady's Serv
 
 Violation of this AUP may result in termination of your project, refusal of future services, with or without notice.
 
-**For MVP/Phase 1:** Services are provided via email-based consulting. You are responsible for proper use of our deliverables and maintaining confidentiality.
+**Note:** Services are provided via email-based consulting. You are responsible for proper use of our deliverables and maintaining confidentiality.
 
 ## 2. PERMITTED USES
 
@@ -39,7 +39,7 @@ You may NOT use the Services to:
 - ❌ Launder money or engage in financial crimes
 - ❌ Violate export control or sanctions laws
 
-### 3.2 Abuse of Services (MVP/Phase 1)
+### 3.2 Abuse of Services
 You may NOT:
 
 - ❌ **Resell or redistribute** our deliverables (gap analysis reports, recommendations) to third parties
@@ -57,7 +57,7 @@ You may NOT:
 - ❌ Use our services to **provide consulting to your own clients** (reselling prohibited)
 - ❌ Share our deliverables with other ISO consultants or competing firms
 
-### 3.4 Harmful Content (MVP/Phase 1)
+### 3.4 Harmful Content
 You may NOT submit via email:
 
 - ❌ **Malware, viruses, or malicious code** in attachments
@@ -84,7 +84,7 @@ You may NOT:
 - ❌ Use our name, logo, or trademarks without written permission
 - ❌ Claim our reports are **official audits** (we are consultants, not certification bodies)
 
-## 4. RESPONSIBLE USE OF AI RECOMMENDATIONS (MVP/Phase 1)
+## 4. RESPONSIBLE USE OF AI RECOMMENDATIONS
 
 ### 4.1 Verification Required
 You acknowledge that AI-generated recommendations in our gap analysis reports may contain:
@@ -108,7 +108,7 @@ You are responsible for:
 - Ensuring document quality for meaningful gap analysis
 - Disclosing any unique circumstances that may affect our recommendations
 
-## 5. DATA USAGE RESTRICTIONS (MVP/Phase 1)
+## 5. DATA USAGE RESTRICTIONS
 
 ### 5.1 Your Data
 - You retain ownership of all documents you submit ("Customer Data")
@@ -150,7 +150,7 @@ Include:
 - Customer or company name (if known)
 - Supporting evidence or documentation
 
-## 8. CONSEQUENCES OF VIOLATIONS (MVP/Phase 1)
+## 8. CONSEQUENCES OF VIOLATIONS
 
 ### 8.1 Enforcement Actions
 We reserve the right to take action if you violate this AUP, including:
@@ -170,7 +170,7 @@ Upon termination for AUP violation:
 - We may retain data longer if required by law or for legal proceedings
 - You may request data deletion after termination (subject to legal holds)
 
-## 9. MONITORING AND INVESTIGATION (MVP/Phase 1)
+## 9. MONITORING AND INVESTIGATION
 
 ### 9.1 Right to Review
 We reserve the right (but have no obligation) to:
@@ -204,7 +204,7 @@ Website: https://auditsready.com
 
 ---
 
-## LAWYER REVIEW CHECKLIST (MVP/Phase 1)
+## LAWYER REVIEW CHECKLIST
 
 **Critical items requiring attorney input:**
 
@@ -228,14 +228,14 @@ Website: https://auditsready.com
 7. What are our obligations under GDPR when reviewing EU customer documents?
 8. Can we enforce "do not resell" restrictions on consulting deliverables?
 
-**Industry-specific considerations (MVP/Phase 1):**
+**Industry-specific considerations:**
 - ISO 9001 context: Should we prohibit use for fraudulent certifications? (YES - included)
 - Manufacturing sector: Any export control implications for AI recommendations?
 - Consulting services: Can we enforce non-compete on deliverables?
 
 ---
 
-## EXAMPLES OF VIOLATIONS (MVP/Phase 1)
+## EXAMPLES OF VIOLATIONS
 
 **Scenario 1: Reselling Deliverables ❌**
 A manufacturing consultant pays for gap analysis for one client, then resells the report and recommendations to 5 other similar manufacturers without our permission.

@@ -15,7 +15,7 @@ This Refund and Cancellation Policy explains our refund policy for AuditsReady c
 
 This Policy applies to all paid services. It should be read together with our Terms of Service.
 
-## 2. SERVICE TYPES (MVP/Phase 1)
+## 2. SERVICE TYPES
 
 **Project-Based Gap Analysis:**
 - One-time fee for document analysis and gap assessment
@@ -29,10 +29,10 @@ This Policy applies to all paid services. It should be read together with our Te
 - Payment terms specified per project
 - May include ongoing support (separately agreed)
 
-**Future Subscription Services (Phase 2):**
-When subscription-based platform services become available, separate refund terms will apply for monthly/annual subscriptions.
+**Future Subscription Services:**
+If subscription-based platform services become available in the future, separate refund terms will apply for monthly/annual subscriptions.
 
-## 3. PROJECT CANCELLATION (MVP/Phase 1)
+## 3. PROJECT CANCELLATION
 
 ### 3.1 Cancellation Before Work Begins
 
@@ -192,7 +192,7 @@ You **lose** your 14-day withdrawal right if:
 
 **[LAWYER TO REVIEW: Proper GDPR withdrawal waiver language for project-based services]**
 
-**Note for MVP/Phase 1:**
+**Note:**
 Most projects complete within 48-72 hours, often before the 14-day period expires. If you receive deliverables and then request withdrawal, you may only receive a partial refund (pro-rated for work not yet performed).
 
 ## 6. CHARGEBACKS AND DISPUTES
@@ -219,7 +219,7 @@ Initiating fraudulent chargebacks (disputing valid charges) may result in:
 - Legal action to recover amounts owed
 - Reporting to fraud prevention databases
 
-## 7. ALTERNATIVE OPTIONS (MVP/Phase 1)
+## 7. ALTERNATIVE OPTIONS
 
 Instead of requesting a refund, you may:
 
@@ -243,8 +243,8 @@ Instead of requesting a refund, you may:
 - Pause for up to 30 days with no additional charges
 - After 30 days, may require restarting project (new fees apply)
 
-**Phase 2 Subscription Options (Future):**
-When our subscription platform launches, you'll have:
+**Future Subscription Options:**
+If our subscription platform launches in the future, you'll have:
 - Monthly or annual subscriptions with flexible cancellation
 - Ability to pause or downgrade plans
 - Separate cancellation terms will apply
@@ -253,7 +253,7 @@ Contact us at info@auditsready.com to discuss alternatives.
 
 ## 8. DATA AFTER PROJECT COMPLETION
 
-### 8.1 Data Retention (MVP/Phase 1)
+### 8.1 Data Retention
 After project completion or cancellation:
 - **90 days:** Customer Data (documents submitted) retained for reference
 - **After 90 days:** Data permanently deleted from our systems
@@ -316,7 +316,7 @@ Material changes will be communicated via email to all active customers.
 
 ## LAWYER REVIEW CHECKLIST
 
-**Critical items requiring attorney input (MVP/Phase 1):**
+**Critical items requiring attorney input:**
 
 - [ ] Money-back guarantee duration for project-based services (7 or 14 days from deliverable receipt?)
 - [ ] EU withdrawal right waiver language for consulting services (GDPR compliant?)
@@ -345,7 +345,7 @@ Material changes will be communicated via email to all active customers.
 - **Professional services firms:** Full refund before work begins, no refunds after
 - **Coaching/consulting:** Common to have "satisfaction guarantee" within 7-14 days
 
-**Recommended Approach for MVP/Phase 1 (Lawyer to confirm):**
+**Recommended Approach (Lawyer to confirm):**
 - ✅ **Full refund before work begins** (clear, fair, builds trust)
 - ✅ **No refunds after deliverables provided** (except major service failures)
 - ✅ **Optional: 7-14 day satisfaction guarantee** (only if deliverables materially deficient)
@@ -387,7 +387,7 @@ Thank you,
 
 **END OF DRAFT - LEGAL REVIEW REQUIRED BEFORE USE**
 
-**COMPLIANCE NOTE (MVP/Phase 1):** This draft addresses general refund best practices for project-based consulting services, but a lawyer must review it for compliance with:
+**COMPLIANCE NOTE:** This draft addresses general refund best practices for project-based consulting services, but a lawyer must review it for compliance with:
 - EU Consumer Rights Directive (14-day withdrawal for services)
 - Consumer protection laws (Canada, UK, Australia, US states)
 - State consumer protection laws (California, New York, etc.)
