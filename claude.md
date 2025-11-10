@@ -25,6 +25,8 @@ auditsready/
 │   ├── _app.js           # Analytics tracking
 │   ├── _document.js      # GA script injection
 │   ├── index.js          # Main landing page with contact form modal
+│   ├── faq.js            # FAQ page (28 questions, contact form modal)
+│   ├── pricing.js        # Pricing page
 │   ├── privacy.js        # Privacy policy (comprehensive, GDPR/CCPA compliant)
 │   ├── terms.js          # Terms of Service
 │   ├── refund-policy.js  # Refund and Cancellation Policy
@@ -33,14 +35,13 @@ auditsready/
 │   │   └── contact.js    # Contact form API endpoint (Resend integration)
 │   └── blog/
 │       ├── index.js      # Blog listing page
-│       ├── iso-9001-gap-analysis-cost.js          # Post #1
-│       └── how-to-prepare-for-iso-9001-audit.js   # Post #2
+│       └── [10 blog posts - see Blog Content Strategy section]
 ├── lib/
 │   └── gtag.js          # Google Analytics helpers
 ├── public/
 │   ├── iso-9001-ai-powered-compliance-auditsready-logo.png
 │   ├── auditsready-demo.mp4  # 8-second demo video (4.7MB)
-│   ├── sitemap.xml       # 16 URLs (homepage, 4 legal pages, pricing, blog, 10 posts)
+│   ├── sitemap.xml       # 17 URLs (homepage, faq, pricing, 4 legal pages, blog, 10 posts)
 │   ├── robots.txt
 │   ├── iso-9001-auditsready-favicon.ico
 │   ├── iso-9001-auditsready-favicon.svg
@@ -171,6 +172,20 @@ RESEND_API_KEY=re_your_key_here  # Get from https://resend.com/api-keys
 
 ## Recent Updates
 
+### 2025-01-10: FAQ Page with 28 Questions Deployed
+- ✅ **Comprehensive FAQ Page Created**: `/pages/faq.js` with 28 Q&A pairs
+  - 6 themed sections: Getting Started, Cost & Pricing, Process & Requirements, Industry-Specific, AI & Technology, Common Concerns
+  - All answers formatted with clean bullet points for readability
+  - Targets ~18,000 monthly searches across high-value ISO 9001 keywords
+- ✅ **Contact Form Integration**: Same modal as homepage for easy lead capture
+  - Both "Book Free Demo" and "Book AI Demo" CTAs open modal (no redirect)
+  - Keeps users on FAQ page for better UX
+- ✅ **SEO Optimization**: FAQ Schema markup for Google rich snippets
+- ✅ **Internal Linking**: Optional link support in answers (e.g., links to blog posts)
+- ✅ **Navigation**: Table of contents for quick access to sections
+- ✅ **Sitemap Updated**: Added FAQ page with priority 0.8
+- ✅ **Footer Updated**: Added FAQ link to Resources section
+
 ### 2025-01-09: Legal Pages Deployed to Production
 - ✅ **4 Legal Pages Created**: All legal policies now live on website
   - `/pages/terms.js` - Terms of Service (16 sections, ~400 lines)
@@ -290,13 +305,15 @@ RESEND_API_KEY=re_your_key_here  # Get from https://resend.com/api-keys
 ### Current Status
 - ✅ Production-ready and deployed
 - ✅ Google Search Console verified
-- ✅ Sitemap updated (13 URLs total: homepage, privacy, blog, 10 posts)
-- ✅ 10 blog posts created (Posts #1-10) covering Jan-Oct 2025
-- ✅ Contact form with Resend API integration deployed
-- ✅ Universal "any manufacturing industry" positioning live
-- ✅ 8-second demo video live in "How It Works" section
-- ✅ Lead magnet deliverables created (checklist, roadmap, gap analysis template)
-- 📊 Total content: 27,000+ words across 10 comprehensive posts
+- ✅ Sitemap updated (17 URLs: homepage, faq, pricing, 4 legal pages, blog, 10 posts)
+- ✅ 10 blog posts published (Jan-Oct 2025)
+- ✅ FAQ page with 28 questions live
+- ✅ 4 legal pages deployed (Terms, Privacy, Refund, Acceptable Use)
+- ✅ Contact form with Resend API integration on all pages
+- ✅ Universal "any manufacturing industry" positioning
+- ✅ 8-second demo video in "How It Works" section
+- ✅ Lead magnet deliverables created (checklist, roadmap, template)
+- 📊 Total content: 30,000+ words across 10 blog posts + FAQ
 - 🎬 **Future:** Create full 2-minute demo video when AI tools support longer videos
 - 📥 **Action Required:** Convert 2 HTML files to PDF (see CHECKLIST_DELIVERY_GUIDE.md)
 
@@ -383,23 +400,25 @@ RESEND_API_KEY=re_your_key_here  # Get from https://resend.com/api-keys
 - **Content**: Case studies of audit failures, lessons learned, re-audit costs, how to recover
 - **Publish date**: January 6, 2026
 
-#### Post #11: Traditional ISO Consultants vs. AI (THOUGHT LEADERSHIP) - November 2025
+### Future Blog Post Ideas (Beyond Post #13)
+
+#### Traditional ISO Consultants vs. AI (THOUGHT LEADERSHIP)
 - **Keyword**: "iso 9001 consultant vs ai" (low volume, brand positioning)
 - **Focus**: Directly positions your AI value proposition
 - **Content**: Honest comparison, pros/cons, when to use which, cost-benefit analysis
-- **Publish date**: November 4, 2025
+- **Target**: November 4, 2025
 
-#### Post #12: 5 ISO 9001 Myths That Cost Manufacturers Thousands - December 2025
+#### 5 ISO 9001 Myths That Cost Manufacturers Thousands
 - **Keyword**: "iso 9001 myths" (low volume, high shareability)
 - **Focus**: Myth-busting posts get shared, drive traffic
 - **Content**: "Too expensive for small manufacturers", "Only big companies need it", "Certification guarantees quality"
-- **Publish date**: December 2, 2025
+- **Target**: December 2, 2025
 
-#### Post #13: What Happens If You Fail Your ISO 9001 Audit? - January 2026
+#### What Happens If You Fail Your ISO 9001 Audit?
 - **Keyword**: "failed iso 9001 audit" (low volume, fear-based motivation)
 - **Focus**: Real stories drive action
 - **Content**: Case studies of audit failures, lessons learned, re-audit costs, how to recover
-- **Publish date**: January 6, 2026
+- **Target**: January 6, 2026
 
 ### Content Cluster Strategy
 - **Hub**: Post #6 (Requirements Guide) links to all other posts
@@ -707,7 +726,7 @@ RESEND_API_KEY=re_your_key_here  # Get from https://resend.com/api-keys
 
 ---
 
-**Last Updated:** 2025-11-08
+**Last Updated:** 2025-01-10
 **Branch:** main
 **Deployment:** Live on Vercel via GitHub integration
 
@@ -836,6 +855,8 @@ If you ever need to verify another domain or re-verify:
    - Check inbox (emails to info@auditsready.com will be routed here via alias)
    - Verify email was delivered successfully
 
-**Last Updated:** 2025-11-08
+---
+
+**Last Updated:** 2025-01-10
 **Branch:** main
 **Deployment:** Live on Vercel via GitHub integration
