@@ -115,7 +115,7 @@ function ContactFormModal({ isOpen, onClose }) {
           </div>
 
           <p className="text-gray-600 mb-6">
-            Fill out the form below and we'll call you within 24 hours to schedule your free 15-minute consultation.
+            Fill out the form below and we'll contact you within 24 hours to schedule your free 15-minute consultation.
           </p>
 
           <form onSubmit={handleSubmit}>
@@ -192,14 +192,14 @@ function ContactFormModal({ isOpen, onClose }) {
 
             <div className="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
               <p className="text-sm text-blue-800">
-                ✓ We'll call you within 24 hours to schedule your free 15-minute consultation
+                ✓ We'll contact you within 24 hours to schedule your free 15-minute consultation
               </p>
             </div>
 
             {submitStatus === 'success' && (
               <div className="mt-4 bg-green-50 border border-green-200 rounded-lg p-4">
                 <p className="text-green-800 font-semibold">✓ Thank you! Your request has been submitted successfully.</p>
-                <p className="text-green-700 text-sm mt-1">We'll call you within 24 hours to schedule your free 15-minute consultation.</p>
+                <p className="text-green-700 text-sm mt-1">We'll contact you within 24 hours to schedule your free 15-minute consultation.</p>
               </div>
             )}
 
