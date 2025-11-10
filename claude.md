@@ -25,7 +25,10 @@ auditsready/
 │   ├── _app.js           # Analytics tracking
 │   ├── _document.js      # GA script injection
 │   ├── index.js          # Main landing page with contact form modal
-│   ├── privacy.js        # Privacy policy
+│   ├── privacy.js        # Privacy policy (comprehensive, GDPR/CCPA compliant)
+│   ├── terms.js          # Terms of Service
+│   ├── refund-policy.js  # Refund and Cancellation Policy
+│   ├── acceptable-use.js # Acceptable Use Policy
 │   ├── api/
 │   │   └── contact.js    # Contact form API endpoint (Resend integration)
 │   └── blog/
@@ -37,7 +40,7 @@ auditsready/
 ├── public/
 │   ├── iso-9001-ai-powered-compliance-auditsready-logo.png
 │   ├── auditsready-demo.mp4  # 8-second demo video (4.7MB)
-│   ├── sitemap.xml       # 13 URLs (homepage, privacy, blog, 10 posts)
+│   ├── sitemap.xml       # 16 URLs (homepage, 4 legal pages, pricing, blog, 10 posts)
 │   ├── robots.txt
 │   ├── iso-9001-auditsready-favicon.ico
 │   ├── iso-9001-auditsready-favicon.svg
@@ -167,6 +170,28 @@ RESEND_API_KEY=re_your_key_here  # Get from https://resend.com/api-keys
 - **Contact Form:** Modal popup with Resend API integration
 
 ## Recent Updates
+
+### 2025-01-09: Legal Pages Deployed to Production
+- ✅ **4 Legal Pages Created**: All legal policies now live on website
+  - `/pages/terms.js` - Terms of Service (16 sections, ~400 lines)
+  - `/pages/privacy.js` - Privacy Policy updated (comprehensive GDPR/CCPA compliance, ~408 lines)
+  - `/pages/refund-policy.js` - Refund and Cancellation Policy (10 sections, ~370 lines)
+  - `/pages/acceptable-use.js` - Acceptable Use Policy (11 sections, ~290 lines)
+- ✅ **Homepage Footer Updated**: Clean 4-column layout with Legal section
+  - Column 1: Contact Us
+  - Column 2: Services
+  - Column 3: Resources (Blog, Pricing)
+  - Column 4: Legal (4 policies)
+- ✅ **Privacy Policy Enhanced**: Added Section 10.3 Document Transfer
+  - Primary method: Email with HTTPS/TLS encryption
+  - Alternative: Secure Cloud Storage (Google Drive/Dropbox available upon request)
+  - Clear customer responsibility for security choices
+- ✅ **Sitemap Updated**: Added 3 new legal pages (now 16 URLs total)
+  - `/terms`, `/refund-policy`, `/acceptable-use` added with priority 0.3
+  - Last modified date: 2025-01-09
+- ✅ **SEO Optimized**: All legal pages have proper meta tags, robots index/follow
+- ✅ **Professional Formatting**: No emojis, clean bullet points, phone numbers displayed directly (B2B standard)
+- 📁 **Source Documents**: `/LAWYER_REVIEW_NEEDED/PRIVACY-POLICY-DRAFT.md` updated to match production
 
 ### 2025-11-09: Legal Documents Adapted for MVP/Phase 1
 - ✅ **All Legal Documents Updated**: Adapted 5 legal documents from SaaS platform to email-based consulting services
