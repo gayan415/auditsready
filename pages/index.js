@@ -437,8 +437,8 @@ export default function Home() {
               <span className="text-2xl font-bold text-white">AuditsReady</span>
             </div>
             <div className="hidden md:flex gap-6 text-white">
-              <Link href="/" className="hover:text-blue-200 transition-colors font-semibold text-orange-300">Home</Link>
               <Link href="/blog" className="hover:text-blue-200 transition-colors">Blog</Link>
+              <Link href="/faq" className="hover:text-blue-200 transition-colors">FAQ</Link>
               <Link href="/pricing" className="hover:text-blue-200 transition-colors">Pricing</Link>
             </div>
           </div>

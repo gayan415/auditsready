@@ -380,6 +380,31 @@ export default function FAQ() {
         />
       </Head>
 
+      {/* Navigation */}
+      <nav className="bg-gradient-to-r from-blue-900 to-indigo-900">
+        <div className="max-w-7xl mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <Link href="/" className="flex items-center gap-3">
+                <img
+                  src="/iso-9001-ai-powered-compliance-auditsready-logo.png"
+                  alt="AuditsReady Logo"
+                  width="50"
+                  height="50"
+                  className="drop-shadow-lg"
+                />
+                <span className="text-2xl font-bold text-white">AuditsReady</span>
+              </Link>
+            </div>
+            <div className="hidden md:flex gap-6 text-white">
+              <Link href="/blog" className="hover:text-blue-200 transition-colors">Blog</Link>
+              <Link href="/faq" className="hover:text-blue-200 transition-colors font-semibold text-orange-300">FAQ</Link>
+              <Link href="/pricing" className="hover:text-blue-200 transition-colors">Pricing</Link>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       <div className="max-w-4xl mx-auto py-12 px-6">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">ISO 9001 Frequently Asked Questions</h1>
         <p className="text-xl text-gray-600 mb-8">
