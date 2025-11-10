@@ -55,7 +55,7 @@ function ContactFormModal({ isOpen, onClose }) {
       <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
         <div className="p-8">
           <div className="flex justify-between items-center mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">Book Your AI Demo</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Schedule Your Free Call</h2>
             <button
               onClick={onClose}
               className="text-gray-400 hover:text-gray-600 text-3xl leading-none"
@@ -65,7 +65,7 @@ function ContactFormModal({ isOpen, onClose }) {
           </div>
 
           <p className="text-gray-600 mb-6">
-            Fill out the form below and we'll call you within 24 hours to schedule your personalized AI demonstration.
+            Fill out the form below and we'll contact you within 24 hours to schedule your free 15-minute consultation.
           </p>
 
           <form onSubmit={handleSubmit}>
@@ -142,14 +142,14 @@ function ContactFormModal({ isOpen, onClose }) {
 
             <div className="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
               <p className="text-sm text-blue-800">
-                ✓ We'll call you within 24 hours to schedule your demo
+                ✓ We'll contact you within 24 hours to schedule your free 15-minute consultation
               </p>
             </div>
 
             {submitStatus === 'success' && (
               <div className="mt-4 bg-green-50 border border-green-200 rounded-lg p-4">
                 <p className="text-green-800 font-semibold">✓ Thank you! Your request has been submitted successfully.</p>
-                <p className="text-green-700 text-sm mt-1">We'll call you within 24 hours to schedule your demo.</p>
+                <p className="text-green-700 text-sm mt-1">We'll contact you within 24 hours to schedule your free 15-minute consultation.</p>
               </div>
             )}
 
@@ -380,6 +380,31 @@ export default function FAQ() {
         />
       </Head>
 
+      {/* Navigation */}
+      <nav className="bg-gradient-to-r from-blue-900 to-indigo-900">
+        <div className="max-w-7xl mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <Link href="/" className="flex items-center gap-3">
+                <img
+                  src="/iso-9001-ai-powered-compliance-auditsready-logo.png"
+                  alt="AuditsReady Logo"
+                  width="50"
+                  height="50"
+                  className="drop-shadow-lg"
+                />
+                <span className="text-2xl font-bold text-white">AuditsReady</span>
+              </Link>
+            </div>
+            <div className="hidden md:flex gap-6 text-white">
+              <Link href="/blog" className="hover:text-blue-200 transition-colors">Blog</Link>
+              <Link href="/faq" className="hover:text-blue-200 transition-colors font-semibold text-orange-300">FAQ</Link>
+              <Link href="/pricing" className="hover:text-blue-200 transition-colors">Pricing</Link>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       <div className="max-w-4xl mx-auto py-12 px-6">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">ISO 9001 Frequently Asked Questions</h1>
         <p className="text-xl text-gray-600 mb-8">
@@ -398,7 +423,7 @@ export default function FAQ() {
               onClick={() => setIsModalOpen(true)}
               className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 whitespace-nowrap"
             >
-              Book Free Demo
+              Book Free Call
             </button>
           </div>
         </div>
@@ -459,14 +484,14 @@ export default function FAQ() {
               onClick={() => setIsModalOpen(true)}
               className="inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white px-10 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
             >
-              Book AI Demo
+              Book Free Call
             </button>
             <Link href="/pricing" className="inline-block bg-white text-blue-900 px-10 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
               View Pricing
             </Link>
           </div>
           <p className="text-sm text-blue-200 mt-4">
-            Free consultation • Same-day response • No obligation
+            📞 Free 15-minute call • 🚀 Same-day response • ✓ No obligation
           </p>
         </div>
 
