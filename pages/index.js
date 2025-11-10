@@ -105,7 +105,7 @@ function ContactFormModal({ isOpen, onClose }) {
       <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
         <div className="p-8">
           <div className="flex justify-between items-center mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">Book Your AI Demo</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Schedule Your Free Call</h2>
             <button
               onClick={onClose}
               className="text-gray-400 hover:text-gray-600 text-3xl leading-none"
@@ -115,7 +115,7 @@ function ContactFormModal({ isOpen, onClose }) {
           </div>
 
           <p className="text-gray-600 mb-6">
-            Fill out the form below and we'll call you within 24 hours to schedule your personalized AI demonstration.
+            Fill out the form below and we'll call you within 24 hours to schedule your free 15-minute consultation.
           </p>
 
           <form onSubmit={handleSubmit}>
@@ -192,14 +192,14 @@ function ContactFormModal({ isOpen, onClose }) {
 
             <div className="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
               <p className="text-sm text-blue-800">
-                ✓ We'll call you within 24 hours to schedule your demo
+                ✓ We'll call you within 24 hours to schedule your free 15-minute consultation
               </p>
             </div>
 
             {submitStatus === 'success' && (
               <div className="mt-4 bg-green-50 border border-green-200 rounded-lg p-4">
                 <p className="text-green-800 font-semibold">✓ Thank you! Your request has been submitted successfully.</p>
-                <p className="text-green-700 text-sm mt-1">We'll call you within 24 hours to schedule your demo.</p>
+                <p className="text-green-700 text-sm mt-1">We'll call you within 24 hours to schedule your free 15-minute consultation.</p>
               </div>
             )}
 
@@ -474,7 +474,7 @@ export default function Home() {
               onClick={() => setIsModalOpen(true)}
               className="inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
             >
-              Book AI Demo
+              Book Free Call
             </button>
             <PhoneReveal
               buttonStyle="inline-block border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-900 transition-all duration-300"
@@ -482,7 +482,7 @@ export default function Home() {
             />
           </div>
           <p className="text-sm text-blue-200 mt-4">
-            🤖 Powered by Advanced AI • 🔍 Intelligent Gap Detection • 🏆 Audit-Ready Results
+            📞 Free 15-minute call • 🚀 Same-day response • ✓ No obligation
           </p>
         </div>
         {/* Decorative Elements */}
@@ -743,7 +743,7 @@ export default function Home() {
             
             <div className="text-center">
               <p className="text-xl mb-8 text-blue-100">
-                <strong>Transparent pricing. No hidden fees. Book a free demo or view detailed pricing.</strong>
+                <strong>Transparent pricing. No hidden fees. Book a free call or view detailed pricing.</strong>
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
@@ -756,11 +756,11 @@ export default function Home() {
                   onClick={() => setIsModalOpen(true)}
                   className="inline-block bg-white text-blue-900 px-10 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
                 >
-                  🤖 Book Free Demo
+                  Book Free Call
                 </button>
               </div>
               <p className="text-sm text-blue-200 mt-4">
-                Free consultation • Same-day response • No obligation
+                📞 Free 15-minute call • 🚀 Same-day response • ✓ No obligation
               </p>
             </div>
           </div>
