@@ -449,16 +449,6 @@ export default function Home() {
       <header className="relative overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900">
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="relative max-w-7xl mx-auto px-4 py-20 text-center text-white">
-          <div className="flex justify-center mb-8">
-            <Image
-              src="/iso-9001-ai-powered-compliance-auditsready-logo.png"
-              alt="AuditsReady Logo"
-              width={80}
-              height={80}
-              className="drop-shadow-lg"
-              priority
-            />
-          </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
             Audit-Ready SOP Compliance for Manufacturing
           </h1>
