@@ -249,13 +249,17 @@ We implement reasonable security measures to protect your information:
 - Incident response procedures
 - Document deletion procedures after retention period
 
-### 10.3 Email Security
+### 10.3 Document Transfer
+- **Primary method:** Email with HTTPS/TLS encryption
+- **Alternative:** Secure Cloud Storage (available upon request)
+- **Your responsibility:** Choose the method that meets your security needs
+- **Recommendations:** Password-protect files with sensitive information
+
+### 10.4 Email Security
 - **Email limitations:** Email is not a fully secure method of communication
-- **Your responsibility:** You are responsible for secure transmission of sensitive documents
-- **Recommendations:** Consider password-protecting files containing highly sensitive information
 - **Our practices:** We use encrypted email storage and secure file handling procedures
 
-### 10.4 Limitations
+### 10.5 Limitations
 No method of transmission or storage is 100% secure. While we strive to protect your data, we cannot guarantee absolute security. Email communication carries inherent risks.
 
 ## 11. DATA TRANSFERS

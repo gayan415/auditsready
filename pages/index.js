@@ -770,20 +770,6 @@ export default function Home() {
       <footer className="bg-gray-900 text-gray-300 py-12">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
-            {/* Company Info */}
-            <div>
-              <Image
-                src="/iso-9001-ai-powered-compliance-auditsready-logo.png"
-                alt="AuditsReady Logo"
-                width={48}
-                height={48}
-                className="mb-4 opacity-80"
-              />
-              <p className="text-sm text-gray-400">
-                AI-Powered ISO 9001 Compliance & SOP Gap Analysis for Manufacturers Worldwide
-              </p>
-            </div>
-
             {/* Contact Info */}
             <div>
               <h3 className="text-white font-semibold mb-4">Contact Us</h3>
@@ -811,7 +797,17 @@ export default function Home() {
               <ul className="space-y-2 text-sm">
                 <li><Link href="/blog" className="hover:text-white transition-colors">Blog</Link></li>
                 <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
+              </ul>
+            </div>
+
+            {/* Legal */}
+            <div>
+              <h3 className="text-white font-semibold mb-4">Legal</h3>
+              <ul className="space-y-2 text-sm">
+                <li><Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link></li>
                 <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
+                <li><Link href="/refund-policy" className="hover:text-white transition-colors">Refund Policy</Link></li>
+                <li><Link href="/acceptable-use" className="hover:text-white transition-colors">Acceptable Use</Link></li>
               </ul>
             </div>
           </div>
