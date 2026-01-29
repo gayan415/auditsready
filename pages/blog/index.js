@@ -5,6 +5,30 @@ import Link from 'next/link'
 export default function BlogIndex() {
   const posts = [
     {
+      slug: 'failed-iso-9001-audit',
+      title: 'What Happens If You Fail Your ISO 9001 Audit? Complete Recovery Guide (2026)',
+      excerpt: 'Failed your ISO 9001 audit? Learn what happens next, re-audit costs ($10k-$35k), 90-day recovery timeline, top 10 failure reasons, and how to pass on your second attempt.',
+      date: '2026-01-06',
+      readTime: '14 min read',
+      category: 'Audit Recovery'
+    },
+    {
+      slug: 'iso-9001-myths',
+      title: '5 ISO 9001 Myths That Cost Manufacturers Thousands (2026)',
+      excerpt: 'Debunking the 5 most expensive ISO 9001 myths: too expensive for small companies, guarantees quality, just paperwork, one-time cost, and DIY is easy. Real facts that save money.',
+      date: '2025-12-02',
+      readTime: '12 min read',
+      category: 'Myth Busters'
+    },
+    {
+      slug: 'iso-9001-consultant-vs-ai',
+      title: 'Traditional ISO 9001 Consultants vs. AI: Honest Comparison (2026)',
+      excerpt: 'Unbiased comparison of traditional ISO 9001 consultants vs AI-powered tools. Costs, timelines, pros/cons, and when to use each approach. Save $40k-$60k with the right choice.',
+      date: '2025-11-04',
+      readTime: '15 min read',
+      category: 'Thought Leadership'
+    },
+    {
       slug: 'iso-9001-for-metal-fabrication',
       title: 'ISO 9001 for Metal Fabrication Shops: Complete Guide (2025)',
       excerpt: 'ISO 9001 certification guide for metal fabrication and job shops: welding specs (WPS/PQR), material traceability, CWB integration, customer requirements, and costs ($55k-$120k). Real fab shop case studies.',
