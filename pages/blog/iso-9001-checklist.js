@@ -648,7 +648,7 @@ export default function ISO9001ChecklistPost() {
       <footer className="bg-gray-900 text-gray-300 py-12 mt-20">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <p className="text-sm">
-            &copy; 2025 AuditsReady. All rights reserved. | <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            &copy; 2026 AuditsReady. All rights reserved. | <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
           </p>
         </div>
       </footer>

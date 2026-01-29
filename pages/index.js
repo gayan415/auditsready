@@ -805,7 +805,7 @@ export default function Home() {
 
           <div className="border-t border-gray-800 pt-8 text-center">
             <p className="text-sm mb-2">
-              &copy; 2025 AuditsReady. All rights reserved.
+              &copy; 2026 AuditsReady. All rights reserved.
             </p>
             <p className="text-xs text-gray-500">
               Professional Engineer (P.Eng) Validated | Where artificial intelligence meets manufacturing excellence.

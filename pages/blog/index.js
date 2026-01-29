@@ -168,7 +168,7 @@ export default function BlogIndex() {
             </Link>
           </p>
           <p className="text-sm">
-            &copy; 2025 AuditsReady. All rights reserved. | <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            &copy; 2026 AuditsReady. All rights reserved. | <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
           </p>
         </div>
       </footer>
