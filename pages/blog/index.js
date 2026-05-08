@@ -5,6 +5,14 @@ import Link from 'next/link'
 export default function BlogIndex() {
   const posts = [
     {
+      slug: 'iso-9001-document-control',
+      title: 'ISO 9001 Document Control: Complete Guide to Managing Quality Documents (2026)',
+      excerpt: 'Master ISO 9001 document control: version management, approval workflows, distribution, retention, and the #1 audit failure area. Electronic vs paper systems compared for manufacturers.',
+      date: '2026-05-07',
+      readTime: '14 min read',
+      category: 'ISO 9001 Compliance'
+    },
+    {
       slug: 'failed-iso-9001-audit',
       title: 'What Happens If You Fail Your ISO 9001 Audit? Complete Recovery Guide (2026)',
       excerpt: 'Failed your ISO 9001 audit? Learn what happens next, re-audit costs ($10k-$35k), 90-day recovery timeline, top 10 failure reasons, and how to pass on your second attempt.',
