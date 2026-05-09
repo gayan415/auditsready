@@ -483,8 +483,20 @@ export default function GapAnalysisCostPost() {
             </p>
           </div>
 
+          {/* Related Reading */}
+          <div className="bg-gray-50 rounded-xl p-6 mb-8 border border-gray-200 mt-12">
+            <h3 className="text-lg font-bold text-gray-900 mb-4">Related Reading</h3>
+            <ul className="space-y-2">
+              <li><Link href="/blog/iso-9001-certification-cost" className="text-blue-700 hover:underline">ISO 9001 Certification Cost: Complete Breakdown ($50k-$150k+)</Link></li>
+              <li><Link href="/blog/iso-9001-requirements" className="text-blue-700 hover:underline">ISO 9001 Requirements: Complete Guide to All 10 Clauses</Link></li>
+              <li><Link href="/blog/iso-9001-consultant-vs-ai" className="text-blue-700 hover:underline">Traditional ISO Consultants vs. AI: Honest Comparison</Link></li>
+              <li><Link href="/blog/how-long-does-iso-9001-take" className="text-blue-700 hover:underline">How Long Does ISO 9001 Certification Take?</Link></li>
+              <li><Link href="/blog/iso-9001-document-control" className="text-blue-700 hover:underline">ISO 9001 Document Control: Complete Guide (2026)</Link></li>
+            </ul>
+          </div>
+
           {/* Bottom Navigation */}
-          <div className="mt-12 pt-8 border-t-2 border-gray-200 flex justify-between items-center">
+          <div className="pt-8 border-t-2 border-gray-200 flex justify-between items-center">
             <Link
               href="/blog"
               className="text-blue-600 hover:text-blue-800 font-semibold flex items-center gap-2 transition-colors"

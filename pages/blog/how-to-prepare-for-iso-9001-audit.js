@@ -675,8 +675,20 @@ export default function AuditPreparationPost() {
             </p>
           </div>
 
+          {/* Related Reading */}
+          <div className="bg-gray-50 rounded-xl p-6 mb-8 border border-gray-200 mt-12">
+            <h3 className="text-lg font-bold text-gray-900 mb-4">Related Reading</h3>
+            <ul className="space-y-2">
+              <li><Link href="/blog/iso-9001-internal-audit-guide" className="text-blue-700 hover:underline">ISO 9001 Internal Audit Guide: How to Conduct Effective Audits</Link></li>
+              <li><Link href="/blog/iso-9001-document-control" className="text-blue-700 hover:underline">ISO 9001 Document Control: Complete Guide (2026)</Link></li>
+              <li><Link href="/blog/failed-iso-9001-audit" className="text-blue-700 hover:underline">What Happens If You Fail Your ISO 9001 Audit?</Link></li>
+              <li><Link href="/blog/iso-9001-gap-analysis-cost" className="text-blue-700 hover:underline">ISO 9001 Gap Analysis Cost: Complete Breakdown</Link></li>
+              <li><Link href="/blog/iso-9001-requirements" className="text-blue-700 hover:underline">ISO 9001 Requirements: Complete Guide to All 10 Clauses</Link></li>
+            </ul>
+          </div>
+
           {/* Bottom Navigation */}
-          <div className="mt-12 pt-8 border-t-2 border-gray-200 flex justify-between items-center">
+          <div className="pt-8 border-t-2 border-gray-200 flex justify-between items-center">
             <Link
               href="/blog"
               className="text-blue-600 hover:text-blue-800 font-semibold flex items-center gap-2 transition-colors"
