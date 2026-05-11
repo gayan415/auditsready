@@ -44,7 +44,7 @@ export default function DocumentControlPost() {
           <div className="flex items-center gap-4 mb-6 text-sm text-blue-200">
             <span className="bg-blue-800 px-3 py-1 rounded-full">ISO 9001 Compliance</span>
             <time dateTime="2026-05-07">May 7, 2026</time>
-            <span>-</span>
+            <span>&bull;</span>
             <span>14 min read</span>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">

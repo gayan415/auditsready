@@ -5,6 +5,14 @@ import Link from 'next/link'
 export default function BlogIndex() {
   const posts = [
     {
+      slug: 'iso-9001-management-review',
+      title: 'ISO 9001 Management Review: Agenda, Minutes, and Best Practices (2026)',
+      excerpt: 'Complete guide to ISO 9001 management review meetings: required inputs/outputs, ready-to-use agenda template, minutes format, who must attend, and the top 5 audit findings to avoid.',
+      date: '2026-05-08',
+      readTime: '12 min read',
+      category: 'ISO 9001 Compliance'
+    },
+    {
       slug: 'iso-9001-document-control',
       title: 'ISO 9001 Document Control: Complete Guide to Managing Quality Documents (2026)',
       excerpt: 'Master ISO 9001 document control: version management, approval workflows, distribution, retention, and the #1 audit failure area. Electronic vs paper systems compared for manufacturers.',
