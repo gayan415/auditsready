@@ -475,10 +475,39 @@ Based on SEO research and current manufacturing challenges, these topics target 
 ### SEO Best Practices Applied
 - ✅ BlogPosting schema on all posts
 - ✅ Proper meta tags, OpenGraph, canonical URLs
-- ✅ Internal linking between related posts
+- ✅ Internal linking between related posts (minimum 5 per post)
 - ✅ Mobile-responsive design
 - ✅ 2,000+ word comprehensive content
 - ✅ Electronic document control messaging (not printed docs)
+
+### Meta Title & Description Rules (CTR Optimization)
+**Every blog post title MUST follow these rules:**
+- Include the **current year** (2026) - signals freshness, outdated years kill CTR
+- Include **specific numbers/dollar amounts** (e.g., "$50K-$150K", "55-Point")
+- Keep title under **60 characters** so Google doesn't truncate it
+- Put the primary keyword FIRST in the title
+- NO "| AuditsReady" suffix (wastes characters, brand not needed in blog titles)
+- Use **parenthetical hooks** for curiosity: "(Save 60%)", "(AI Does It for $500)"
+
+**Meta description rules (155 characters max):**
+- Start with a question or specific claim that matches search intent
+- Include **3+ specific numbers** (costs, timeframes, percentages)
+- End with a benefit or action ("See how manufacturers cut costs 60%")
+- Include the primary keyword naturally
+- NO generic phrases: "complete guide", "everything you need to know", "learn more"
+
+**Title formula:** `[Keyword] [Year]: [Specific Number/Claim] ([Hook])`
+- Example: `ISO 9001 Certification Cost 2026: Real Numbers $50K-$150K`
+- Example: `ISO 9001 Gap Analysis Cost 2026: $15K-$50K (AI Does It for $500)`
+
+**Description formula:** `[Specific claim with numbers]. [Breakdown]. [Benefit/CTA].`
+- Example: "What does ISO 9001 actually cost in 2026? Consultant fees $15K-$50K + audit $8K-$20K + internal time $30K-$80K = $50K-$150K total. Full breakdown with 3 ways to cut costs by 60%."
+
+### Blog Post Header Style (Consistency)
+- Header gradient: `bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900`
+- Separator between date and read time: `&bull;` (not dash, not pipe)
+- Category badge: `bg-blue-800 px-3 py-1 rounded-full`
+- All posts must have: Related Reading section (5 links), Author Bio, Footer nav
 
 ## Next Steps for Traffic Growth
 
