@@ -240,8 +240,8 @@ export default function Home() {
     <div className="bg-gradient-to-br from-slate-50 to-blue-50 min-h-screen">
       <ContactFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Head>
-        <title>AI-Powered ISO 9001 Gap Analysis | Audit-Ready SOP Compliance | AuditsReady</title>
-        <meta name="description" content="AI-powered ISO 9001 compliance for any manufacturing industry worldwide. Automated gap analysis and ISO 9001-compliant SOP generation. P.Eng validated. Serving all manufacturing sectors from job shops to large facilities." />
+        <title>AuditsReady - AI-Powered ISO 9001 Gap Analysis for Manufacturers</title>
+        <meta name="description" content="Get ISO 9001 audit-ready in weeks, not months. AI finds your compliance gaps, generates SOPs, and a P.Eng validates everything. For manufacturers 10-500 employees. Free gap analysis, 48-hour turnaround." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="AuditsReady" />

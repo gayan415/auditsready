@@ -6,8 +6,8 @@ export default function CertificationCostPost() {
   return (
     <div className="bg-gradient-to-br from-slate-50 to-blue-50 min-h-screen">
       <Head>
-        <title>ISO 9001 Certification Cost: Complete Breakdown for Manufacturers (2025) | AuditsReady</title>
-        <meta name="description" content="Complete ISO 9001 certification cost breakdown: $50k-$150k+ total investment. Learn certification body fees, consultant costs, hidden expenses, and how to reduce costs by 40-60% with AI." />
+        <title>ISO 9001 Certification Cost 2026: Real Numbers $50K-$150K</title>
+        <meta name="description" content="What does ISO 9001 actually cost in 2026? Consultant fees $15K-$50K + audit $8K-$20K + internal time $30K-$80K = $50K-$150K total. Full breakdown with 3 ways to cut costs by 60%." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="iso 9001 certification cost, how much does iso 9001 cost, iso certification price, iso 9001 fees, total cost of iso certification" />
