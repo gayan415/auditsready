@@ -105,7 +105,7 @@ function ContactFormModal({ isOpen, onClose }) {
       <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
         <div className="p-8">
           <div className="flex justify-between items-center mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">Schedule Your Free Call</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Get Your Free Gap Analysis</h2>
             <button
               onClick={onClose}
               className="text-gray-400 hover:text-gray-600 text-3xl leading-none"
@@ -115,7 +115,8 @@ function ContactFormModal({ isOpen, onClose }) {
           </div>
 
           <p className="text-gray-600 mb-6">
-            Fill out the form below and we'll contact you within 24 hours to schedule your free 15-minute consultation.
+            Send us one document — your quality manual or a single SOP — and we'll return a real sample gap analysis at no charge.
+            Attach it here or email it to info@auditsready.com. Prefer to talk first? Ask for a 15-minute call in the message below.
           </p>
 
           <form onSubmit={handleSubmit}>
@@ -185,21 +186,21 @@ function ContactFormModal({ isOpen, onClose }) {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  placeholder="Tell us about your ISO 9001 compliance needs..."
+                  placeholder="What are you preparing for — certification, a surveillance audit, or a customer audit? Roughly how many documents do you have? (Or ask for a 15-minute call.)"
                 />
               </div>
             </div>
 
             <div className="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
               <p className="text-sm text-blue-800">
-                ✓ We'll contact you within 24 hours to schedule your free 15-minute consultation
+                ✓ We reply within 24 hours. Every gap analysis is reviewed and signed off by a licensed P.Eng.
               </p>
             </div>
 
             {submitStatus === 'success' && (
               <div className="mt-4 bg-green-50 border border-green-200 rounded-lg p-4">
                 <p className="text-green-800 font-semibold">✓ Thank you! Your request has been submitted successfully.</p>
-                <p className="text-green-700 text-sm mt-1">We'll contact you within 24 hours to schedule your free 15-minute consultation.</p>
+                <p className="text-green-700 text-sm mt-1">We'll reply within 24 hours. If you attached or emailed a document, we'll send back a sample gap analysis at no charge.</p>
               </div>
             )}
 
@@ -240,17 +241,17 @@ export default function Home() {
     <div className="bg-gradient-to-br from-slate-50 to-blue-50 min-h-screen">
       <ContactFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Head>
-        <title>AuditsReady - AI-Powered ISO 9001 Gap Analysis for Manufacturers</title>
-        <meta name="description" content="Get ISO 9001 audit-ready in weeks, not months. AI finds your compliance gaps, generates SOPs, and a P.Eng validates everything. For manufacturers 10-500 employees. Free gap analysis, 48-hour turnaround." />
+        <title>ISO 9001 Gap Analysis for Small & Mid-Size Manufacturers | P.Eng-Validated | AuditsReady</title>
+        <meta name="description" content="Pass your ISO 9001 audit without a $20K consultant. Gap analysis for small and mid-size manufacturers, reviewed and signed off by a licensed Professional Engineer (P.Eng). Audit-ready findings in 2 weeks, at a fraction of consultant cost." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="AuditsReady" />
-        <meta name="keywords" content="ISO 9001 gap analysis, ISO 9001 consultant, SOP compliance, manufacturing audit preparation, ISO certification service, quality management system, audit-ready documentation, SOP conversion, any manufacturing industry, all manufacturing sectors, automotive ISO 9001, aerospace manufacturing, electronics manufacturing, food processing ISO 9001, consumer products manufacturing, textile manufacturing, plastics manufacturing" />
+        <meta name="keywords" content="ISO 9001 gap analysis, ISO 9001 pre-assessment, ISO 9001 for small manufacturers, ISO 9001 certification, surveillance audit, customer audit, quality management system, P.Eng validated, building materials manufacturing, packaging manufacturing, plastics manufacturing, metal fabrication, industrial products manufacturing, quality manual review, SOP gap analysis" />
         <link rel="canonical" href="https://auditsready.com" />
 
         {/* OpenGraph Meta Tags */}
-        <meta property="og:title" content="AI-Powered ISO 9001 Gap Analysis | Any Manufacturing Industry" />
-        <meta property="og:description" content="AI-powered ISO 9001 compliance for any manufacturing industry worldwide. Automated gap analysis and ISO 9001-compliant SOP generation. P.Eng validated for all manufacturing sectors." />
+        <meta property="og:title" content="ISO 9001 Gap Analysis for Small & Mid-Size Manufacturers | P.Eng-Validated" />
+        <meta property="og:description" content="Pass your ISO 9001 audit without a $20K consultant. Gap analysis for small and mid-size manufacturers, reviewed and signed off by a licensed P.Eng. Audit-ready findings in 2 weeks." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://auditsready.com" />
         <meta property="og:image" content="https://auditsready.com/iso-9001-ai-powered-compliance-auditsready-logo.png" />
@@ -259,8 +260,8 @@ export default function Home() {
 
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="AI-Powered ISO 9001 Gap Analysis | Any Manufacturing Industry" />
-        <meta name="twitter:description" content="AI-powered ISO 9001 compliance for any manufacturing industry. Automated gap analysis and ISO 9001-compliant SOP generation. P.Eng validated worldwide." />
+        <meta name="twitter:title" content="ISO 9001 Gap Analysis for Small & Mid-Size Manufacturers | P.Eng-Validated" />
+        <meta name="twitter:description" content="Pass your ISO 9001 audit without a $20K consultant. Gap analysis for small and mid-size manufacturers, signed off by a licensed P.Eng. Audit-ready findings in 2 weeks." />
         <meta name="twitter:image" content="https://auditsready.com/iso-9001-ai-powered-compliance-auditsready-logo.png" />
 
         {/* Favicon and Icons */}
@@ -276,7 +277,7 @@ export default function Home() {
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               "name": "AuditsReady",
-              "description": "AI-powered ISO 9001 compliance and SOP gap analysis service for any manufacturing industry worldwide. Serving automotive, aerospace, electronics, food processing, consumer products, textiles, plastics, metal fabrication, and all manufacturing sectors. P.Eng validated audit preparation.",
+              "description": "ISO 9001 gap analysis for small and mid-size manufacturers preparing for certification, surveillance audits, or customer audits. Every finding is reviewed and signed off by a licensed Professional Engineer (P.Eng) with 12+ years of manufacturing quality experience. Focused on general industrial manufacturing: building materials, packaging, plastics, metal fabrication, and industrial products.",
               "url": "https://auditsready.com",
               "logo": "https://auditsready.com/iso-9001-ai-powered-compliance-auditsready-logo.png",
               "image": "https://auditsready.com/iso-9001-ai-powered-compliance-auditsready-logo.png",
@@ -289,18 +290,18 @@ export default function Home() {
               },
               "knowsAbout": [
                 "ISO 9001 Certification",
+                "ISO 9001 Gap Analysis",
+                "ISO 9001 Pre-Assessment",
                 "Quality Management Systems",
-                "Manufacturing Compliance",
-                "Automotive Manufacturing",
-                "Aerospace Manufacturing",
-                "Electronics Manufacturing",
-                "Food Processing",
-                "Consumer Products Manufacturing",
-                "Textile Manufacturing",
+                "Building Materials Manufacturing",
+                "Packaging Manufacturing",
                 "Plastics Manufacturing",
                 "Metal Fabrication",
-                "SOP Documentation",
-                "Gap Analysis"
+                "Industrial Products Manufacturing",
+                "Surveillance Audit Preparation",
+                "Customer Audit Preparation",
+                "Corrective Action Planning",
+                "Quality Manual Review"
               ],
               "contactPoint": {
                 "@type": "ContactPoint",
@@ -309,12 +310,7 @@ export default function Home() {
                 "contactType": "Customer Service",
                 "availableLanguage": ["English", "en"]
               },
-              "sameAs": [],
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "5.0",
-                "reviewCount": "1"
-              }
+              "sameAs": []
             })
           }}
         />
@@ -326,9 +322,9 @@ export default function Home() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Service",
-              "serviceType": "ISO 9001 Compliance Consulting",
-              "name": "AI-Powered ISO 9001 Compliance for All Manufacturing Industries",
-              "description": "Automated gap analysis and ISO 9001-compliant SOP generation for any manufacturing sector worldwide",
+              "serviceType": "ISO 9001 Gap Analysis",
+              "name": "ISO 9001 Gap Analysis for Small & Mid-Size Manufacturers",
+              "description": "P.Eng-validated ISO 9001 gap analysis for small and mid-size manufacturers preparing for certification, surveillance audits, or customer audits. Findings mapped to specific ISO 9001:2015 clauses with corrective action recommendations.",
               "provider": {
                 "@type": "Organization",
                 "name": "AuditsReady",
@@ -340,34 +336,34 @@ export default function Home() {
               },
               "audience": {
                 "@type": "BusinessAudience",
-                "audienceType": "Manufacturing Companies of All Sizes and Industries"
+                "audienceType": "Small and mid-size manufacturers (10-500 employees) in building materials, packaging, plastics, metal fabrication, and industrial products"
               },
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",
-                "name": "ISO 9001 Compliance Services",
+                "name": "ISO 9001 Gap Analysis Services",
                 "itemListElement": [
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "AI-Powered ISO 9001 Gap Analysis",
-                      "description": "Automated gap detection and compliance mapping"
+                      "name": "Pilot Gap Analysis",
+                      "description": "Gap analysis of your quality manual or one process area, mapped to ISO 9001:2015 clauses and validated by a licensed P.Eng. A low-risk first step before a full engagement."
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "SOP Document Conversion",
-                      "description": "Transform handwritten procedures into audit-ready documentation"
+                      "name": "Full Documentation Gap Analysis",
+                      "description": "Full documentation gap analysis, clause-by-clause findings report, corrective action roadmap, and one review call. Every finding reviewed and signed off by a licensed P.Eng."
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "P.Eng Validated Audit Preparation",
-                      "description": "Professional Engineer validated compliance consulting"
+                      "name": "Free Sample Gap Analysis",
+                      "description": "Upload or email one document (quality manual or a single SOP) and receive a real sample gap analysis at no charge."
                     }
                   }
                 ]
@@ -386,34 +382,34 @@ export default function Home() {
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": "What industries does AuditsReady serve?",
+                  "name": "Who is AuditsReady for?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "AuditsReady serves any kind of manufacturing industry worldwide, including automotive, aerospace, electronics, food processing, consumer products, textiles, plastics, metal fabrication, and all other manufacturing sectors seeking ISO 9001 certification."
+                    "text": "Small and mid-size manufacturers (10-500 employees) preparing for ISO 9001 certification, surveillance audits, or customer audits. We focus on general industrial manufacturing: building materials, packaging, plastics, metal fabrication, and industrial products. We work with other manufacturing sectors as well."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "How does AI-powered gap analysis work?",
+                  "name": "Who reviews the gap analysis?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Our AI system automatically scans your existing SOPs and documentation to identify gaps, missing procedures, and compliance issues. It maps your processes to ISO 9001 requirements and provides intelligent recommendations, all validated by a licensed Professional Engineer (P.Eng)."
+                    "text": "Every finding is reviewed and signed off by a licensed Professional Engineer (P.Eng, APEGA) with 12+ years of manufacturing quality experience at building-materials and packaging plants. We use modern analysis tooling to work fast, but nothing is auto-generated and shipped. A P.Eng validates everything before it reaches you."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "What company sizes can use AuditsReady?",
+                  "name": "What do I receive?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "AuditsReady serves manufacturing companies of all sizes, from small 5-person job shops to large 500+ employee production facilities. Our AI-powered platform scales to your needs regardless of company size."
+                    "text": "Audit-ready findings mapped to specific ISO 9001:2015 clauses, with corrective action recommendations. The full engagement includes a documentation gap analysis, a clause-by-clause findings report, a corrective action roadmap, and one review call. Turnaround is about 2 weeks."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "Is the service available worldwide?",
+                  "name": "How much does it cost?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, AuditsReady provides AI-powered ISO 9001 compliance services to manufacturers worldwide, including North America, Europe, Asia, and all other regions globally."
+                    "text": "A Pilot Gap Analysis of your quality manual or one process area is $597, positioned as a first step. The full documentation gap analysis is $1,500. A failed certification audit typically costs $8,000-$15,000 in wasted audit fees plus 3-6 months of delay, so a pre-assessment costs a fraction of that. You can also send one document for a free sample gap analysis."
                   }
                 }
               ]
@@ -449,30 +445,39 @@ export default function Home() {
       <header className="relative overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900">
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="relative max-w-7xl mx-auto px-4 py-20 text-center text-white">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
-            Audit-Ready SOP Compliance for Manufacturing
+          {/* P.Eng trust line */}
+          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-5 py-2 mb-8 text-sm font-semibold text-blue-50">
+            <span className="text-lg">🛡️</span>
+            Reviewed and signed off by a licensed Professional Engineer (P.Eng)
+          </div>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
+            Pass your ISO 9001 audit — without the $20K consultant.
           </h1>
-          <h2 className="text-2xl md:text-3xl font-light mb-8 text-blue-100">
-            AI-powered Gap Detection • Pass Every Audit
-          </h2>
-          <p className="text-xl max-w-3xl mx-auto mb-10 text-blue-100 leading-relaxed">
-            Our smart system automatically finds missing procedures and transforms your documentation 
-            into professional, audit-ready formats. Personal service meets proven technology.
+          <p className="text-xl max-w-3xl mx-auto mb-6 text-blue-100 leading-relaxed">
+            Gap analysis for small and mid-size manufacturers, reviewed and signed off by a licensed
+            Professional Engineer (P.Eng) with 12+ years of manufacturing quality experience at
+            building-materials and packaging plants. Audit-ready findings in 2 weeks, at a fraction of consultant cost.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <p className="text-base max-w-3xl mx-auto mb-10 text-blue-200">
+            Built for building materials, packaging, plastics, metal fabrication, and industrial products —
+            10 to 500 employees. Other manufacturing sectors welcome.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button
               onClick={() => setIsModalOpen(true)}
               className="inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
             >
-              Book Free Call
+              Get a free gap analysis of your quality manual or one SOP
             </button>
-            <PhoneReveal
-              buttonStyle="inline-block border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-900 transition-all duration-300"
-              buttonText="📞 Call Us Today"
-            />
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className="inline-block border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-900 transition-all duration-300"
+            >
+              Book a 15-minute call
+            </button>
           </div>
           <p className="text-sm text-blue-200 mt-4">
-            📞 Free 15-minute call • 🚀 Same-day response • ✓ No obligation
+            ✓ Upload or email one document • 🚀 Real sample gap analysis at no charge • ✓ No obligation
           </p>
         </div>
         {/* Decorative Elements */}
@@ -489,7 +494,7 @@ export default function Home() {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Simple 3-step process to audit-ready compliance
+              Three steps to audit-ready findings — reviewed by a P.Eng before they reach you
             </p>
           </div>
 
@@ -512,17 +517,17 @@ export default function Home() {
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-2xl font-bold text-blue-600 mx-auto mb-4">1</div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Send Your Documents</h3>
-              <p className="text-gray-600">Email your existing SOPs, handwritten notes, or Word docs. Any format works.</p>
+              <p className="text-gray-600">Email your quality manual, SOPs, or work instructions. Word, PDF, or scans — whatever you have.</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-2xl font-bold text-blue-600 mx-auto mb-4">2</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">AI Analysis</h3>
-              <p className="text-gray-600">Our AI scans for gaps, maps to ISO 9001 requirements, and identifies missing procedures.</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">P.Eng Reviews the Gaps</h3>
+              <p className="text-gray-600">We check your documentation against ISO 9001:2015 clause by clause. A licensed P.Eng reviews and validates every finding.</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-2xl font-bold text-blue-600 mx-auto mb-4">3</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Get Audit-Ready SOPs</h3>
-              <p className="text-gray-600">Receive professional, P.Eng validated, audit-ready documentation in days, not months.</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Get Audit-Ready Findings</h3>
+              <p className="text-gray-600">Receive a findings report mapped to specific clauses, with corrective action recommendations — in about 2 weeks, not 6 months.</p>
             </div>
           </div>
 
@@ -533,13 +538,14 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-gray-900">Professional Engineer Validated</h3>
             </div>
             <p className="text-gray-700 text-lg max-w-3xl mx-auto">
-              Every gap analysis is reviewed by a licensed Professional Engineer (P.Eng) with ISO 9001
-              audit experience. You get AI speed with expert validation.
+              Every gap analysis is reviewed and signed off by a licensed Professional Engineer (P.Eng, APEGA)
+              with 12+ years in manufacturing quality assurance at building-materials and packaging plants.
+              Nothing is auto-generated and shipped.
             </p>
-            <div className="mt-6 flex items-center justify-center gap-8 text-sm text-gray-600">
-              <div>✓ P.Eng Certified</div>
-              <div>✓ ISO 9001 Expert</div>
-              <div>✓ 10+ Years Experience</div>
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-8 text-sm text-gray-600">
+              <div>✓ Licensed P.Eng (APEGA)</div>
+              <div>✓ 12+ Years in Manufacturing QA</div>
+              <div>✓ Findings Mapped to ISO 9001:2015 Clauses</div>
             </div>
           </div>
 
@@ -556,99 +562,111 @@ export default function Home() {
           </div>
         </section>
 
-        {/* AI-Powered Features Section */}
+        {/* Why Trust Us Section */}
         <section className="mb-20">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Beyond Traditional Tools
+              Why Trust Us
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Artificial intelligence meets personal service for truly smart compliance
+              A licensed engineer with real plant experience reviews your documentation. No black box.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 text-center">
-              <div className="text-5xl mb-6">🤖</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Advanced AI Backend</h3>
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Licensed Professional Engineer</h3>
               <p className="text-gray-700">
-                Enterprise-grade artificial intelligence identifies patterns
-                and optimizes your documentation automatically.
+                Licensed Professional Engineer (P.Eng, APEGA) with 12+ years in manufacturing quality assurance.
+                Your findings are reviewed by an engineer, not a template.
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 text-center">
-              <div className="text-5xl mb-6">🔍</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Intelligent Gap Detection</h3>
+            <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Real Plant Experience</h3>
               <p className="text-gray-700">
-                AI scans your SOPs and automatically finds missing procedures,
-                compliance gaps, and areas needing improvement.
+                Hands-on QMS and ISO experience in building materials manufacturing (IKO Industries)
+                and packaging manufacturing (WestRock). We have worked the shop floor, not just the standard.
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 text-center">
-              <div className="text-5xl mb-6">⚡</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Smart Assistance</h3>
+            <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Audit-Ready Deliverables</h3>
               <p className="text-gray-700">
-                AI-powered suggestions help you create compliant documentation
-                faster than any traditional tool or manual process.
+                Findings are mapped to specific ISO 9001:2015 clauses, each with a corrective action
+                recommendation. You know exactly what to fix and where the standard requires it.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">The Cost of Failing</h3>
+              <p className="text-gray-700">
+                A failed certification audit typically costs $8,000–$15,000 in wasted audit fees plus
+                3–6 months of delay. A pre-assessment costs a fraction of that. Find the gaps before the auditor does.
               </p>
             </div>
           </div>
+
+          {/* Single AI mention — framed as speed/cost, human-validated */}
+          <div className="bg-gray-50 rounded-2xl border border-gray-200 p-8 max-w-4xl mx-auto text-center">
+            <p className="text-gray-700 text-lg leading-relaxed">
+              <strong>How we work fast:</strong> we use modern analysis tooling to move quickly — but every finding
+              is reviewed and validated by a licensed P.Eng before it reaches you. Nothing is auto-generated and shipped.
+              Drafts are prepared for your review and validated by a P.Eng.
+            </p>
+          </div>
         </section>
 
-        {/* What We Do Section */}
+        {/* What You Get Section */}
         <section className="mb-20">
-          <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-2xl shadow-xl p-8 md:p-12 border border-gray-100">
+          <div className="bg-gradient-to-r from-slate-50 to-blue-50 rounded-2xl shadow-xl p-8 md:p-12 border border-gray-100">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <h3 className="text-3xl font-bold text-gray-900 mb-6">
-                  AI Finds What Others Miss
+                  What You Get
                 </h3>
                 <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                  While traditional consultants rely on manual reviews, our AI-powered platform
-                  instantly analyzes your entire documentation ecosystem to identify gaps,
-                  inconsistencies, and compliance risks—then generates ISO 9001-compliant SOPs
-                  to fill those gaps.
+                  A clear picture of where your documentation stands against ISO 9001:2015 — and exactly
+                  what to fix before your audit. Every finding is drafted for your review and validated by a P.Eng.
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-start text-gray-700">
-                    <div className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                    <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
                       <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                     <div>
-                      <strong>Automated Gap Analysis:</strong> AI scans every procedure for missing steps
+                      <strong>Clause-by-clause findings:</strong> each gap tied to the specific ISO 9001:2015 clause it affects
                     </div>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <div className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                    <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
                       <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                     <div>
-                      <strong>Smart Compliance Mapping:</strong> Links SOPs to ISO requirements automatically
+                      <strong>Corrective action recommendations:</strong> what to change, in plain language, prioritized by audit risk
                     </div>
                   </li>
                   <li className="flex items-start text-gray-700">
-                    <div className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                    <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
                       <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                     <div>
-                      <strong>Continuous Learning:</strong> Gets smarter with every document processed
+                      <strong>P.Eng sign-off:</strong> a licensed engineer reviews and validates every finding before you see it
                     </div>
                   </li>
                 </ul>
               </div>
-              <div className="bg-gradient-to-br from-purple-100 to-blue-100 rounded-xl p-8 text-center">
-                <div className="text-6xl mb-4">🧠</div>
-                <h4 className="text-xl font-semibold text-gray-900 mb-2">AI-Powered Intelligence</h4>
-                <p className="text-gray-600">Advanced algorithms that understand compliance like an expert auditor</p>
+              <div className="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-xl p-8 text-center">
+                <div className="text-6xl mb-4">📋</div>
+                <h4 className="text-xl font-semibold text-gray-900 mb-2">Audit-Ready in About 2 Weeks</h4>
+                <p className="text-gray-600">A findings report you can hand to your team and act on before the auditor arrives</p>
               </div>
             </div>
           </div>
@@ -659,44 +677,44 @@ export default function Home() {
           <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl shadow-xl p-12 border border-blue-100">
             <div className="text-center mb-8">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                Built for Every Manufacturing Business
+                Built for Industrial Manufacturers
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto mb-6"></div>
               <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-                From small job shops to large production facilities, our AI-powered compliance platform serves
-                <strong> any kind of manufacturing industry</strong> seeking ISO 9001 certification.
+                We focus on small and mid-size general manufacturers — <strong>10 to 500 employees</strong> —
+                preparing for ISO 9001 certification, surveillance audits, or customer audits.
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               <div className="bg-white rounded-xl p-6 shadow-lg">
                 <div className="text-4xl mb-4 text-center">🏭</div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">All Industries Welcome</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">Industrial Manufacturing</h3>
                 <p className="text-gray-600 text-sm text-center">
-                  Whether you're in automotive, aerospace, electronics, food processing, consumer products, textiles, plastics, or any manufacturing sector
+                  Building materials, packaging, plastics, metal fabrication, and industrial products — the sectors we know firsthand
                 </p>
               </div>
 
               <div className="bg-white rounded-xl p-6 shadow-lg">
                 <div className="text-4xl mb-4 text-center">📊</div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">Any Company Size</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">Small & Mid-Size</h3>
                 <p className="text-gray-600 text-sm text-center">
-                  From 5-person job shops to 500-employee facilities - our solution scales to your needs
+                  10 to 500 employees — the range where a full-time quality department is rare and outside help matters most
                 </p>
               </div>
 
               <div className="bg-white rounded-xl p-6 shadow-lg">
-                <div className="text-4xl mb-4 text-center">🌍</div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">Global Reach</h3>
+                <div className="text-4xl mb-4 text-center">✅</div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">Any Audit Milestone</h3>
                 <p className="text-gray-600 text-sm text-center">
-                  Serving manufacturers worldwide - North America, Europe, Asia, and beyond
+                  First certification, annual surveillance audit, or a customer audit you can't afford to fail
                 </p>
               </div>
             </div>
 
             <div className="mt-10 text-center">
-              <p className="text-gray-700 text-lg font-semibold">
-                No matter what you make, we help you get audit-ready
+              <p className="text-gray-700 text-lg">
+                In a different manufacturing sector? We still work with you — just ask.
               </p>
             </div>
           </div>
@@ -707,50 +725,65 @@ export default function Home() {
           <div className="bg-gradient-to-r from-blue-900 to-indigo-900 rounded-2xl shadow-2xl p-8 md:p-12 text-white">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold mb-4">
-                Professional ISO 9001 Compliance — Starting at $1,500
+                Start Small. Prove the Value First.
               </h2>
-              <p className="text-xl text-blue-100">
-                Save 70-85% vs traditional consultants | One-time packages or monthly subscriptions
+              <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+                Try a Pilot Gap Analysis before committing to a full engagement. No retainer, no long contract.
               </p>
             </div>
-            
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-              {[
-                "AI processes any format: Word, PDF, handwritten notes",
-                "Intelligent gap detection and compliance mapping",
-                "Personal consultation combined with AI insights"
-              ].map((feature, index) => (
-                <div key={index} className="flex items-start">
-                  <div className="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
-                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <p className="text-blue-100">{feature}</p>
-                </div>
-              ))}
+
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              {/* Pilot */}
+              <div className="bg-white/10 border border-white/20 rounded-2xl p-8">
+                <h3 className="text-2xl font-bold mb-1">Pilot Gap Analysis</h3>
+                <div className="text-4xl font-bold mb-1">$597</div>
+                <p className="text-blue-200 mb-6 text-sm">Your quality manual or one process area</p>
+                <ul className="space-y-3 text-blue-100 text-sm">
+                  <li>✓ Gap analysis of one document set or process area</li>
+                  <li>✓ Findings mapped to ISO 9001:2015 clauses</li>
+                  <li>✓ Corrective action recommendations</li>
+                  <li>✓ Reviewed and signed off by a licensed P.Eng</li>
+                </ul>
+                <p className="text-blue-200 text-sm mt-6">A low-risk first step before the full engagement.</p>
+              </div>
+
+              {/* Full */}
+              <div className="bg-white text-gray-900 rounded-2xl p-8 shadow-xl">
+                <h3 className="text-2xl font-bold mb-1 text-blue-900">Full Gap Analysis</h3>
+                <div className="text-4xl font-bold mb-1">$1,500</div>
+                <p className="text-gray-600 mb-6 text-sm">Your full documentation set</p>
+                <ul className="space-y-3 text-gray-700 text-sm">
+                  <li>✓ Full documentation gap analysis</li>
+                  <li>✓ Clause-by-clause findings report</li>
+                  <li>✓ Corrective action roadmap</li>
+                  <li>✓ One review call to walk through the findings</li>
+                  <li>✓ Every finding validated by a licensed P.Eng</li>
+                </ul>
+                <p className="text-gray-600 text-sm mt-6">Audit-ready findings in about 2 weeks.</p>
+              </div>
             </div>
-            
+
             <div className="text-center">
-              <p className="text-xl mb-8 text-blue-100">
-                <strong>Transparent pricing. No hidden fees. Book a free call or view detailed pricing.</strong>
+              <p className="text-lg mb-8 text-blue-100 max-w-3xl mx-auto">
+                A failed certification audit typically costs $8,000–$15,000 plus 3–6 months of delay.
+                A pre-assessment costs a fraction of that.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  href="/pricing"
-                  className="inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white px-10 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
-                >
-                  📋 View Detailed Pricing
-                </Link>
                 <button
                   onClick={() => setIsModalOpen(true)}
+                  className="inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white px-10 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+                >
+                  Get a free sample gap analysis
+                </button>
+                <Link
+                  href="/pricing"
                   className="inline-block bg-white text-blue-900 px-10 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
                 >
-                  Book Free Call
-                </button>
+                  View Detailed Pricing
+                </Link>
               </div>
               <p className="text-sm text-blue-200 mt-4">
-                📞 Free 15-minute call • 🚀 Same-day response • ✓ No obligation
+                ✓ Send one document • 🚀 24-hour response • ✓ No obligation
               </p>
             </div>
           </div>
@@ -766,7 +799,7 @@ export default function Home() {
               <div className="space-y-2 text-sm">
                 <p>📧 <a href="mailto:info@auditsready.com" className="hover:text-white transition-colors">info@auditsready.com</a></p>
                 <p><PhoneDisplay /></p>
-                <p>🌎 Serving North America & Beyond</p>
+                <p>🌎 Serving manufacturers in North America & worldwide</p>
               </div>
             </div>
 
@@ -774,10 +807,10 @@ export default function Home() {
             <div>
               <h3 className="text-white font-semibold mb-4">Services</h3>
               <ul className="space-y-2 text-sm">
-                <li>AI-Powered Gap Analysis</li>
-                <li>SOP Document Conversion</li>
-                <li>Audit Preparation</li>
-                <li>P.Eng Validated Consulting</li>
+                <li>ISO 9001 Gap Analysis</li>
+                <li>Pre-Assessment & Audit Readiness</li>
+                <li>Corrective Action Roadmaps</li>
+                <li>P.Eng-Validated Findings</li>
               </ul>
             </div>
 
@@ -808,7 +841,7 @@ export default function Home() {
               &copy; {new Date().getFullYear()} AuditsReady. All rights reserved.
             </p>
             <p className="text-xs text-gray-500">
-              Professional Engineer (P.Eng) Validated | Where artificial intelligence meets manufacturing excellence.
+              ISO 9001 gap analysis reviewed and signed off by a licensed Professional Engineer (P.Eng).
             </p>
           </div>
         </div>

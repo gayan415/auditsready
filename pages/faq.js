@@ -192,19 +192,19 @@ export default function FAQ() {
       questions: [
         {
           q: "How much does ISO 9001 certification cost for a small manufacturer?",
-          a: "For small manufacturers (10-50 employees), total ISO 9001 certification costs typically range from $15,000-$50,000 with traditional consultants:\n\n• Consultant fees: $10k-$30k\n• Certification body fees: $3k-$8k\n• Internal costs: $2k-$12k\n\nWith AuditsReady's AI-powered approach, you can reduce consultant costs to $1,500-$5,000 while maintaining P.Eng validation. The exact cost depends on your current documentation quality, number of processes, and timeline urgency."
+          a: "For small manufacturers (10-50 employees), total ISO 9001 certification costs typically range from $15,000-$50,000 with traditional consultants:\n\n• Consultant fees: $10k-$30k\n• Certification body fees: $3k-$8k\n• Internal costs: $2k-$12k\n\nAuditsReady replaces the consultant gap-analysis phase with a P.Eng-validated review: a $597 pilot or a $1,500 full gap analysis. You get a clear list of what to fix, mapped to ISO 9001:2015 clauses, then handle implementation with your own team. The exact cost depends on your current documentation quality, number of processes, and timeline."
         },
         {
           q: "How long does ISO 9001 certification take?",
-          a: "Most manufacturers complete ISO 9001 certification in 6-12 months. The timeline includes:\n\n• Gap analysis: 1-2 weeks\n• Documentation development: 2-4 months\n• Implementation: 2-4 months\n• Internal audits: 1 month\n• Certification audit: 1-2 months\n\nWith AuditsReady's AI-powered gap analysis (48-72 hours) and streamlined approach, you can compress this to 3-6 months if you have some existing documentation and dedicated internal resources."
+          a: "Most manufacturers complete ISO 9001 certification in 6-12 months. The timeline includes:\n\n• Gap analysis: 1-2 weeks\n• Documentation development: 2-4 months\n• Implementation: 2-4 months\n• Internal audits: 1 month\n• Certification audit: 1-2 months\n\nWith AuditsReady's P.Eng-validated gap analysis (about 2 weeks) and a focused action plan, you can compress this to 3-6 months if you have some existing documentation and dedicated internal resources."
         },
         {
           q: "Can I get ISO 9001 in 3 months?",
-          a: "Yes, but only under specific conditions:\n\n• You already have documented processes\n• You have a dedicated quality manager or team\n• Your documentation is mostly compliant with minor gaps\n• You can schedule a certification audit quickly\n\nAuditsReady's AI can identify gaps in 48-72 hours, helping you focus immediately on critical issues. However, rushing certification often leads to failures or major non-conformances. We recommend 6 months as a realistic fast-track timeline for most manufacturers."
+          a: "Yes, but only under specific conditions:\n\n• You already have documented processes\n• You have a dedicated quality manager or team\n• Your documentation is mostly compliant with minor gaps\n• You can schedule a certification audit quickly\n\nAuditsReady's P.Eng-validated gap analysis (about 2 weeks) helps you focus immediately on the critical issues. However, rushing certification often leads to failures or major non-conformances. We recommend 6 months as a realistic fast-track timeline for most manufacturers."
         },
         {
           q: "What's the fastest way to get ISO 9001 certified?",
-          a: "The fastest path combines:\n\n• AI-powered gap analysis to identify issues immediately (AuditsReady provides this in 48-72 hours)\n• Focus on mandatory documentation only (skip nice-to-have procedures initially)\n• Parallel workflows (develop docs while implementing processes)\n• Dedicated internal champion (quality manager or owner commitment)\n• Pre-audit with consultant before official certification audit\n\nAvoid shortcuts like generic templates or skipping implementation—these lead to audit failures and delays."
+          a: "The fastest path combines:\n\n• A gap analysis to identify issues early (AuditsReady delivers a P.Eng-validated report in about 2 weeks)\n• Focus on mandatory documentation only (skip nice-to-have procedures initially)\n• Parallel workflows (develop docs while implementing processes)\n• Dedicated internal champion (quality manager or owner commitment)\n• Pre-audit before your official certification audit\n\nAvoid shortcuts like generic templates or skipping implementation—these lead to audit failures and delays."
         },
         {
           q: "What are the 10 clauses of ISO 9001:2015?",
@@ -221,7 +221,7 @@ export default function FAQ() {
         },
         {
           q: "Is ISO 9001 too complicated for a small business?",
-          a: "No, ISO 9001 is scalable to any company size. The standard doesn't dictate how much documentation you need—a 5-person job shop can have simpler procedures than a 500-person factory. The key is documenting what you actually do, not creating bureaucracy. Many small manufacturers think ISO 9001 means endless paperwork, but modern approaches (like AuditsReady's AI-powered gap analysis) simplify compliance. Focus on the 20% of processes that drive 80% of your quality, and scale documentation to your actual complexity."
+          a: "No, ISO 9001 is scalable to any company size. The standard doesn't dictate how much documentation you need—a 5-person job shop can have simpler procedures than a 500-person factory. The key is documenting what you actually do, not creating bureaucracy. Many small manufacturers think ISO 9001 means endless paperwork, but a focused gap analysis (like AuditsReady's P.Eng-validated review) shows you what actually matters. Focus on the 20% of processes that drive 80% of your quality, and scale documentation to your actual complexity."
         },
         {
           q: "What happens if I fail my ISO 9001 audit?",
@@ -236,15 +236,15 @@ export default function FAQ() {
       questions: [
         {
           q: "Can I get ISO 9001 certified without a consultant?",
-          a: "Yes, but it's challenging and time-consuming. DIY certification works if:\n\n• You have strong internal expertise (quality manager with ISO experience)\n• You can commit 200-500 hours to documentation\n• You understand audit requirements\n• You have good existing processes\n\nMost small manufacturers struggle with interpretation of requirements and audit preparation. AuditsReady offers a middle path: AI-powered gap analysis ($1,500-$5,000) gives you the roadmap, and you do the implementation work. This saves 60-80% vs. full consultant fees while avoiding DIY pitfalls."
+          a: "Yes, but it's challenging and time-consuming. DIY certification works if:\n\n• You have strong internal expertise (quality manager with ISO experience)\n• You can commit 200-500 hours to documentation\n• You understand audit requirements\n• You have good existing processes\n\nMost small manufacturers struggle with interpretation of requirements and audit preparation. AuditsReady offers a middle path: a P.Eng-validated gap analysis (pilot from $597, full engagement $1,500) gives you the roadmap, and you do the implementation work. This costs far less than full consultant fees while avoiding DIY pitfalls."
         },
         {
           q: "Is ISO 9001 worth the cost?",
-          a: "For most manufacturers, yes. ROI comes from:\n\n• Customer requirements (many contracts require ISO 9001)\n• Reduced defects (10-30% quality improvement typical)\n• Operational efficiency (streamlined processes save 5-15% in costs)\n• Competitive advantage (preferred supplier status)\n• Better employee training\n\nBreak-even is typically 12-24 months. If you're losing contracts due to lack of certification, ROI is immediate. If you're pursuing certification for internal improvement only, calculate savings from reduced rework, scrap, and customer complaints. For small manufacturers with tight margins, AI-powered consulting (like AuditsReady) reduces upfront costs from $15k-$50k to $1,500-$5,000, improving ROI significantly."
+          a: "For most manufacturers, yes. ROI comes from:\n\n• Customer requirements (many contracts require ISO 9001)\n• Reduced defects (10-30% quality improvement typical)\n• Operational efficiency (streamlined processes save 5-15% in costs)\n• Competitive advantage (preferred supplier status)\n• Better employee training\n\nBreak-even is typically 12-24 months. If you're losing contracts due to lack of certification, ROI is immediate. If you're pursuing certification for internal improvement only, calculate savings from reduced rework, scrap, and customer complaints. For small manufacturers with tight margins, a P.Eng-validated gap analysis (like AuditsReady, pilot from $597 or $1,500 for the full engagement) cuts the upfront gap-analysis cost dramatically versus a traditional consultant, improving ROI."
         },
         {
           q: "How much does an ISO 9001 consultant charge?",
-          a: "Traditional ISO 9001 consultants charge $125-$250/hour or $10,000-$50,000 per project, depending on company size and complexity.\n\nTypical breakdown:\n• Small manufacturer (10-50 employees) = $15k-$25k\n• Mid-size (50-200 employees) = $25k-$40k\n• Large (200+ employees) = $40k-$100k+\n\nThese fees cover gap analysis, documentation, training, and audit preparation. AuditsReady uses AI to reduce costs to $1,500-$5,000 for gap analysis and recommendations, with optional ongoing support. You save 70-85% by doing implementation yourself with AI guidance."
+          a: "Traditional ISO 9001 consultants charge $125-$250/hour or $10,000-$50,000 per project, depending on company size and complexity.\n\nTypical breakdown:\n• Small manufacturer (10-50 employees) = $15k-$25k\n• Mid-size (50-200 employees) = $25k-$40k\n• Large (200+ employees) = $40k-$100k+\n\nThese fees cover gap analysis, documentation, training, and audit preparation. AuditsReady focuses on the gap-analysis phase: a $597 pilot or a $1,500 full engagement, with findings mapped to ISO 9001:2015 clauses and signed off by a licensed P.Eng. You save a large share of the cost by handling implementation yourself with a clear roadmap."
         }
       ]
     },
@@ -309,7 +309,7 @@ export default function FAQ() {
       questions: [
         {
           q: "Can AI help with ISO 9001 compliance?",
-          a: "Yes! AI excels at:\n\n• Gap analysis (scanning your documents to identify missing requirements in 48-72 hours vs. 2-4 weeks manually)\n• Documentation generation (creating first-draft SOPs based on your inputs)\n• Audit preparation (predicting likely audit findings)\n• Continuous monitoring (future capability—AI tracking non-conformances and corrective actions)\n\nAuditsReady combines AI-powered gap detection with P.Eng (Professional Engineer) validation to ensure accuracy. AI alone isn't enough—you need expert review to catch nuances auditors care about. Our hybrid model gives you speed of AI plus credibility of professional validation. AI reduces consultant costs by 70-85% while maintaining quality."
+          a: "Modern analysis tooling helps with:\n\n• Gap analysis (reviewing documents against ISO 9001 requirements faster than a fully manual read)\n• Draft procedures (a starting point you review and edit—never shipped as-is)\n• Audit preparation (surfacing likely audit findings to check)\n\nAt AuditsReady, tooling is only the how. Every finding is reviewed and validated by a licensed Professional Engineer (P.Eng) before it reaches you. Nothing is auto-generated and shipped. That combination gives you speed without the audit risk of unchecked, machine-written compliance documents—at a fraction of a traditional consultant's cost."
         },
         {
           q: "Is AI-generated ISO 9001 documentation acceptable to auditors?",
@@ -317,7 +317,7 @@ export default function FAQ() {
         },
         {
           q: "What's better: hiring a consultant or using software for ISO 9001?",
-          a: "Neither extreme is ideal—a hybrid approach works best. Traditional consultants ($15k-$50k) provide expertise but are expensive and slow. Software-only tools ($500-$5,000) are fast and cheap but require you to interpret ISO 9001, risking gaps.\n\nAuditsReady's hybrid model combines:\n• AI for speed and cost savings (gap analysis in 48-72 hours)\n• P.Eng validation for accuracy and credibility\n• Your implementation for cost control (you do the work, AI guides you)\n\nThis gives you 70-85% cost savings vs. full consultants while avoiding DIY mistakes. Choose based on your internal expertise: strong quality team = software-only, no expertise = full consultant, some capability = hybrid (AuditsReady)."
+          a: "Neither extreme is ideal—a hybrid approach works best. Traditional consultants ($15k-$50k) provide expertise but are expensive and slow. Software-only tools ($500-$5,000) are fast and cheap but require you to interpret ISO 9001, risking gaps.\n\nAuditsReady's model combines:\n• Modern tooling for speed (gap analysis in about 2 weeks)\n• P.Eng validation for accuracy and credibility—every finding signed off by a licensed engineer\n• Your implementation for cost control (you do the work with a clear roadmap)\n\nThis costs far less than a full consultant while avoiding DIY mistakes. Choose based on your internal expertise: strong quality team = software-only, no expertise = full consultant, some capability = a P.Eng-validated gap analysis (AuditsReady)."
         }
       ]
     },
@@ -328,7 +328,7 @@ export default function FAQ() {
       questions: [
         {
           q: "Where can I find ISO 9001 consultants near me?",
-          a: "While local consultants exist, location matters less for ISO 9001 consulting than you think. Modern consulting is remote-first (COVID proved this)—most documentation, training, and audit prep happens via email, video calls, and document sharing.\n\nLocal consultants charge premium rates ($150-$300/hour) due to travel time and limited competition. Remote consultants (like AuditsReady) offer 50-70% cost savings without sacrificing quality.\n\nThat said, if you prefer on-site visits: search \"ISO 9001 consultant [your city]\" or check ASQC, ASQ, or LinkedIn. For most small manufacturers, remote AI-powered consulting delivers faster results at lower cost. AuditsReady serves manufacturers worldwide—location doesn't limit our service quality."
+          a: "While local consultants exist, location matters less for ISO 9001 consulting than you think. Modern consulting is remote-first (COVID proved this)—most documentation, training, and audit prep happens via email, video calls, and document sharing.\n\nLocal consultants charge premium rates ($150-$300/hour) due to travel time and limited competition. Remote consultants (like AuditsReady) offer 50-70% cost savings without sacrificing quality.\n\nThat said, if you prefer on-site visits: search \"ISO 9001 consultant [your city]\" or check ASQC, ASQ, or LinkedIn. For most small manufacturers, remote gap analysis delivers faster results at lower cost. AuditsReady serves manufacturers in North America and worldwide—location doesn't limit our service quality."
         },
         {
           q: "Do I need an on-site consultant for ISO 9001?",
@@ -363,7 +363,7 @@ export default function FAQ() {
       <ContactFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Head>
         <title>ISO 9001 FAQ: 28 Questions Answered by Experts | AuditsReady</title>
-        <meta name="description" content="Get answers to the 28 most common ISO 9001 questions about cost, timeline, requirements, and certification. Free advice from P.Eng validated consultants." />
+        <meta name="description" content="Answers to 28 common ISO 9001 questions on cost, timeline, requirements, and certification for small and mid-size manufacturers. Reviewed by a licensed Professional Engineer (P.Eng)." />
         <meta name="keywords" content="iso 9001 faq, iso 9001 questions, iso 9001 cost, iso 9001 requirements, iso certification questions, iso 9001 timeline" />
         <meta name="robots" content="index, follow" />
 
@@ -477,7 +477,7 @@ export default function FAQ() {
         <div className="bg-gradient-to-r from-blue-900 to-indigo-900 rounded-2xl shadow-2xl p-8 text-white text-center mt-16">
           <h2 className="text-3xl font-bold mb-4">Ready to Get Started with ISO 9001?</h2>
           <p className="text-xl text-blue-100 mb-6">
-            Get AI-powered gap analysis in 48-72 hours. P.Eng validated. Starting at $1,500.
+            Send us one document for a free sample gap analysis. Pilot from $597, full engagement $1,500 — every finding signed off by a licensed P.Eng.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button

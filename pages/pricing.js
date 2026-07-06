@@ -74,7 +74,7 @@ function ContactFormModal({ isOpen, onClose }) {
       <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
         <div className="p-8">
           <div className="flex justify-between items-center mb-6">
-            <h2 className="text-3xl font-bold text-gray-900">Get Custom Quote</h2>
+            <h2 className="text-3xl font-bold text-gray-900">Tell Us About Your Project</h2>
             <button
               onClick={onClose}
               className="text-gray-400 hover:text-gray-600 text-3xl leading-none"
@@ -84,7 +84,8 @@ function ContactFormModal({ isOpen, onClose }) {
           </div>
 
           <p className="text-gray-600 mb-6">
-            Tell us about your needs and we'll provide a customized quote within 24 hours.
+            Tell us what you're preparing for and roughly how many documents you have. We'll reply within 24 hours.
+            Prefer to see it first? Send one document for a free sample gap analysis.
           </p>
 
           <form onSubmit={handleSubmit}>
@@ -161,7 +162,7 @@ function ContactFormModal({ isOpen, onClose }) {
 
             {submitStatus === 'success' && (
               <div className="mt-4 bg-green-50 border border-green-200 rounded-lg p-4">
-                <p className="text-green-800 font-semibold">✓ Thank you! We'll send you a custom quote within 24 hours.</p>
+                <p className="text-green-800 font-semibold">✓ Thank you! We'll reply within 24 hours. If you sent a document, we'll return a sample gap analysis at no charge.</p>
               </div>
             )}
 
@@ -178,7 +179,7 @@ function ContactFormModal({ isOpen, onClose }) {
                 disabled={isSubmitting}
                 className="flex-1 bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 disabled:opacity-50"
               >
-                {isSubmitting ? 'Submitting...' : 'Get Custom Quote'}
+                {isSubmitting ? 'Submitting...' : 'Send Request'}
               </button>
               <button
                 type="button"
@@ -203,24 +204,24 @@ export default function Pricing() {
       <ContactFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
 
       <Head>
-        <title>Pricing - AI-Powered ISO 9001 Compliance | AuditsReady</title>
-        <meta name="description" content="AuditsReady pricing: 70-85% savings vs traditional ISO 9001 consultants. One-time packages from $1,500 or monthly subscriptions from $99. AI-powered gap analysis and SOP generation." />
+        <title>ISO 9001 Gap Analysis Pricing | Pilot $597, Full $1,500 | P.Eng-Validated | AuditsReady</title>
+        <meta name="description" content="ISO 9001 gap analysis for small and mid-size manufacturers. Pilot from $597, full engagement $1,500. Findings mapped to ISO 9001:2015 clauses and signed off by a licensed P.Eng. A fraction of consultant cost." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
-        <meta name="keywords" content="ISO 9001 pricing, ISO consultant cost, gap analysis price, SOP compliance cost, ISO certification pricing, affordable ISO 9001" />
+        <meta name="keywords" content="ISO 9001 gap analysis pricing, ISO 9001 pre-assessment cost, ISO 9001 for small manufacturers, ISO consultant cost, P.Eng validated gap analysis, affordable ISO 9001" />
         <link rel="canonical" href="https://auditsready.com/pricing" />
 
         {/* OpenGraph */}
-        <meta property="og:title" content="Pricing - AI-Powered ISO 9001 Compliance | AuditsReady" />
-        <meta property="og:description" content="Save 70-85% vs traditional consultants. AI-powered ISO 9001 gap analysis and SOP generation from $1,500." />
+        <meta property="og:title" content="ISO 9001 Gap Analysis Pricing | Pilot $597, Full $1,500 | P.Eng-Validated" />
+        <meta property="og:description" content="ISO 9001 gap analysis for small and mid-size manufacturers. Pilot from $597, full engagement $1,500. Signed off by a licensed P.Eng. A fraction of consultant cost." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://auditsready.com/pricing" />
         <meta property="og:image" content="https://auditsready.com/iso-9001-ai-powered-compliance-auditsready-logo.png" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Pricing - AI-Powered ISO 9001 Compliance" />
-        <meta name="twitter:description" content="70-85% savings vs traditional ISO consultants. AI-powered compliance from $1,500." />
+        <meta name="twitter:title" content="ISO 9001 Gap Analysis Pricing | Pilot $597, Full $1,500" />
+        <meta name="twitter:description" content="ISO 9001 gap analysis for small and mid-size manufacturers. Signed off by a licensed P.Eng. A fraction of consultant cost." />
         <meta name="twitter:image" content="https://auditsready.com/iso-9001-ai-powered-compliance-auditsready-logo.png" />
 
         {/* Favicon */}
@@ -235,8 +236,8 @@ export default function Pricing() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Product",
-              "name": "AuditsReady ISO 9001 Compliance Service",
-              "description": "AI-powered ISO 9001 gap analysis and SOP generation service",
+              "name": "AuditsReady ISO 9001 Gap Analysis",
+              "description": "P.Eng-validated ISO 9001 gap analysis for small and mid-size manufacturers. Findings mapped to specific ISO 9001:2015 clauses with corrective action recommendations.",
               "brand": {
                 "@type": "Brand",
                 "name": "AuditsReady"
@@ -244,24 +245,17 @@ export default function Pricing() {
               "offers": [
                 {
                   "@type": "Offer",
-                  "name": "Basic Package",
+                  "name": "Pilot Gap Analysis",
+                  "price": "597",
+                  "priceCurrency": "USD",
+                  "description": "Gap analysis of your quality manual or one process area, mapped to ISO 9001:2015 clauses and signed off by a licensed P.Eng. A low-risk first step."
+                },
+                {
+                  "@type": "Offer",
+                  "name": "Full Gap Analysis",
                   "price": "1500",
                   "priceCurrency": "USD",
-                  "description": "25 documents digitization with ISO 9001 formatting"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Professional Package",
-                  "price": "2500",
-                  "priceCurrency": "USD",
-                  "description": "25 documents with detailed gap analysis and compliance mapping"
-                },
-                {
-                  "@type": "Offer",
-                  "name": "Premium Package",
-                  "price": "4500",
-                  "priceCurrency": "USD",
-                  "description": "25 documents with AI-generated fixes and P.Eng verification"
+                  "description": "Full documentation gap analysis, clause-by-clause findings report, corrective action roadmap, and one review call. Every finding validated by a licensed P.Eng."
                 }
               ]
             })
@@ -300,10 +294,10 @@ export default function Pricing() {
             Transparent Pricing
           </h1>
           <p className="text-2xl md:text-3xl font-light mb-8 text-blue-100">
-            Save 70-85% vs Traditional ISO Consultants
+            Pilot from $597. Full gap analysis $1,500.
           </p>
           <p className="text-xl max-w-3xl mx-auto text-blue-100">
-            One-time packages or flexible monthly subscriptions. No hidden fees. No surprises.
+            One-time engagements. No retainer, no long contract. Every finding signed off by a licensed P.Eng.
           </p>
         </div>
       </section>
@@ -313,109 +307,105 @@ export default function Pricing() {
         {/* Value Proposition */}
         <div className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white rounded-2xl p-12 mb-16 text-center">
           <h2 className="text-4xl font-bold mb-6">
-            AI-Powered Compliance at 1/10th the Cost
+            Consultant-Quality Findings, a Fraction of the Cost
           </h2>
           <p className="text-xl text-blue-100 max-w-4xl mx-auto leading-relaxed">
-            Our AI analyzes your documentation, identifies gaps, and generates ISO 9001-compliant SOPs — all validated by a licensed Professional Engineer (P.Eng). Get consultant-quality results without consultant-level prices.
+            We check your documentation against ISO 9001:2015 clause by clause and tell you exactly what to fix before your audit. Every finding is reviewed and signed off by a licensed Professional Engineer (P.Eng) with 12+ years in manufacturing quality. Nothing is auto-generated and shipped.
           </p>
         </div>
 
-        {/* One-Time Packages */}
+        {/* Engagements */}
         <section className="mb-20">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              One-Time Packages
+              Two Ways to Start
             </h2>
             <p className="text-xl text-gray-600">
-              Perfect for certification preparation or one-time document reviews
+              Try a pilot first, or go straight to the full gap analysis. One-time engagements, no retainer.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {/* Basic */}
+          <div className="grid md:grid-cols-2 gap-8 mb-12 max-w-4xl mx-auto">
+            {/* Pilot */}
             <div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-gray-200 hover:shadow-2xl transition-all duration-300">
               <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold text-blue-900 mb-2">Basic</h3>
-                <div className="text-5xl font-bold text-gray-900 mb-2">$1,500</div>
-                <p className="text-gray-600">25 documents ($60/doc)</p>
+                <h3 className="text-2xl font-bold text-blue-900 mb-2">Pilot Gap Analysis</h3>
+                <div className="text-5xl font-bold text-gray-900 mb-2">$597</div>
+                <p className="text-gray-600">Your quality manual or one process area</p>
               </div>
 
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start">
                   <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span>Document digitization</span>
+                  <span>Gap analysis of one document set or process area</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span>ISO 9001 formatted SOPs</span>
+                  <span>Findings mapped to ISO 9001:2015 clauses</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span>Quality validation</span>
+                  <span>Corrective action recommendations</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span>Editable Word documents</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span>Basic confidence scoring</span>
+                  <span>Reviewed and signed off by a licensed P.Eng</span>
                 </li>
               </ul>
 
               <p className="text-sm text-gray-600 mb-6">
-                <strong>Best for:</strong> Companies with existing ISO knowledge who need digitization
+                <strong>Best for:</strong> Seeing the quality of our work before a full engagement
               </p>
 
               <button
                 onClick={() => setIsModalOpen(true)}
                 className="w-full bg-blue-900 text-white py-4 rounded-full font-semibold hover:bg-blue-800 transition-colors"
               >
-                Get Started
+                Start With a Pilot
               </button>
             </div>
 
-            {/* Professional */}
-            <div className="bg-white rounded-2xl shadow-2xl p-8 border-4 border-blue-900 relative transform scale-105">
+            {/* Full */}
+            <div className="bg-white rounded-2xl shadow-2xl p-8 border-4 border-blue-900 relative transform md:scale-105">
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-2 rounded-full text-sm font-bold">
                 MOST POPULAR
               </div>
 
               <div className="text-center mb-6 mt-4">
-                <h3 className="text-2xl font-bold text-blue-900 mb-2">Professional</h3>
-                <div className="text-5xl font-bold text-gray-900 mb-2">$2,500</div>
-                <p className="text-gray-600">25 documents ($100/doc)</p>
+                <h3 className="text-2xl font-bold text-blue-900 mb-2">Full Gap Analysis</h3>
+                <div className="text-5xl font-bold text-gray-900 mb-2">$1,500</div>
+                <p className="text-gray-600">Your full documentation set</p>
               </div>
 
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start">
                   <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span><strong>Everything in Basic</strong></span>
+                  <span><strong>Full documentation gap analysis</strong></span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span><strong>Detailed gap analysis</strong></span>
+                  <span>Clause-by-clause findings report</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span>Clause-by-clause ISO 9001 mapping</span>
+                  <span>Corrective action roadmap, prioritized by audit risk</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span>Gap severity levels</span>
+                  <span>One review call to walk through the findings</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span>Comprehensive gap report</span>
+                  <span><strong>Every finding validated by a licensed P.Eng</strong></span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span>Priority action plan</span>
+                  <span>Audit-ready findings in about 2 weeks</span>
                 </li>
               </ul>
 
               <p className="text-sm text-gray-600 mb-6">
-                <strong>Best for:</strong> Companies preparing for certification who need to know exactly what's missing
+                <strong>Best for:</strong> Manufacturers preparing for certification, surveillance, or a customer audit
               </p>
 
               <button
@@ -425,301 +415,57 @@ export default function Pricing() {
                 Get Started
               </button>
             </div>
-
-            {/* Premium */}
-            <div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-gray-200 hover:shadow-2xl transition-all duration-300">
-              <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold text-blue-900 mb-2">Premium</h3>
-                <div className="text-5xl font-bold text-gray-900 mb-2">$4,500</div>
-                <p className="text-gray-600">25 documents ($180/doc)</p>
-              </div>
-
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span><strong>Everything in Professional</strong></span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span><strong>AI-generated gap fixes</strong></span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span>Surgical insertions (preserves content)</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span>Fixed SOP documents</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span><strong>P.Eng verification</strong></span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span>Compliance certification letter</span>
-                </li>
-              </ul>
-
-              <p className="text-sm text-gray-600 mb-6">
-                <strong>Best for:</strong> Companies wanting "done for you" with P.Eng validation
-              </p>
-
-              <button
-                onClick={() => setIsModalOpen(true)}
-                className="w-full bg-blue-900 text-white py-4 rounded-full font-semibold hover:bg-blue-800 transition-colors"
-              >
-                Get Started
-              </button>
-            </div>
           </div>
+
+          <p className="text-center text-gray-600 max-w-2xl mx-auto">
+            Not sure yet? Send us one document — your quality manual or a single SOP — and we'll return a real
+            sample gap analysis at no charge, usually within 24 hours.
+          </p>
         </section>
 
         {/* Cost Comparison */}
         <section className="mb-20">
           <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-12 border-l-8 border-orange-500">
             <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">
-              Your Savings vs Traditional Consultants
+              What Gap Analysis Usually Costs
             </h2>
 
             <div className="overflow-x-auto">
               <table className="w-full bg-white rounded-xl shadow-lg">
                 <thead>
                   <tr className="bg-blue-900 text-white">
-                    <th className="py-4 px-6 text-left font-bold">Service</th>
-                    <th className="py-4 px-6 text-left font-bold">Traditional Consultant</th>
-                    <th className="py-4 px-6 text-left font-bold">AuditsReady</th>
-                    <th className="py-4 px-6 text-left font-bold">Your Savings</th>
+                    <th className="py-4 px-6 text-left font-bold">Approach</th>
+                    <th className="py-4 px-6 text-left font-bold">Typical Cost</th>
+                    <th className="py-4 px-6 text-left font-bold">Turnaround</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-b">
-                    <td className="py-4 px-6 font-semibold">Document Digitization (25 docs)</td>
-                    <td className="py-4 px-6">$5,000 - $8,000</td>
-                    <td className="py-4 px-6 text-blue-900 font-bold">$1,500</td>
-                    <td className="py-4 px-6 text-green-600 font-bold">$3,500 - $6,500 (70-81%)</td>
+                    <td className="py-4 px-6 font-semibold">Traditional consultant gap analysis</td>
+                    <td className="py-4 px-6">$5,000 - $15,000</td>
+                    <td className="py-4 px-6">4 - 8 weeks</td>
                   </tr>
                   <tr className="border-b bg-blue-50">
-                    <td className="py-4 px-6 font-semibold">Gap Analysis + Digitization</td>
-                    <td className="py-4 px-6">$10,000 - $15,000</td>
-                    <td className="py-4 px-6 text-blue-900 font-bold">$2,500</td>
-                    <td className="py-4 px-6 text-green-600 font-bold">$7,500 - $12,500 (75-83%)</td>
-                  </tr>
-                  <tr className="border-b">
-                    <td className="py-4 px-6 font-semibold">Gap Analysis + Remediation</td>
-                    <td className="py-4 px-6">$15,000 - $30,000</td>
-                    <td className="py-4 px-6 text-blue-900 font-bold">$4,500</td>
-                    <td className="py-4 px-6 text-green-600 font-bold">$10,500 - $25,500 (70-85%)</td>
+                    <td className="py-4 px-6 font-semibold">AuditsReady Full Gap Analysis (P.Eng-validated)</td>
+                    <td className="py-4 px-6 text-blue-900 font-bold">$1,500</td>
+                    <td className="py-4 px-6">~2 weeks</td>
                   </tr>
                   <tr className="bg-green-50">
-                    <td className="py-4 px-6 font-semibold">Full Certification Support (Annual)</td>
-                    <td className="py-4 px-6">$20,000 - $50,000</td>
-                    <td className="py-4 px-6 text-blue-900 font-bold">$8,088<br/><span className="text-sm text-gray-600">(Package + Subscription)</span></td>
-                    <td className="py-4 px-6 text-green-600 font-bold">$11,912 - $41,912 (60-84%)</td>
+                    <td className="py-4 px-6 font-semibold">AuditsReady Pilot Gap Analysis</td>
+                    <td className="py-4 px-6 text-blue-900 font-bold">$597</td>
+                    <td className="py-4 px-6">~1 week</td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
             <div className="mt-12 bg-white rounded-xl p-8 text-center shadow-lg">
-              <h3 className="text-3xl font-bold text-green-600 mb-4">Average Customer Savings</h3>
-              <p className="text-5xl font-bold text-green-600 mb-4">$10,000 - $25,000</p>
-              <p className="text-gray-600 text-lg">Per engagement compared to traditional consulting</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Monthly Subscriptions */}
-        <section className="mb-20">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Monthly Subscription Plans
-            </h2>
-            <p className="text-xl text-gray-600">
-              Ongoing compliance support with document management and continuous analysis
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Basic Subscription */}
-            <div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-gray-200">
-              <h3 className="text-2xl font-bold text-blue-900 mb-4 text-center">Basic</h3>
-              <div className="text-center mb-8">
-                <span className="text-5xl font-bold text-gray-900">$99</span>
-                <span className="text-gray-600">/month</span>
-              </div>
-
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3">✓</span>
-                  <span>50 conversions/month</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3">✓</span>
-                  <span>500 documents storage</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3">✓</span>
-                  <span>Version control</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3">✓</span>
-                  <span>Basic support</span>
-                </li>
-              </ul>
-
-              <button
-                onClick={() => setIsModalOpen(true)}
-                className="w-full bg-blue-900 text-white py-3 rounded-full font-semibold hover:bg-blue-800 transition-colors"
-              >
-                Start Free Trial
-              </button>
-            </div>
-
-            {/* Professional Subscription */}
-            <div className="bg-white rounded-2xl shadow-2xl p-8 border-4 border-blue-900 transform scale-105">
-              <div className="bg-blue-900 text-white text-center py-2 rounded-lg mb-4 font-bold">
-                RECOMMENDED
-              </div>
-              <h3 className="text-2xl font-bold text-blue-900 mb-4 text-center">Professional</h3>
-              <div className="text-center mb-8">
-                <span className="text-5xl font-bold text-gray-900">$299</span>
-                <span className="text-gray-600">/month</span>
-              </div>
-
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3">✓</span>
-                  <span>500 conversions/month</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3">✓</span>
-                  <span><strong>Gap analysis included</strong></span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3">✓</span>
-                  <span>5,000 documents storage</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3">✓</span>
-                  <span>Priority support</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3">✓</span>
-                  <span>API access</span>
-                </li>
-              </ul>
-
-              <button
-                onClick={() => setIsModalOpen(true)}
-                className="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all"
-              >
-                Start Free Trial
-              </button>
-            </div>
-
-            {/* Enterprise Subscription */}
-            <div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-gray-200">
-              <h3 className="text-2xl font-bold text-blue-900 mb-4 text-center">Enterprise</h3>
-              <div className="text-center mb-8">
-                <span className="text-5xl font-bold text-gray-900">$999</span>
-                <span className="text-gray-600">/month</span>
-              </div>
-
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3">✓</span>
-                  <span>Unlimited conversions</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3">✓</span>
-                  <span><strong>Multi-standard support</strong></span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3">✓</span>
-                  <span>Unlimited storage</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3">✓</span>
-                  <span>Multi-user access (10 users)</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3">✓</span>
-                  <span>Dedicated account manager</span>
-                </li>
-              </ul>
-
-              <button
-                onClick={() => setIsModalOpen(true)}
-                className="w-full bg-blue-900 text-white py-3 rounded-full font-semibold hover:bg-blue-800 transition-colors"
-              >
-                Contact Sales
-              </button>
-            </div>
-          </div>
-        </section>
-
-        {/* ROI Example */}
-        <section className="mb-20">
-          <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-12 border-l-8 border-green-500">
-            <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">
-              Real-World Example: Small Manufacturer
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-12">
-              <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Traditional Consultant Route</h3>
-                <div className="bg-white rounded-xl p-6 shadow-lg">
-                  <div className="space-y-4">
-                    <div className="flex justify-between pb-3 border-b">
-                      <span>Gap Analysis</span>
-                      <span className="font-bold">$10,000</span>
-                    </div>
-                    <div className="flex justify-between pb-3 border-b">
-                      <span>Document Remediation</span>
-                      <span className="font-bold">$15,000</span>
-                    </div>
-                    <div className="flex justify-between pb-3 border-b">
-                      <span>Annual Support</span>
-                      <span className="font-bold">$5,000</span>
-                    </div>
-                    <div className="flex justify-between pt-3 bg-red-50 p-4 rounded-lg">
-                      <span className="font-bold">First Year Total</span>
-                      <span className="font-bold text-red-600 text-2xl">$30,000</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">AuditsReady Route</h3>
-                <div className="bg-white rounded-xl p-6 shadow-lg">
-                  <div className="space-y-4">
-                    <div className="flex justify-between pb-3 border-b">
-                      <span>Premium Package (25 docs)</span>
-                      <span className="font-bold">$4,500</span>
-                    </div>
-                    <div className="flex justify-between pb-3 border-b">
-                      <span>Professional Subscription (12 months)</span>
-                      <span className="font-bold">$3,588</span>
-                    </div>
-                    <div className="flex justify-between pb-3 border-b">
-                      <span>&nbsp;</span>
-                      <span>&nbsp;</span>
-                    </div>
-                    <div className="flex justify-between pt-3 bg-green-50 p-4 rounded-lg">
-                      <span className="font-bold">First Year Total</span>
-                      <span className="font-bold text-green-600 text-2xl">$8,088</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-12 bg-white rounded-xl p-8 text-center shadow-lg">
-              <h3 className="text-3xl font-bold text-green-600 mb-3">Total First Year Savings</h3>
-              <p className="text-6xl font-bold text-green-600 mb-4">$21,912</p>
-              <p className="text-gray-600 text-xl">That's a 73% cost reduction with the same compliance results</p>
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">The Real Number to Watch</h3>
+              <p className="text-gray-700 text-lg max-w-3xl mx-auto">
+                A failed certification audit typically costs <strong>$8,000&ndash;$15,000</strong> in wasted audit fees
+                plus <strong>3&ndash;6 months</strong> of delay. A pre-assessment costs a fraction of that. Find the gaps
+                before the auditor does.
+              </p>
             </div>
           </div>
         </section>
@@ -733,27 +479,27 @@ export default function Pricing() {
 
             <div className="grid md:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="text-6xl mb-4">⚡</div>
-                <h3 className="text-xl font-bold text-blue-900 mb-3">Fast</h3>
-                <p className="text-gray-600">5 minutes per document vs weeks with consultants</p>
+                <div className="text-6xl mb-4">🛡️</div>
+                <h3 className="text-xl font-bold text-blue-900 mb-3">P.Eng-Validated</h3>
+                <p className="text-gray-600">Every finding reviewed and signed off by a licensed Professional Engineer</p>
               </div>
 
               <div className="text-center">
-                <div className="text-6xl mb-4">💰</div>
-                <h3 className="text-xl font-bold text-blue-900 mb-3">Affordable</h3>
-                <p className="text-gray-600">1/10th the cost of traditional consulting</p>
+                <div className="text-6xl mb-4">🏭</div>
+                <h3 className="text-xl font-bold text-blue-900 mb-3">Plant Experience</h3>
+                <p className="text-gray-600">12+ years in manufacturing quality at building-materials and packaging plants</p>
               </div>
 
               <div className="text-center">
                 <div className="text-6xl mb-4">🎯</div>
-                <h3 className="text-xl font-bold text-blue-900 mb-3">Accurate</h3>
-                <p className="text-gray-600">P.Eng-verified compliance analysis</p>
+                <h3 className="text-xl font-bold text-blue-900 mb-3">Clause-Mapped</h3>
+                <p className="text-gray-600">Findings tied to specific ISO 9001:2015 clauses with corrective actions</p>
               </div>
 
               <div className="text-center">
-                <div className="text-6xl mb-4">📋</div>
-                <h3 className="text-xl font-bold text-blue-900 mb-3">Comprehensive</h3>
-                <p className="text-gray-600">Clause-by-clause ISO 9001:2015 mapping</p>
+                <div className="text-6xl mb-4">💰</div>
+                <h3 className="text-xl font-bold text-blue-900 mb-3">A Fraction of the Cost</h3>
+                <p className="text-gray-600">Far less than a traditional consultant, and far less than a failed audit</p>
               </div>
             </div>
           </div>
@@ -764,14 +510,14 @@ export default function Pricing() {
           <div className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white rounded-2xl p-12">
             <h2 className="text-4xl font-bold mb-6">Ready to Get Started?</h2>
             <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              Contact us for a free consultation and see how much you can save with AI-powered compliance
+              Send us one document for a free sample gap analysis, or start with a $597 pilot. Every finding is validated by a licensed P.Eng.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={() => setIsModalOpen(true)}
                 className="inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white px-10 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
               >
-                Get Custom Quote
+                Get a Free Sample Gap Analysis
               </button>
               <Link
                 href="/blog/iso-9001-checklist"
@@ -798,7 +544,7 @@ export default function Pricing() {
                 className="mb-4 opacity-80"
               />
               <p className="text-sm text-gray-400">
-                AI-Powered ISO 9001 Compliance for Manufacturers Worldwide
+                P.Eng-Validated ISO 9001 Gap Analysis for Small & Mid-Size Manufacturers
               </p>
             </div>
 
@@ -807,17 +553,17 @@ export default function Pricing() {
               <div className="space-y-2 text-sm">
                 <p>📧 <a href="mailto:info@auditsready.com" className="hover:text-white transition-colors">info@auditsready.com</a></p>
                 <p><PhoneDisplay /></p>
-                <p>🌎 Serving Worldwide</p>
+                <p>🌎 Serving manufacturers in North America & worldwide</p>
               </div>
             </div>
 
             <div>
               <h3 className="text-white font-semibold mb-4">Services</h3>
               <ul className="space-y-2 text-sm">
-                <li>AI-Powered Gap Analysis</li>
-                <li>SOP Document Generation</li>
-                <li>Audit Preparation</li>
-                <li>P.Eng Validated Consulting</li>
+                <li>ISO 9001 Gap Analysis</li>
+                <li>Pre-Assessment & Audit Readiness</li>
+                <li>Corrective Action Roadmaps</li>
+                <li>P.Eng-Validated Findings</li>
               </ul>
             </div>
 
@@ -836,7 +582,7 @@ export default function Pricing() {
               &copy; {new Date().getFullYear()} AuditsReady. All rights reserved.
             </p>
             <p className="text-xs text-gray-500">
-              Professional Engineer (P.Eng) Validated | AI-Powered ISO 9001 Compliance
+              ISO 9001 gap analysis reviewed and signed off by a licensed Professional Engineer (P.Eng).
             </p>
           </div>
         </div>
