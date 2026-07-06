@@ -9,6 +9,7 @@ Marketing and landing page for AuditsReady, a P.Eng-validated ISO 9001 gap analy
 **Purpose:** Customer acquisition and lead generation
 **Location:** `/Users/gjayasun/git/auditsready`
 **Live Site:** https://auditsready.com
+**Business model:** See `BUSINESS_MODEL.md` — productized P.Eng consulting; free sample → $597 pilot → $1,500 full engagement; revenue from full engagements; margin depends on keeping P.Eng hours-per-job low (unvalidated). Marks [Established] vs [Assumption] facts.
 
 ## Technology Stack
 
