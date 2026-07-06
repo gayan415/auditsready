@@ -2,7 +2,9 @@
 
 ## Project Overview
 
-Marketing and landing page for AuditsReady, an AI-powered ISO9001 SOP compliance platform for manufacturers worldwide.
+Marketing and landing page for AuditsReady, a P.Eng-validated ISO 9001 gap analysis service for small and mid-size manufacturers.
+
+**Positioning (as of 2026-07-05):** ISO 9001 gap analysis for small and mid-size **general industrial manufacturers** (10–500 employees) — building materials, packaging, plastics, metal fabrication, and industrial products — preparing for certification, surveillance audits, or customer audits. Every finding is reviewed and signed off by a licensed Professional Engineer (P.Eng). AI/modern tooling is the *how* (speed/cost), never the headline; outputs are "drafted for your review, validated by a P.Eng" — never "auto-generated." Other manufacturing sectors are reachable via a secondary line but the hero speaks to industrial manufacturers. See the 2026-07-05 Recent Updates entry for details.
 
 **Purpose:** Customer acquisition and lead generation
 **Location:** `/Users/gjayasun/git/auditsready`
@@ -73,14 +75,14 @@ auditsready/
 
 ## Key Features
 
-### Landing Page Sections
-1. **Hero** - Value proposition with "Book AI Demo" modal CTA and phone reveal
-2. **How It Works** - 8-second demo video (auditsready-demo.mp4) + 3-step process with P.Eng trust badge + Free ISO 9001 Checklist CTA
-3. **Beyond Traditional Tools** - AI features (Claude Sonnet 4.5 + Opus capabilities)
-4. **AI Finds What Others Miss** - Gap detection and SOP conversion capabilities
-5. **Built for Every Manufacturing Business** - Universal industry messaging (automotive, aerospace, electronics, food, consumer products, textiles, plastics, metal fabrication, etc.)
-6. **Pricing/CTA** - Early adopter pricing with "Book AI Demo" modal
-7. **Footer** - Contact info with click-to-reveal phone
+### Landing Page Sections (as of 2026-07-05 repositioning)
+1. **Hero** - "Pass your ISO 9001 audit — without the $20K consultant." P.Eng trust pill + subheadline (P.Eng, 12+ yrs, building-materials/packaging) + beachhead industries line. Primary CTA: "Get a free gap analysis of your quality manual or one SOP" (opens modal); secondary CTA: "Book a 15-minute call"
+2. **How It Works** - 8-second demo video (auditsready-demo.mp4) + 3-step process (Send Documents → P.Eng Reviews the Gaps → Get Audit-Ready Findings) with factual P.Eng trust badge (APEGA, 12+ yrs) + Free ISO 9001 Checklist CTA
+3. **Why Trust Us** - Credibility proof points (licensed P.Eng/APEGA 12+ yrs; IKO Industries + WestRock experience; findings mapped to ISO 9001:2015 clauses; failed-audit cost $8K–$15K + 3–6 months) + the SINGLE AI mention, framed as speed with mandatory P.Eng validation
+4. **What You Get** - Deliverables: clause-by-clause findings, corrective action recommendations, P.Eng sign-off ("drafted for your review, validated by a P.Eng")
+5. **Built for Industrial Manufacturers** - Beachhead industries + 10-500 employees + audit milestones; secondary "different sector? just ask" line
+6. **Pricing/CTA** - Pilot Gap Analysis $597 → Full Gap Analysis $1,500; failed-audit cost framing; free-sample CTA
+7. **Footer** - Contact info with click-to-reveal phone; P.Eng sign-off tagline (no "artificial intelligence" tagline)
 
 ### Contact Form (Modal)
 - Professional modal popup with form fields (Name, Company, Email, Phone, Message)
@@ -106,20 +108,22 @@ git push origin main    # Auto-deploys to Vercel
 
 ## Target Market
 
-**Primary:** Small-medium manufacturers worldwide (10-500 employees)
-**Geographic:** Worldwide (no geographic restrictions)
-**Industries:** Any manufacturing sector - automotive, aerospace, electronics, food processing, consumer products, textiles, plastics, metal fabrication, craft breweries, oilfield services, and more
+**Primary (beachhead):** Small and mid-size **general industrial manufacturers** (10-500 employees) — building materials, packaging, plastics, metal fabrication, and industrial products — preparing for ISO 9001 certification, surveillance audits, or customer audits
+**Secondary:** Other manufacturing sectors (reachable via a secondary line, not the hero)
+**Geographic:** North America and worldwide (no hard geographic restrictions)
+**Buyer:** Skeptical plant manager or quality manager at a small/mid-size manufacturer; fears AI-generated compliance documents failing a real audit. Write for them, not a tech buyer.
 
 ## SEO Implementation
 
-### Meta Tags (Global Positioning)
-- Title: "AI-Powered ISO 9001 Gap Analysis | Audit-Ready SOP Compliance"
-- Keywords: ISO 9001 gap analysis, SOP compliance, audit preparation, automotive ISO 9001, aerospace manufacturing, electronics manufacturing, food processing ISO 9001, consumer products manufacturing
-- Emphasis on "any manufacturing industry" for broad appeal
-- Geographic scope: Worldwide
+### Meta Tags (Positioning: beachhead + P.Eng, not AI)
+- Title: "ISO 9001 Gap Analysis for Small & Mid-Size Manufacturers | P.Eng-Validated | AuditsReady"
+- Keywords: ISO 9001 gap analysis, ISO 9001 pre-assessment, ISO 9001 for small manufacturers, P.Eng validated, building materials manufacturing, packaging manufacturing, plastics manufacturing, metal fabrication, industrial products manufacturing
+- Lead with the beachhead industries + P.Eng validation; keep other sectors as secondary
+- **No "AI" in the page title or meta description.** AI may appear once, lower on the page, framed as speed/cost — always paired with mandatory P.Eng validation
+- Geographic scope: North America and worldwide
 
 ### Structured Data
-- ProfessionalService schema (Worldwide coverage with knowsAbout 13+ manufacturing sectors)
+- ProfessionalService schema (knowsAbout leads with the beachhead industries; fabricated aggregateRating removed)
 - Service schema with offerings and business audience
 - FAQPage schema with 4 strategic questions for rich snippets
 - Phone number visible to crawlers in structured data
@@ -167,10 +171,19 @@ RESEND_API_KEY=re_your_key_here  # Get from https://resend.com/api-keys
   - compliance@auditsready.com (Compliance queries - routes to team)
   - noreply@auditsready.com (Automated emails only)
 - **Phone:** +1-403-404-4643 (click-to-reveal component)
-- **Serving:** Worldwide - any manufacturing industry
+- **Serving:** North America and worldwide — beachhead is small/mid-size industrial manufacturers (building materials, packaging, plastics, metal fabrication, industrial products); other sectors reachable via secondary line
 - **Contact Form:** Modal popup with Resend API integration
 
 ## Recent Updates
+
+### 2026-07-05: Repositioning — Industrial Manufacturing Beachhead + P.Eng-Led (branch: reposition-manufacturing)
+- 🎯 **New positioning**: Away from "AI-Powered ISO 9001 | Any Manufacturing Industry" (which was failing to convert) toward **P.Eng-validated ISO 9001 gap analysis for small/mid-size general industrial manufacturers** (building materials, packaging, plastics, metal fabrication, industrial products; 10-500 employees). Two problems being fixed: (1) generalist "any industry/size/worldwide" is no positioning; (2) "AI-powered" as the headline scares the buyer (a quality manager who fears AI-generated docs failing a real audit). AI is the *how*, not the headline.
+- ✅ **`pages/index.js`**: Hero rewrite ("Pass your ISO 9001 audit — without the $20K consultant."), P.Eng trust pill, free-gap-analysis primary CTA + 15-min call secondary. Demoted AI to a single speed/cost mention with mandatory P.Eng validation. Added "Why Trust Us" credibility section (proof points + $8K–$15K failed-audit framing reused from the pre-assessment checklist) and "What You Get" deliverables. Replaced generalist section with "Built for Industrial Manufacturers." Added Pilot $597 → Full $1,500 offer. Rewrote title/meta/OG/Twitter + all JSON-LD; removed fabricated 5.0 aggregateRating.
+- ✅ **`pages/pricing.js`**: Replaced per-25-document packages ($1,500/$2,500/$4,500) and monthly SaaS subscriptions ($99/$299/$999) with **Pilot $597 → Full $1,500** gap-analysis offer. Rebuilt cost-comparison table; removed fabricated ROI numbers. De-AI'd title/meta/JSON-LD/copy/footer; dropped "AI generates SOPs" claim.
+- ✅ **`pages/faq.js`**: Reconciled turnaround to **~2 weeks** (was "48-72 hours"); reframed AI answers (tooling is the *how*, P.Eng validates every finding, drafts are for review — never auto-shipped); updated pricing refs to $597/$1,500; de-AI'd meta + bottom CTA.
+- 📐 **Turnaround standard**: Free single-document sample in ~24 hours; full engagement in ~2 weeks.
+- ⚠️ **NOT yet done (intentional)**: (1) **Blog** (`pages/blog/index.js` + 13 post bodies, ~40,000 words) still AI-forward — two index excerpts say "AI-powered" and post #11 is literally "Traditional ISO Consultants vs. AI"; realigning is a separate large effort. (2) Logo filename still `iso-9001-ai-powered-compliance-auditsready-logo.png` (cosmetic). (3) `public/sitemap.xml` tone still generalist. (4) The MVP pricing model and lead-magnet copy below in this file still reference the old package/subscription framing where noted.
+- 📦 **Status**: On branch `reposition-manufacturing` (2 commits), not pushed, no PR — awaiting owner review per instruction.
 
 ### 2026-01-28: Blog Content Phase 1 Complete (13/13 Posts)
 - ✅ **3 New Blog Posts Published**: Completing the 13-post content strategy
@@ -325,7 +338,7 @@ RESEND_API_KEY=re_your_key_here  # Get from https://resend.com/api-keys
 - ✅ FAQ page with 28 questions live
 - ✅ 4 legal pages deployed (Terms, Privacy, Refund, Acceptable Use)
 - ✅ Contact form with Resend API integration on all pages
-- ✅ Universal "any manufacturing industry" positioning
+- ✅ Positioning: P.Eng-validated ISO 9001 gap analysis for small/mid-size industrial manufacturers (beachhead) — homepage/pricing/FAQ updated on branch `reposition-manufacturing`; `main` still shows the prior "any manufacturing industry" positioning until merged
 - ✅ 8-second demo video in "How It Works" section
 - ✅ Lead magnet deliverables created (checklist, roadmap, template)
 - 📊 Total content: 40,000+ words across 13 blog posts + FAQ
@@ -562,8 +575,9 @@ Based on SEO research and current manufacturing challenges, these topics target 
 
 ### Common Tasks
 - Phone/Email updates: `pages/index.js` PhoneReveal component
-- Industries: `pages/index.js` industries section
-- SEO: Update `<Head>` meta tags and structured data
+- Industries: `pages/index.js` "Built for Industrial Manufacturers" section (lead with beachhead industries; keep "other sectors? just ask" secondary line)
+- SEO: Update `<Head>` meta tags and structured data (keep "AI" out of homepage/pricing titles + meta descriptions)
+- Positioning guardrails: never claim outputs are "auto-generated"/"AI-generated"; frame as "drafted for your review, validated by a P.Eng"; AI appears at most once per page as speed/cost, always paired with P.Eng validation
 - Blog posts: Create feature branch → write post → test locally → commit → push → PR → merge
 
 ## Known Issues
@@ -802,8 +816,8 @@ Based on SEO research and current manufacturing challenges, these topics target 
 
 ---
 
-**Last Updated:** 2026-01-28
-**Branch:** main
+**Last Updated:** 2026-07-05
+**Branch:** reposition-manufacturing (repositioning in review; main is still the deployed positioning)
 **Deployment:** Live on Vercel via GitHub integration
 
 ## Email Configuration
@@ -933,6 +947,6 @@ If you ever need to verify another domain or re-verify:
 
 ---
 
-**Last Updated:** 2026-01-28
-**Branch:** main
+**Last Updated:** 2026-07-05
+**Branch:** reposition-manufacturing (repositioning in review; main is still the deployed positioning)
 **Deployment:** Live on Vercel via GitHub integration
